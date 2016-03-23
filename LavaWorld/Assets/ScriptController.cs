@@ -2,8 +2,9 @@
 using System.Collections;
 
 public class ScriptController : MonoBehaviour {
+///testing
 /// <summary>
-/// will move this to scenen manager once i get more orginized 
+/// will move this to scenen manager once i get more orginized  testinh 
 /// </summary>
 	PlayerController platfromController;
 	ShipController shipController;

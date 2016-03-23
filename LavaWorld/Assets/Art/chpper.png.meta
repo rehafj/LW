@@ -1,0 +1,1926 @@
+fileFormatVersion: 2
+guid: 7a5355ca52d874d969bbe914cd2a286f
+timeCreated: 1457662699
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: chpper_0
+    21300002: chpper_1
+    21300004: chpper_2
+    21300006: chpper_3
+    21300008: chpper_4
+    21300010: chpper_5
+    21300012: chpper_6
+    21300014: chpper_7
+    21300016: chpper_8
+    21300018: chpper_9
+    21300020: chpper_10
+    21300022: chpper_11
+    21300024: chpper_12
+    21300026: chpper_13
+    21300028: chpper_14
+    21300030: chpper_15
+    21300032: chpper_16
+    21300034: chpper_17
+    21300036: chpper_18
+    21300038: chpper_19
+    21300040: chpper_20
+    21300042: chpper_21
+    21300044: chpper_22
+    21300046: chpper_23
+    21300048: chpper_24
+    21300050: chpper_25
+    21300052: chpper_26
+    21300054: chpper_27
+    21300056: chpper_28
+    21300058: chpper_29
+    21300060: chpper_30
+    21300062: chpper_31
+    21300064: chpper_32
+    21300066: chpper_33
+    21300068: chpper_34
+    21300070: chpper_35
+    21300072: chpper_36
+    21300074: chpper_37
+    21300076: chpper_38
+    21300078: chpper_39
+    21300080: chpper_40
+    21300082: chpper_41
+    21300084: chpper_42
+    21300086: chpper_43
+    21300088: chpper_44
+    21300090: chpper_45
+    21300092: chpper_46
+    21300094: chpper_47
+    21300096: chpper_48
+    21300098: chpper_49
+    21300100: chpper_50
+    21300102: chpper_51
+    21300104: chpper_52
+    21300106: chpper_53
+    21300108: chpper_54
+    21300110: chpper_55
+    21300112: chpper_56
+    21300114: chpper_57
+    21300116: chpper_58
+    21300118: chpper_59
+    21300120: chpper_60
+    21300122: chpper_61
+    21300124: chpper_62
+    21300126: chpper_63
+    21300128: chpper_64
+    21300130: chpper_65
+    21300132: chpper_66
+    21300134: chpper_67
+    21300136: chpper_68
+    21300138: chpper_69
+    21300140: chpper_70
+    21300142: chpper_71
+    21300144: chpper_72
+    21300146: chpper_73
+    21300148: chpper_74
+    21300150: chpper_75
+    21300152: chpper_76
+    21300154: chpper_77
+    21300156: chpper_78
+    21300158: chpper_79
+    21300160: chpper_80
+    21300162: chpper_81
+    21300164: chpper_82
+    21300166: chpper_83
+    21300168: chpper_84
+    21300170: chpper_85
+    21300172: chpper_86
+    21300174: chpper_87
+    21300176: chpper_88
+    21300178: chpper_89
+    21300180: chpper_90
+    21300182: chpper_91
+    21300184: chpper_92
+    21300186: chpper_93
+    21300188: chpper_94
+    21300190: chpper_95
+    21300192: chpper_96
+    21300194: chpper_97
+    21300196: chpper_98
+    21300198: chpper_99
+    21300200: chpper_100
+    21300202: chpper_101
+    21300204: chpper_102
+    21300206: chpper_103
+    21300208: chpper_104
+    21300210: chpper_105
+    21300212: chpper_106
+    21300214: chpper_107
+    21300216: chpper_108
+    21300218: chpper_109
+    21300220: chpper_110
+    21300222: chpper_111
+    21300224: chpper_112
+    21300226: chpper_113
+    21300228: chpper_114
+    21300230: chpper_115
+    21300232: chpper_116
+    21300234: chpper_117
+    21300236: chpper_118
+    21300238: chpper_119
+    21300240: chpper_120
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: chpper_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 985
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 985
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_2
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 985
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_3
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 985
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_4
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 985
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_5
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 985
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_6
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 985
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_7
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 985
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_8
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 985
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 985
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_10
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 984
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_11
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 984
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_12
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 984
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_13
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 984
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_14
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 984
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_15
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 916
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_16
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 916
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_17
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 916
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: -22}
+        - {x: 21, y: 20}
+        - {x: 20, y: 23}
+        - {x: -7, y: 23}
+        - {x: -21, y: -8}
+        - {x: -21, y: -23}
+        - {x: -8, y: -23}
+        - {x: -8, y: -20}
+        - {x: -1, y: -23}
+        - {x: 20, y: -23}
+    - name: chpper_18
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 916
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: -22}
+        - {x: 21, y: 20}
+        - {x: 20, y: 23}
+        - {x: -7, y: 23}
+        - {x: -21, y: -8}
+        - {x: -21, y: -23}
+        - {x: -8, y: -23}
+        - {x: -8, y: -20}
+        - {x: -1, y: -23}
+        - {x: 20, y: -23}
+    - name: chpper_19
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 916
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: -22}
+        - {x: 21, y: 20}
+        - {x: 20, y: 23}
+        - {x: -7, y: 23}
+        - {x: -21, y: -8}
+        - {x: -21, y: -23}
+        - {x: -8, y: -23}
+        - {x: -8, y: -20}
+        - {x: -1, y: -23}
+        - {x: 20, y: -23}
+    - name: chpper_20
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 916
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_21
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 916
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_22
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 916
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 29.5}
+        - {x: -20.5, y: 29.5}
+        - {x: -26.5, y: 27.5}
+        - {x: -26.5, y: -29.5}
+        - {x: 19.5, y: -29.5}
+        - {x: 26.5, y: -18.5}
+        - {x: 26.5, y: 14.5}
+        - {x: 13.5, y: 28.5}
+    - name: chpper_23
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 916
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 29.5}
+        - {x: -20.5, y: 29.5}
+        - {x: -26.5, y: 27.5}
+        - {x: -26.5, y: -29.5}
+        - {x: 19.5, y: -29.5}
+        - {x: 26.5, y: -18.5}
+        - {x: 26.5, y: 14.5}
+        - {x: 13.5, y: 28.5}
+    - name: chpper_24
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 916
+        width: 45
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 29.5}
+        - {x: -22.5, y: -29.5}
+        - {x: 22.5, y: -29.5}
+        - {x: 22.5, y: 27.5}
+        - {x: 19.5, y: 29.5}
+    - name: chpper_25
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 917
+        width: 46
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: -20.5}
+        - {x: 23, y: 27.5}
+        - {x: -8, y: 27.5}
+        - {x: -23, y: 16.5}
+        - {x: -23, y: -27.5}
+        - {x: -10, y: -27.5}
+        - {x: -10, y: -24.5}
+        - {x: -3, y: -27.5}
+        - {x: 16, y: -27.5}
+    - name: chpper_26
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 917
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19, y: -28.5}
+        - {x: 24, y: -21.5}
+        - {x: 24, y: 11.5}
+        - {x: 14, y: 28.5}
+        - {x: -3, y: 28.5}
+        - {x: -19, y: 22.5}
+        - {x: -24, y: 8.5}
+        - {x: -24, y: -28.5}
+        - {x: -13, y: -28.5}
+        - {x: -12, y: -27.5}
+        - {x: -12, y: -25.5}
+        - {x: -8, y: -28.5}
+    - name: chpper_27
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 917
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19, y: -28.5}
+        - {x: 24, y: -21.5}
+        - {x: 24, y: 11.5}
+        - {x: 14, y: 28.5}
+        - {x: -3, y: 28.5}
+        - {x: -19, y: 22.5}
+        - {x: -24, y: 8.5}
+        - {x: -24, y: -28.5}
+        - {x: -13, y: -28.5}
+        - {x: -12, y: -27.5}
+        - {x: -12, y: -25.5}
+        - {x: -8, y: -28.5}
+    - name: chpper_28
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 917
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_29
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 895
+        width: 29
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_30
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 850
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_31
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 850
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 17.5}
+        - {x: -17.5, y: 7.5}
+        - {x: -17.5, y: -16.5}
+        - {x: -15.5, y: -17.5}
+        - {x: 17.5, y: -17.5}
+        - {x: 17.5, y: 17.5}
+    - name: chpper_32
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 850
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 18}
+        - {x: -16.5, y: 10}
+        - {x: -16.5, y: -15}
+        - {x: -12.5, y: -18}
+        - {x: 14.5, y: -18}
+        - {x: 16.5, y: -14}
+        - {x: 16.5, y: 18}
+    - name: chpper_33
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 850
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 18.5}
+        - {x: -7, y: 16.5}
+        - {x: -17, y: 3.5}
+        - {x: -17, y: -14.5}
+        - {x: -15, y: -18.5}
+        - {x: 9, y: -18.5}
+        - {x: 17, y: -2.5}
+        - {x: 17, y: 18.5}
+    - name: chpper_34
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 850
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 19}
+        - {x: -17.5, y: 5}
+        - {x: -17.5, y: -14}
+        - {x: -14.5, y: -19}
+        - {x: 3.5, y: -19}
+        - {x: 17.5, y: -4}
+        - {x: 17.5, y: 19}
+    - name: chpper_35
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 850
+        width: 35
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 20}
+        - {x: -17.5, y: 2}
+        - {x: -17.5, y: -20}
+        - {x: 16.5, y: -20}
+        - {x: 17.5, y: -15}
+        - {x: 17.5, y: 20}
+    - name: chpper_36
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 853
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: 18}
+        - {x: -20.5, y: 4}
+        - {x: -20.5, y: -18}
+        - {x: 18.5, y: -18}
+        - {x: 20.5, y: -14}
+        - {x: 20.5, y: 18}
+    - name: chpper_37
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 855
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 17}
+        - {x: -21, y: -1}
+        - {x: -21, y: -14}
+        - {x: -10, y: -17}
+        - {x: 20, y: -17}
+        - {x: 21, y: -14}
+        - {x: 21, y: 17}
+    - name: chpper_38
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 850
+        width: 43
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.5, y: 17}
+        - {x: -19.5, y: 9}
+        - {x: -21.5, y: 4}
+        - {x: -21.5, y: -15}
+        - {x: -15.5, y: -17}
+        - {x: 21.5, y: -17}
+        - {x: 21.5, y: 17}
+    - name: chpper_39
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 850
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 17.5}
+        - {x: -17.5, y: 7.5}
+        - {x: -17.5, y: -16.5}
+        - {x: -15.5, y: -17.5}
+        - {x: 17.5, y: -17.5}
+        - {x: 17.5, y: 17.5}
+    - name: chpper_40
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 820
+        width: 34
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_41
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 820
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_42
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 820
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_43
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 804
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_44
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 808
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_45
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 807
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_46
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 767
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.5, y: 5}
+        - {x: 16.5, y: 18}
+        - {x: -16.5, y: 18}
+        - {x: -16.5, y: -2}
+        - {x: -8.5, y: -18}
+        - {x: 9.5, y: -18}
+        - {x: 12.5, y: -9}
+        - {x: 15.5, y: 1}
+    - name: chpper_47
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 767
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.5, y: 18}
+        - {x: -16.5, y: 18}
+        - {x: -16.5, y: -17}
+        - {x: -14.5, y: -18}
+        - {x: 12.5, y: -18}
+        - {x: 16.5, y: -10}
+        - {x: 16.5, y: 17}
+    - name: chpper_48
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 767
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 18}
+        - {x: -16.5, y: -2}
+        - {x: -9.5, y: -18}
+        - {x: 10.5, y: -18}
+        - {x: 16.5, y: -12}
+        - {x: 16.5, y: 18}
+    - name: chpper_49
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 767
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -10}
+        - {x: -14, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -9}
+        - {x: 16, y: 16}
+    - name: chpper_50
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 767
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -10}
+        - {x: -14, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -9}
+        - {x: 16, y: 16}
+    - name: chpper_51
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 767
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -10}
+        - {x: -14, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -9}
+        - {x: 16, y: 16}
+    - name: chpper_52
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 767
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16.5}
+        - {x: -16, y: -7.5}
+        - {x: -13, y: -16.5}
+        - {x: 12, y: -16.5}
+        - {x: 16, y: -10.5}
+        - {x: 16, y: 16.5}
+    - name: chpper_53
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 767
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_54
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 767
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_55
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 767
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_56
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 744
+        width: 42
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_57
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 749
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_58
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 688
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_59
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 688
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 22}
+        - {x: -23.5, y: 16}
+        - {x: -23.5, y: -22}
+        - {x: 13.5, y: -22}
+        - {x: 21.5, y: -15}
+        - {x: 23.5, y: -7}
+        - {x: 23.5, y: 22}
+    - name: chpper_60
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 688
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 22}
+        - {x: -23.5, y: 16}
+        - {x: -23.5, y: -22}
+        - {x: 13.5, y: -22}
+        - {x: 21.5, y: -15}
+        - {x: 23.5, y: -7}
+        - {x: 23.5, y: 22}
+    - name: chpper_61
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 688
+        width: 49
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 21.5}
+        - {x: -24.5, y: 18.5}
+        - {x: -24.5, y: -21.5}
+        - {x: 18.5, y: -21.5}
+        - {x: 24.5, y: -4.5}
+        - {x: 24.5, y: 21.5}
+    - name: chpper_62
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 688
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: 23.5}
+        - {x: -6, y: 23.5}
+        - {x: -23, y: 2.5}
+        - {x: -23, y: -23.5}
+        - {x: 9, y: -23.5}
+        - {x: 23, y: -17.5}
+    - name: chpper_63
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 688
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 24.5}
+        - {x: -19, y: 16.5}
+        - {x: -19, y: -24.5}
+        - {x: 17, y: -24.5}
+        - {x: 19, y: -21.5}
+        - {x: 19, y: 24.5}
+    - name: chpper_64
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 688
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.5, y: -13.5}
+        - {x: 14.5, y: -13.5}
+        - {x: 20.5, y: -7.5}
+        - {x: 20.5, y: 23.5}
+        - {x: 15.5, y: 26.5}
+        - {x: -10.5, y: 26.5}
+        - {x: -20.5, y: -10.5}
+        - {x: -20.5, y: -26.5}
+        - {x: 14.5, y: -26.5}
+        - {x: 20.5, y: -17.5}
+        - {x: 20.5, y: -14.5}
+    - name: chpper_65
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 628
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 26.5}
+        - {x: -26, y: 18.5}
+        - {x: -26, y: -10.5}
+        - {x: -20, y: -26.5}
+        - {x: 20, y: -26.5}
+        - {x: 26, y: -18.5}
+        - {x: 26, y: 22.5}
+        - {x: 17, y: 26.5}
+    - name: chpper_66
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 628
+        width: 54
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 22.5}
+        - {x: -27, y: -22.5}
+        - {x: 16, y: -22.5}
+        - {x: 27, y: -13.5}
+        - {x: 27, y: 15.5}
+        - {x: 26, y: 22.5}
+    - name: chpper_67
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 628
+        width: 52
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 22.5}
+        - {x: -15, y: 22.5}
+        - {x: -26, y: 14.5}
+        - {x: -26, y: -9.5}
+        - {x: -24, y: -22.5}
+        - {x: 23, y: -22.5}
+        - {x: 26, y: -19.5}
+        - {x: 26, y: 8.5}
+        - {x: 21, y: 20.5}
+    - name: chpper_68
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 644
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_69
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 628
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 21.5}
+        - {x: -24, y: 19.5}
+        - {x: -24, y: -21.5}
+        - {x: 16, y: -21.5}
+        - {x: 24, y: -18.5}
+        - {x: 24, y: 10.5}
+        - {x: 21, y: 21.5}
+    - name: chpper_70
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 631
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_71
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 628
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 23.5}
+        - {x: -23.5, y: 11.5}
+        - {x: -23.5, y: -2.5}
+        - {x: -8.5, y: -23.5}
+        - {x: 20.5, y: -23.5}
+        - {x: 23.5, y: -20.5}
+        - {x: 23.5, y: 23.5}
+      - - {x: -23.5, y: -2.5}
+        - {x: -23.5, y: -21.5}
+        - {x: -21.5, y: -21.5}
+        - {x: -13.5, y: -15.5}
+        - {x: -13.5, y: -7.5}
+        - {x: -15.5, y: -2.5}
+    - name: chpper_72
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 628
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_73
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 547
+        width: 55
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 23.5}
+        - {x: -27.5, y: 2.5}
+        - {x: -27.5, y: -23.5}
+        - {x: 23.5, y: -23.5}
+        - {x: 25.5, y: -20.5}
+        - {x: 27.5, y: -6.5}
+        - {x: 27.5, y: 23.5}
+    - name: chpper_74
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 524
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 40}
+        - {x: -25, y: 34}
+        - {x: -26, y: 32}
+        - {x: -26, y: 30}
+        - {x: -40, y: -28}
+        - {x: -40, y: -40}
+        - {x: 24, y: -40}
+        - {x: 38, y: -3}
+        - {x: 40, y: 7}
+        - {x: 40, y: 40}
+    - name: chpper_75
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 593
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_76
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 592
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_77
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 579
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 17.5}
+        - {x: 2, y: 13.5}
+        - {x: -13, y: -1.5}
+        - {x: -13, y: -3.5}
+        - {x: -10, y: -4.5}
+        - {x: -18, y: -14.5}
+        - {x: -18, y: -17.5}
+        - {x: 0, y: -17.5}
+        - {x: 8, y: -15.5}
+        - {x: 18, y: 11.5}
+        - {x: 18, y: 17.5}
+    - name: chpper_78
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 558
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_79
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 544
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19, y: 7}
+        - {x: 23, y: 19}
+        - {x: 23, y: 23}
+        - {x: -19, y: 23}
+        - {x: -23, y: 21}
+        - {x: -23, y: -23}
+        - {x: -14, y: -23}
+        - {x: -7, y: -21}
+        - {x: 5, y: -23}
+        - {x: 14, y: -23}
+        - {x: 17, y: -21}
+        - {x: 13, y: -9}
+    - name: chpper_80
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 580
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_81
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 577
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_82
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 542
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_83
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 542
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_84
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 521
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.5, y: 16}
+        - {x: 7.5, y: 16}
+        - {x: -9.5, y: 12}
+        - {x: -16.5, y: -5}
+        - {x: -16.5, y: -16}
+        - {x: 1.5, y: -16}
+        - {x: 12.5, y: -1}
+        - {x: 14.5, y: 6}
+        - {x: 16.5, y: 11}
+    - name: chpper_85
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 540
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_86
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 541
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_87
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 531
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_88
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 524
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_89
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 466
+        width: 57
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28.5, y: 6}
+        - {x: -27.5, y: 5}
+        - {x: -28.5, y: 4}
+        - {x: -28.5, y: -8}
+        - {x: -14.5, y: -21}
+        - {x: 28.5, y: -21}
+        - {x: 28.5, y: 8}
+        - {x: 26.5, y: 16}
+        - {x: 21.5, y: 21}
+        - {x: -15.5, y: 21}
+        - {x: -28.5, y: 17}
+    - name: chpper_90
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 466
+        width: 57
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28.5, y: 6}
+        - {x: -27.5, y: 5}
+        - {x: -28.5, y: 4}
+        - {x: -28.5, y: -8}
+        - {x: -14.5, y: -21}
+        - {x: 28.5, y: -21}
+        - {x: 28.5, y: 8}
+        - {x: 26.5, y: 16}
+        - {x: 21.5, y: 21}
+        - {x: -15.5, y: 21}
+        - {x: -28.5, y: 17}
+    - name: chpper_91
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 466
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_92
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 466
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_93
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 466
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_94
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 466
+        width: 35
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_95
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 445
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_96
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 445
+        width: 34
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_97
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 445
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_98
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 445
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_99
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 419
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_100
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 422
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_101
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 421
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_102
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 382
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.5, y: 5}
+        - {x: 16.5, y: 18}
+        - {x: -16.5, y: 18}
+        - {x: -16.5, y: -2}
+        - {x: -8.5, y: -18}
+        - {x: 9.5, y: -18}
+        - {x: 12.5, y: -9}
+        - {x: 15.5, y: 1}
+    - name: chpper_103
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 382
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.5, y: 18}
+        - {x: -16.5, y: 18}
+        - {x: -16.5, y: -17}
+        - {x: -14.5, y: -18}
+        - {x: 12.5, y: -18}
+        - {x: 16.5, y: -10}
+        - {x: 16.5, y: 17}
+    - name: chpper_104
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 382
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 18}
+        - {x: -16.5, y: -2}
+        - {x: -9.5, y: -18}
+        - {x: 10.5, y: -18}
+        - {x: 16.5, y: -12}
+        - {x: 16.5, y: 18}
+    - name: chpper_105
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 382
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 10}
+        - {x: -16, y: 10}
+        - {x: -16, y: -16}
+        - {x: -9, y: -24}
+        - {x: 16, y: -24}
+      - - {x: -7, y: 22}
+        - {x: -10, y: 20}
+        - {x: -10, y: 14}
+        - {x: -9, y: 11}
+        - {x: 7, y: 11}
+        - {x: 8, y: 13}
+        - {x: 8, y: 20}
+        - {x: 2, y: 22}
+    - name: chpper_106
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 382
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 9}
+        - {x: -16, y: 9}
+        - {x: -16, y: -17}
+        - {x: -9, y: -25}
+        - {x: 16, y: -25}
+      - - {x: -8, y: 24}
+        - {x: -13, y: 22}
+        - {x: -13, y: 15}
+        - {x: -12, y: 13}
+        - {x: 5, y: 13}
+        - {x: 5, y: 20}
+        - {x: 3, y: 24}
+    - name: chpper_107
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 382
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 10}
+        - {x: -16, y: 10}
+        - {x: -16, y: -16}
+        - {x: -9, y: -24}
+        - {x: 16, y: -24}
+      - - {x: -6, y: 24}
+        - {x: -11, y: 22}
+        - {x: -11, y: 15}
+        - {x: -10, y: 13}
+        - {x: 7, y: 13}
+        - {x: 7, y: 20}
+        - {x: 5, y: 24}
+    - name: chpper_108
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 382
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16.5}
+        - {x: -16, y: -2.5}
+        - {x: -9, y: -16.5}
+        - {x: 13, y: -16.5}
+        - {x: 16, y: -12.5}
+        - {x: 16, y: 16.5}
+    - name: chpper_109
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 382
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_110
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 382
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_111
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 365
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_112
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 365
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_113
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 365
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_114
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 365
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_115
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 360
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_116
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 365
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_117
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 365
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_118
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 228
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_119
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 241
+        width: 39
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chpper_120
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 199
+        width: 49
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 18}
+        - {x: -24.5, y: 16}
+        - {x: -24.5, y: -18}
+        - {x: 23.5, y: -18}
+        - {x: 24.5, y: -17}
+        - {x: 24.5, y: 10}
+        - {x: 17.5, y: 18}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

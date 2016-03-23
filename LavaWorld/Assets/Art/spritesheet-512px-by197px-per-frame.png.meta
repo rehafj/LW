@@ -1,0 +1,254 @@
+fileFormatVersion: 2
+guid: 9ede017b238cf440b94d45bb65442813
+timeCreated: 1456802435
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spritesheet-512px-by197px-per-frame_0
+    21300002: spritesheet-512px-by197px-per-frame_1
+    21300004: spritesheet-512px-by197px-per-frame_2
+    21300006: spritesheet-512px-by197px-per-frame_3
+    21300008: spritesheet-512px-by197px-per-frame_4
+    21300010: spritesheet-512px-by197px-per-frame_5
+    21300012: spritesheet-512px-by197px-per-frame_6
+    21300014: spritesheet-512px-by197px-per-frame_7
+    21300016: spritesheet-512px-by197px-per-frame_8
+    21300018: spritesheet-512px-by197px-per-frame_9
+    21300020: spritesheet-512px-by197px-per-frame_10
+    21300022: spritesheet-512px-by197px-per-frame_11
+    21300024: spritesheet-512px-by197px-per-frame_12
+    21300026: spritesheet-512px-by197px-per-frame_13
+    21300028: spritesheet-512px-by197px-per-frame_14
+    21300030: spritesheet-512px-by197px-per-frame_15
+    21300032: spritesheet-512px-by197px-per-frame_16
+    21300034: spritesheet-512px-by197px-per-frame_17
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: spritesheet-512px-by197px-per-frame_0
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 370
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spritesheet-512px-by197px-per-frame_1
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 359
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spritesheet-512px-by197px-per-frame_2
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 250
+        width: 122
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spritesheet-512px-by197px-per-frame_3
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 197
+        width: 330
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spritesheet-512px-by197px-per-frame_4
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 234
+        width: 122
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spritesheet-512px-by197px-per-frame_5
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 197
+        width: 321
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spritesheet-512px-by197px-per-frame_6
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 242
+        width: 87
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spritesheet-512px-by197px-per-frame_7
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 13
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spritesheet-512px-by197px-per-frame_8
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 139
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spritesheet-512px-by197px-per-frame_9
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 149
+        width: 35
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spritesheet-512px-by197px-per-frame_10
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 144
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spritesheet-512px-by197px-per-frame_11
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 135
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spritesheet-512px-by197px-per-frame_12
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 50
+        width: 84
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spritesheet-512px-by197px-per-frame_13
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 321
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spritesheet-512px-by197px-per-frame_14
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 45
+        width: 87
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spritesheet-512px-by197px-per-frame_15
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 330
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spritesheet-512px-by197px-per-frame_16
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 37
+        width: 122
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spritesheet-512px-by197px-per-frame_17
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 18
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

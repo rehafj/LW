@@ -1,0 +1,210 @@
+fileFormatVersion: 2
+guid: 8a3ce610ad7f04d4c8570fbab91ba371
+timeCreated: 1456801967
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Metroidvania Tileset_0
+    21300002: Metroidvania Tileset_1
+    21300004: Metroidvania Tileset_2
+    21300006: Metroidvania Tileset_3
+    21300008: Metroidvania Tileset_4
+    21300010: Metroidvania Tileset_5
+    21300012: Metroidvania Tileset_6
+    21300014: Metroidvania Tileset_7
+    21300016: Metroidvania Tileset_8
+    21300018: Metroidvania Tileset_9
+    21300020: Metroidvania Tileset_10
+    21300022: Metroidvania Tileset_11
+    21300024: Metroidvania Tileset_12
+    21300026: Metroidvania Tileset_13
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Metroidvania Tileset_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 33
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 1}
+    - name: Metroidvania Tileset_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Metroidvania Tileset_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Metroidvania Tileset_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Metroidvania Tileset_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Metroidvania Tileset_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 28
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Metroidvania Tileset_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Metroidvania Tileset_7
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 236
+        width: 92
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Metroidvania Tileset_8
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 29
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Metroidvania Tileset_9
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 67
+        width: 95
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Metroidvania Tileset_10
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 128
+        width: 97
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Metroidvania Tileset_11
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 200
+        width: 87
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Metroidvania Tileset_12
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 193
+        width: 62
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Metroidvania Tileset_13
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 176
+        width: 83
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

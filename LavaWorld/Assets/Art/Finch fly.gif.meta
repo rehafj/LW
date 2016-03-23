@@ -1,0 +1,96 @@
+fileFormatVersion: 2
+guid: 8bf7388cca20d48b4b4e4017472b708c
+timeCreated: 1456955262
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Finch fly_0
+    21300002: Finch fly_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Finch fly_0
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 283
+        width: 103
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40.5, y: 91.5}
+        - {x: -51.5, y: 80.5}
+        - {x: -51.5, y: -91.5}
+        - {x: 48.5, y: -91.5}
+        - {x: 48.5, y: 84.5}
+        - {x: 13.5, y: 91.5}
+    - name: Finch fly_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 37
+        width: 106
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 43, y: 15}
+        - {x: 28, y: 40}
+        - {x: -23, y: 40}
+        - {x: -52, y: 8}
+        - {x: -52, y: -39}
+        - {x: -46, y: -40}
+        - {x: 47, y: -40}
+        - {x: 50, y: -28}
+        - {x: 50, y: 9}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

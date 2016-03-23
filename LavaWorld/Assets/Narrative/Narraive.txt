@@ -1,0 +1,114 @@
+The rumbling and revving of engines and the dull scream of a * siren suggest that the player is inside a sort of fire truck. 
+A  holo-screen flickers on and a man, stern-looking but wise, appears before you. *
+
+Battalion Chief Mizu
+
+Listen Finch, I know that you’re still a probationary recruit 
+
+but things are getting serious and we need all hands on deck. 
+
+The image of Mizu gets smaller and an image of a phoenix emblem 
+
+appears.
+
+Battalion Chief Mizu
+
+As you know the Cult of the Phoenix has started to wreak major 
+
+havoc on the US. At first they were an odd religious group 
+
+claiming to find peace with the element of fire.
+
+Another image, this time of a fiery, warped carnival landscape.
+
+Battalion Chief Mizu
+
+But they’ve finally shown their true intentions. They plan to 
+
+make our country into some type of giant theme park that serves 
+
+suffering rather than smiles.
+
+Another Image, one of a small water sprite.
+
+Battalion Chief Mizu
+
+Unfortunately, they got the one up on us. Somehow they managed 
+
+to get into one of our major science facilities a take several 
+
+of our Undyne hostage.
+
+The chief again takes up most of the screen.
+
+Battalion Chief Mizu
+
+We already have some of our best people on the hunt for the 
+
+members and the other Undyne, but you’re the only recruit in 
+
+this area who can save the Undyne here. I won’t lie to you, 
+
+Finch, this will be no easy task. But you’ve shown exemplary 
+
+skills during training and the department and once you get the 
+
+Undyne, you’ll be ready for battle. Do you need to hear this 
+
+again?
+
+If player says no:
+
+Battalion Chief Mizu
+
+Excellent! May the WATER flow through you.
+
+We have no time for that! Be vigilant Finch, and may the WATER 
+
+If player says yes:
+
+Battalion Chief Mizu
+
+flow through you.
+
+Fadeout or screen goes off.
+
+The player is plopped into the first level where they are taught 
+
+how to Jump. They learn about the varying types of platforms and 
+
+for enemies can be avoided using this method. Near the end of 
+
+the level, a small blue blob lays on the ground. Running over it 
+
+will cause the player to hear a small chime. A text box will 
+
+show up on the low-third of the screen with the small blob in 
+
+the corner. 
+
+Tyne
+
+Oh thank goodness you’re here! I was just about to evaporate for 
+
+good. My name’s Tyne and I’m one of the WATER Undyne. Let me 
+
+gather the data from your WATER gun. 
+
+The players can continue through dialogue using a button
+
+Tyne
+
+Finch huh? And a new recruit no less. Seems like we’re getting 
+
+desperate in this situation. No matter, with me backing you up, 
+
+we can conquer anything! Now that I’m with you, you can press 
+
+[button] to jump higher and go further. 
+
+The player is now faced with new platforms that allow them to do 
+
+just that. They face a combination of all the obstacles in the 
+
+level before exiting.

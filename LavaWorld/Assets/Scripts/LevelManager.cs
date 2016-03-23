@@ -32,17 +32,17 @@ void Start(){
 		//if( Player!=null){
 
 
-if(playerInstance.Playerinstance !=null){//check this out or move it to player script 
-		GameObject.Destroy(Player);
-			Debug.Log("player instance!=null");
-		}
+//if(playerInstance.Playerinstance !=null){//check this out or move it to player script 
+	//	GameObject.Destroy(Player);
+		//	Debug.Log("player instance!=null");
+		//}
 
 	// }
 
 	else {//instance == nill 
 		GameObject.DontDestroyOnLoad(gameObject);//do not destoyr teh current gameobject ( i..e scene instance) 
 				InstanceOfLeve = this;
-		GameObject.DontDestroyOnLoad(Player);
+		//GameObject.DontDestroyOnLoad(Player);
 	}
 
 }
@@ -82,19 +82,3 @@ public void  GameOver(){
 
 	
 }
-//		else {
-//
-//		GameObject.DontDestroyOnLoad(gameObject);
-//		SceneInstance = this;
-//		}//to make the scene manager presisit 
-//
-//}
-//
-//void Update(){
-////		if(myplayer.playerWonLevel==true){
-////		//Application.LoadLevel("lvl1");
-////		}
-//
-//
-//}
-

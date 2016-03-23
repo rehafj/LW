@@ -12,7 +12,7 @@ public class PlayerStatus : MonoBehaviour {
 
 	public   PlayerStatus Playerinstance;
 	public LevelManager currentScene;
-
+	public static PlayerStatus PlayerinstanceTest;
 	/// player status var 
 	public int health;
 	public int lives;
@@ -27,6 +27,19 @@ public class PlayerStatus : MonoBehaviour {
 
 
 	void Start(){
+
+	///these lies are used to transfer the player an dmake sure there are no duplicate co[ies - might move this to scene manager - but i dont need 
+	// 
+		if(PlayerinstanceTest!=null){
+		GameObject.Destroy(gameObject);
+		}
+		 else {//instance == nill 
+		GameObject.DontDestroyOnLoad(gameObject);
+			PlayerinstanceTest = this;
+		
+	}
+
+
 		 currentScene = FindObjectOfType<LevelManager>();//sets it to scene manager 
 
 		 this.health = 100;
@@ -34,6 +47,7 @@ public class PlayerStatus : MonoBehaviour {
 		 Player  = GetComponent<Transform>();
 		 anim = GetComponent<Animator>();
 	}
+
 
 	void Update(){
 		//Debug.Log("frame rate:"+ (1/Time.deltaTime));

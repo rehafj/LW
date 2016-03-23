@@ -2,7 +2,10 @@
 using System.Collections;
 
 public class RespawnerGameObj : MonoBehaviour {
-
+/// <summary>
+/// returns gameobject this script is attacjed to to their origitanl state 
+///have o hange code that 'destroys them' into code that deactivates them... -> check other files to fix this
+/// </summary>
 Vector3 iniitalPostion;
 Quaternion initialRotation;
 Vector3 intialScale;

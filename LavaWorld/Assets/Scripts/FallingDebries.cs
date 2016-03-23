@@ -2,7 +2,9 @@
 using System.Collections;
 
 public class FallingDebries : MonoBehaviour {
-
+/// <summary>
+/// temporary - wil use another method instead of instantistying will pull it to reduce load 
+/// </summary>
 Transform mytrans;
 public GameObject debries;
 public int x =1;

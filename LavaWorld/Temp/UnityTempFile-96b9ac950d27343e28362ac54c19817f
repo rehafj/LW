@@ -84,7 +84,6 @@
 'Assets/Scripts/MoveTeleportation.cs'
 'Assets/Scripts/MoveToNextLevel.cs'
 'Assets/Scripts/MovingPlatform.cs'
-'Assets/Scripts/ParticleController.cs'
 'Assets/Scripts/PlatformUp.cs'
 'Assets/Scripts/PlayerScripts/PlayerController.cs'
 'Assets/Scripts/PlayerScripts/PlayerStatus.cs'

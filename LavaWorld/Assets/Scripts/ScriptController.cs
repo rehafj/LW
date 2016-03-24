@@ -12,8 +12,8 @@ public class ScriptController : MonoBehaviour {
 	GameObject x;
 	// Use this for initialization
 	void Awake () {
-	 platfromController = GetComponent<PlayerController>();
-	 shipController = GetComponent<ShipController>();
+	platfromController = GetComponent<PlayerController>();
+	shipController = GetComponent<ShipController>();
 	currentScene = FindObjectOfType<LevelManager>();//sets it to scene manager 
 	platfromController.enabled= true;
 	shipController.enabled = false;

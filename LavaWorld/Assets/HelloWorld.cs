@@ -7,6 +7,7 @@ public class HelloWorld : MonoBehaviour {
 	void Start () {
 	print("Hello world");
 	//comment 
+	//tyoing stuff in 
 	}
 	
 	// Update is called once per frame

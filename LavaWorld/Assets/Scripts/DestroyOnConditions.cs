@@ -3,6 +3,7 @@ using System.Collections;
 /// <summary>
 /// this script will handle destruciton of things - so far it just destroys objects based on timer we give it to and a boolian value we can manipluate 
 ///THIS SCRIPT WIL BE REWTITTEN - DEPENING ON OBJECT IF BULLETS MOSTLY WILL BE TURNED INTO DEACTIVATE AND WE WILL USE OBECT OOOLING STAYTUNED~ ops sorry caps 
+/// NOOT NOOT
 /// </summary>
 public class DestroyOnConditions : MonoBehaviour {
 

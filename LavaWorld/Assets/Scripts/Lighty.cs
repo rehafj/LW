@@ -32,7 +32,7 @@ public  Transform[] locations= new Transform[3];
 
 
 		/// <summary>
-		/// note this is temporary untill we activate deactivate things based on camera object 
+		/// note this is temporary untill we activate deactivate things in a diff way
 		/// </summary>
 		/// <param name="plr">Plr.</param>
 

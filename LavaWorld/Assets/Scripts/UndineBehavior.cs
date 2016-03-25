@@ -3,7 +3,7 @@ using System.Collections;
 
 public class UndineBehavior : MonoBehaviour {
 	// Use this for initialization
-
+    //remmeber\to deavtivate script and just hide it
 	GameObject myPlayer;//i need ti cgane this 
 	public GameObject prison;
 	PlayerController status;

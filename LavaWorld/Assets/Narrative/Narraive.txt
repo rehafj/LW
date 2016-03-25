@@ -1,4 +1,4 @@
-The rumbling and revving of engines and the dull scream of a * siren suggest that the player is inside a sort of fire truck. 
+///The rumbling and revving of engines and the dull scream of a * siren suggest that the player is inside a sort of fire truck. 
 A  holo-screen flickers on and a man, stern-looking but wise, appears before you. *
 
 Battalion Chief Mizu
@@ -111,4 +111,4 @@ The player is now faced with new platforms that allow them to do
 
 just that. They face a combination of all the obstacles in the 
 
-level before exiting.
+level before exiting.///

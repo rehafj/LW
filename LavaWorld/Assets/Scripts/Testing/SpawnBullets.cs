@@ -7,7 +7,7 @@ public float timer=1;
 /// test this oout and read more about pooling objects :D note to self... never read things at 4 am  
 /// </summary>
 	// Use this for initialization
-public GameObject myPooledgameObject; 
+//public GameObject myPooledgameObject; 
 	void Start () {
 		
 InvokeRepeating("LetLooseTheBullets",timer,timer);
@@ -25,5 +25,9 @@ InvokeRepeating("LetLooseTheBullets",timer,timer);
 	temp.transform.position = gameObject.transform.position;
 	temp.transform.rotation = gameObject.transform.rotation;
 	temp.SetActive(true);
+
+
+
+
 	}
 }

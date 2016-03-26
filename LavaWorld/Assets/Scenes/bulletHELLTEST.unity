@@ -170,6 +170,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 341013205}
   - 212: {fileID: 341013204}
+  - 114: {fileID: 341013206}
   m_Layer: 0
   m_Name: FirebatHanging (1)
   m_TagString: Untagged
@@ -213,12 +214,24 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 341013203}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: -0.00000016292068}
   m_LocalPosition: {x: -1.23, y: 7.61875, z: 0}
   m_LocalScale: {x: 1.7897775, y: 1.7897775, z: 1.7897775}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!114 &341013206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 341013203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 501c5af11e2a24904b420a0f4a34befb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 1
 --- !u!1 &359817652
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,6 +241,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 359817654}
   - 212: {fileID: 359817653}
+  - 114: {fileID: 359817655}
+  - 114: {fileID: 359817656}
   m_Layer: 0
   m_Name: FirebatHanging
   m_TagString: Untagged
@@ -271,12 +286,35 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 359817652}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: -0.00000016292068}
   m_LocalPosition: {x: -4.2012377, y: 7.61875, z: 0}
   m_LocalScale: {x: 1.7897775, y: 1.7897775, z: 1.7897775}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!114 &359817655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 359817652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 501c5af11e2a24904b420a0f4a34befb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 1
+--- !u!114 &359817656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 359817652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50f0daa99d234bc09ccebb8272a676d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &393779708
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,6 +570,48 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 850399951}
+--- !u!1 &1103001459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1103001461}
+  - 114: {fileID: 1103001460}
+  m_Layer: 0
+  m_Name: Pooler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1103001460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1103001459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da1eea95f494c452eb96a8c39da40f11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myPooledgameObject: {fileID: 174038, guid: 52d2a6bde53e349629c4a8a15898c337, type: 2}
+  Size: 100
+  myPooledgameObjects: []
+--- !u!4 &1103001461
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1103001459}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 297.72473, y: -17.922884, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
 --- !u!1 &1446922964 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 150798, guid: 5b91207b8e87e4069b38bea22ac0af29, type: 2}
@@ -805,6 +885,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1781150708}
   - 212: {fileID: 1781150707}
+  - 114: {fileID: 1781150709}
   m_Layer: 0
   m_Name: FirebatHanging (2)
   m_TagString: Untagged
@@ -848,12 +929,24 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781150706}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: -0.00000016292068}
   m_LocalPosition: {x: 0.81, y: 7.61875, z: 0}
   m_LocalScale: {x: 1.7897775, y: 1.7897775, z: 1.7897775}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!114 &1781150709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1781150706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 501c5af11e2a24904b420a0f4a34befb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 1
 --- !u!1001 &1834724400
 Prefab:
   m_ObjectHideFlags: 0

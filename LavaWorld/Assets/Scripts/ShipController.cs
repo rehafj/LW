@@ -17,7 +17,24 @@ public class ShipController : MonoBehaviour {
 	void FixedUpdate () {
 
 	MoveTheTruck();
-	
+
+		if( Input.GetButtonDown("shoot")){
+			FireBullers();
+		}
+	}
+
+	void FireBullers(){
+
+	GameObject temp = TestingPollingGeneric.currentPoller.ReturnPooledObect();//gives acses to the ppoo for the ginafwm 
+
+	if(temp==null)
+	return ;
+
+	temp.transform.position = gameObject.transform.position;
+	temp.transform.rotation = gameObject.transform.rotation;//based on the bullets behavior - 
+	temp.SetActive(true);
+
+
 	}
 
 	void MoveTheTruck(){//add transtion for truk animations 

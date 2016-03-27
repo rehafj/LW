@@ -13,9 +13,10 @@ GameObject:
   - 58: {fileID: 5826402}
   - 114: {fileID: 11477384}
   - 114: {fileID: 11473736}
+  - 114: {fileID: 11471238}
   m_Layer: 0
   m_Name: w
-  m_TagString: Untagged
+  m_TagString: Dmg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63,6 +64,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &11471238
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 174038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf93bd492e1145f4aeb668ef1c88d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11473736
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -74,7 +86,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d113875276cc84d79868f1536c4df80f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
   myegd: {fileID: 0}
 --- !u!114 &11477384
 MonoBehaviour:
@@ -127,6 +138,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Dmg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

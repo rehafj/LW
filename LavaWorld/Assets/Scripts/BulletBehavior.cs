@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class BulletBehavior : MonoBehaviour {
-public int speed =9;
+//public int speed =9;
 public Rigidbody2D myegd;
 	// Use this for initialization
 	void Start () {

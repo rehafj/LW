@@ -16,6 +16,7 @@ Animator anim;
 	// Use this for initialization
 	void Start () {
 	anim = GetComponent<Animator>();
+	anim.Play("Enem1Entry");
 //	//ulternate method instead of hard values 
 //	//get camera's bonds //0 of x azsis 
 //	Vector3 LeftSide= Camera.main.ViewportToWorldPoint(new Vector3(0,0,0));

@@ -345,8 +345,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 717766673}
+  - 114: {fileID: 717766674}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -364,6 +365,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
+--- !u!114 &717766674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 717766672}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e192a4522802457a8d0d0482e171cd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 3
 --- !u!1 &766651424
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,6 +825,10 @@ Prefab:
     - target: {fileID: 9581240, guid: b0ccb6f95d156460d991a17b81324096, type: 2}
       propertyPath: m_ApplyRootMotion
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9581240, guid: b0ccb6f95d156460d991a17b81324096, type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b0ccb6f95d156460d991a17b81324096, type: 2}

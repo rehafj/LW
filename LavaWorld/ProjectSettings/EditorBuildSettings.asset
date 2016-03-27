@@ -10,6 +10,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/bulletHELLTEST.unity
   - enabled: 1
+    path: Assets/BulletHellTest/BulletHellTrans.unity
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
   - enabled: 1
     path: Assets/Scenes/levelOne.unity

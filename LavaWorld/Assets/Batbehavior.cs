@@ -15,8 +15,8 @@ public float width = 5f;
 Animator anim;
 	// Use this for initialization
 	void Start () {
-	anim = GetComponent<Animator>();
-	anim.Play("Enem1Entry");
+	//anim = GetComponent<Animator>();
+	//anim.Play("Enem1Entry");
 //	//ulternate method instead of hard values 
 //	//get camera's bonds //0 of x azsis 
 //	Vector3 LeftSide= Camera.main.ViewportToWorldPoint(new Vector3(0,0,0));
@@ -31,7 +31,8 @@ Animator anim;
 //anim.applyRootMotion = true;
 						//works but clunky - refactor 
 	if(movingRight){
-		transform.Translate(-Vector3.right * 2 * Time.deltaTime);
+		//transform.Translate(-Vector3.right * 2 * Time.deltaTime);
+		transform.position+= Vector3.right * 2 *Time.deltaTime;
 	if( transform.position.x > maxXpos){
 			 movingRight = !movingRight;
 				//transform.Translate(-Vector3.up * 0.5f * Time.deltaTime);
@@ -44,7 +45,7 @@ Animator anim;
 			if( transform.position.x <= minXpos){
 		 movingRight = !movingRight;
 			}	
-		}	transform.Translate(Vector3.up * 0.5f * Time.deltaTime);
+		}	//transform.Translate(Vector3.up * 0.5f * Time.deltaTime);
 
 }
 

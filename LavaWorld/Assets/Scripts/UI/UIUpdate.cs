@@ -13,7 +13,7 @@ public class UIUpdate : MonoBehaviour {
 	string healthText = "current health: ";
 	static UIUpdate InstanceOfUI;
 
-
+	//going to change this later 
 	void Start () {
 
 

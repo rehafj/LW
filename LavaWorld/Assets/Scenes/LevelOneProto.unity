@@ -444,11 +444,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 421084, guid: 5b91207b8e87e4069b38bea22ac0af29, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -34.6
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 421084, guid: 5b91207b8e87e4069b38bea22ac0af29, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.9
+      value: -24.6
       objectReference: {fileID: 0}
     - target: {fileID: 421084, guid: 5b91207b8e87e4069b38bea22ac0af29, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1790,6 +1790,7 @@ GameObject:
   - 114: {fileID: 525348897}
   - 58: {fileID: 525348896}
   - 95: {fileID: 525348895}
+  - 114: {fileID: 525348900}
   m_Layer: 0
   m_Name: Undine_prison
   m_TagString: Untagged
@@ -1886,6 +1887,40 @@ Transform:
   - {fileID: 1551555620}
   m_Father: {fileID: 0}
   m_RootOrder: 13
+--- !u!114 &525348900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 525348894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 649cb1fb6820a48e681e68b4a2fc8b55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1.0
+  scrollPos: {x: 0, y: 0}
+  variablesScrollPos: {x: 0, y: 0}
+  variablesExpanded: 1
+  blockViewHeight: 400
+  zoom: 1
+  scrollViewRect:
+    serializedVersion: 2
+    x: -251
+    y: -327
+    width: 920
+    height: 840
+  selectedBlock: {fileID: 0}
+  selectedCommands: []
+  variables: []
+  description: 
+  stepPause: 0
+  colorCommands: 1
+  hideComponents: 1
+  saveSelection: 1
+  localizationId: 
+  hideCommands: []
+  myflowchart: {fileID: 0}
 --- !u!1001 &562578293
 Prefab:
   m_ObjectHideFlags: 0
@@ -3091,6 +3126,43 @@ Transform:
   - {fileID: 845232299}
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!1 &882552711 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 142980, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a, type: 2}
+  m_PrefabInternal: {fileID: 1166296390}
+--- !u!114 &882552712 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11433304, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1166296390}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+--- !u!114 &882552717
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 882552711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: ActivatedUndine
+  value: 0
+--- !u!114 &882552718
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 882552711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 882552712}
+  message: Test
 --- !u!1001 &927887582
 Prefab:
   m_ObjectHideFlags: 0
@@ -3477,6 +3549,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 525348899}
     m_Modifications:
+    - target: {fileID: 11430050, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a, type: 2}
+      propertyPath: variables.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 467082, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.21125662
@@ -3525,7 +3601,36 @@ Prefab:
       propertyPath: character
       value: 
       objectReference: {fileID: 1634940500}
-    m_RemovedComponents: []
+    - target: {fileID: 11430050, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a, type: 2}
+      propertyPath: selectedBlock
+      value: 
+      objectReference: {fileID: 882552712}
+    - target: {fileID: 11430050, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a, type: 2}
+      propertyPath: variables.Array.data[0]
+      value: 
+      objectReference: {fileID: 882552717}
+    - target: {fileID: 11433304, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a, type: 2}
+      propertyPath: eventHandler
+      value: 
+      objectReference: {fileID: 882552718}
+    - target: {fileID: 11433304, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a, type: 2}
+      propertyPath: nodeRect.x
+      value: 149
+      objectReference: {fileID: 0}
+    - target: {fileID: 11433304, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a, type: 2}
+      propertyPath: nodeRect.y
+      value: 73
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430050, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a, type: 2}
+      propertyPath: scrollViewRect.x
+      value: -427
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430050, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a, type: 2}
+      propertyPath: scrollViewRect.width
+      value: 1198
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11414216, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1170265402
@@ -3779,7 +3884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1551555613}
+  selectedFlowchart: {fileID: 525348900}
 --- !u!4 &1275658823
 Transform:
   m_ObjectHideFlags: 1
@@ -4438,12 +4543,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   test: []
   spawningThese: []
---- !u!114 &1551555613 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11430050, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1166296390}
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!4 &1551555620 stripped
 Transform:
   m_PrefabParentObject: {fileID: 467082, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a, type: 2}

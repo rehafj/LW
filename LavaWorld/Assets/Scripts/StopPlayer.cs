@@ -18,7 +18,7 @@ using System.Collections;
    // voidUpdate()
   //  {
      //   if (BlockInspectorEditor == true) {
-           Directions.idle;
+//           Directions.idle;
       //  }
 
   //  }

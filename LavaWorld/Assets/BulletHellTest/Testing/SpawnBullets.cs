@@ -12,6 +12,12 @@ public float timer=1;
 		
 InvokeRepeating("LetLooseTheBullets",timer,timer);
 	}
+
+	void OnEnable(){
+		InvokeRepeating("LetLooseTheBullets",timer,timer);
+
+	}
+
 	
 	// Update is called once per frame
 
@@ -26,8 +32,13 @@ InvokeRepeating("LetLooseTheBullets",timer,timer);
 	temp.transform.rotation = gameObject.transform.rotation;
 	temp.SetActive(true);
 
-
-
-
 	}
+
+
+	void OnDisable() {
+        print("script was removed");
+		CancelInvoke();
+    }
+
+
 }

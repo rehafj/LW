@@ -11,6 +11,9 @@ public class ReadMe : TestingPollingGeneric {
 //
 //InvokeRepeating("LetLooseTheBullets",1,1);
 //	}
+/// <summary>
+/// add somthing to reset the postion of enemies to top based on spanner and pull them from a lust - change it from an array - create list of lists in one manager might be easyer 
+/// </summary>
 
 	void Start () {//
 		myPooledgameObjects = new GameObject[Size];

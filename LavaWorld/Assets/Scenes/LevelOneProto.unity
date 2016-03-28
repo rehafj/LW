@@ -769,6 +769,12 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 150798, guid: 5b91207b8e87e4069b38bea22ac0af29, type: 2}
   m_PrefabInternal: {fileID: 99285151}
+--- !u!114 &223193715 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11491014, guid: 5b91207b8e87e4069b38bea22ac0af29,
+    type: 2}
+  m_PrefabInternal: {fileID: 99285151}
+  m_Script: {fileID: 11500000, guid: 63daf99b3ee3749198887f0f53f36268, type: 3}
 --- !u!114 &223193719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1908,7 +1914,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -251
     y: -335
-    width: 955
+    width: 961
     height: 889
   selectedBlock: {fileID: 0}
   selectedCommands: []
@@ -1920,7 +1926,7 @@ MonoBehaviour:
   saveSelection: 1
   localizationId: 
   hideCommands: []
-  myflowchart: {fileID: 0}
+  plr: {fileID: 223193715}
 --- !u!1001 &562578293
 Prefab:
   m_ObjectHideFlags: 0
@@ -3615,11 +3621,11 @@ Prefab:
       objectReference: {fileID: 882552718}
     - target: {fileID: 11433304, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a, type: 2}
       propertyPath: nodeRect.x
-      value: 182
+      value: 190
       objectReference: {fileID: 0}
     - target: {fileID: 11433304, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a, type: 2}
       propertyPath: nodeRect.y
-      value: 65
+      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 11430050, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a, type: 2}
       propertyPath: scrollViewRect.x
@@ -3884,7 +3890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1844856945}
+  selectedFlowchart: {fileID: 525348900}
 --- !u!4 &1275658823
 Transform:
   m_ObjectHideFlags: 1

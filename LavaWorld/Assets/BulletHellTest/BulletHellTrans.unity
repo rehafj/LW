@@ -346,6 +346,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 717766673}
   - 114: {fileID: 717766674}
+  - 114: {fileID: 717766675}
   m_Layer: 0
   m_Name: timer
   m_TagString: Untagged
@@ -377,6 +378,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 3
+--- !u!114 &717766675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 717766672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b607a5dc294c64a9180b562bdabc7387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyTypes: []
 --- !u!1 &766651424
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,9 +735,10 @@ GameObject:
   - 114: {fileID: 892644225}
   - 114: {fileID: 892644228}
   - 50: {fileID: 892644229}
+  - 114: {fileID: 892644230}
   m_Layer: 0
   m_Name: ZigZagBat
-  m_TagString: Untagged
+  m_TagString: Enem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -814,6 +828,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &892644230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 892644224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 019f58860605e4b469e7e78fda64617c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1000439354
 Prefab:
   m_ObjectHideFlags: 0
@@ -860,6 +885,10 @@ Prefab:
     - target: {fileID: 9581240, guid: b0ccb6f95d156460d991a17b81324096, type: 2}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 146136, guid: b0ccb6f95d156460d991a17b81324096, type: 2}
+      propertyPath: m_TagString
+      value: Enem
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b0ccb6f95d156460d991a17b81324096, type: 2}
@@ -1184,6 +1213,10 @@ Prefab:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 185234, guid: 3f981d21f396b43198db10bbd120843d, type: 2}
+      propertyPath: m_TagString
+      value: Enem
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f981d21f396b43198db10bbd120843d, type: 2}
   m_IsPrefabParent: 0
@@ -1299,9 +1332,10 @@ GameObject:
   - 114: {fileID: 1630915834}
   - 50: {fileID: 1630915838}
   - 114: {fileID: 1630915837}
+  - 114: {fileID: 1630915839}
   m_Layer: 0
   m_Name: FirebatHanging (2)
-  m_TagString: Untagged
+  m_TagString: Enem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1375,7 +1409,7 @@ MonoBehaviour:
   height: 2
   target: {fileID: 0}
   distanceBetween: {x: 0, y: 0, z: 0}
-  speed: 0.1
+  speed: 1
   offset: {x: 0, y: 0, z: 0}
 --- !u!50 &1630915838
 Rigidbody2D:
@@ -1394,6 +1428,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1630915839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1630915833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 019f58860605e4b469e7e78fda64617c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1867044701 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 146136, guid: b0ccb6f95d156460d991a17b81324096, type: 2}
@@ -1427,6 +1472,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1867044709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1867044701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 019f58860605e4b469e7e78fda64617c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2039164320
 Prefab:
   m_ObjectHideFlags: 0

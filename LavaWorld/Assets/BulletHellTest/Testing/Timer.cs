@@ -13,6 +13,9 @@ LevelManager lvl;
 	void Update () {
 	timer -= Time.deltaTime;
 	Debug.Log(timer);
+
+
+
 	if(timer<=0){
 	timer=60;
 	lvl.MoveToNextLevel(1);

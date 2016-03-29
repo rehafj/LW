@@ -23,7 +23,7 @@ InvokeRepeating("LetLooseTheBullets",timer,timer);
 
 
 	public void LetLooseTheBullets(){//cz my naming gets crazy oh well :P 
-	GameObject temp = TestingPollingGeneric.currentPoller.ReturnPooledObect();//gives acses to the ppoo for the ginafwm 
+	GameObject temp = Pooler.currentPoller.ReturnEnemyBullets();//gives acses to the ppoo for the ginafwm 
 
 	if(temp==null)
 	return ;

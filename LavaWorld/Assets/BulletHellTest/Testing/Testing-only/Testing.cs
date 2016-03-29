@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-
+//delete this 
 public class Testing : MonoBehaviour {
 public Transform x;
 	WaterProjectile bulletsl;

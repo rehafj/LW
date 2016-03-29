@@ -25,7 +25,7 @@ public class ShipController : MonoBehaviour {
 
 	void FireBullers(){
 
-	GameObject temp = TestingPollingGeneric.currentPoller.ReturnPooledObect();//gives acses to the ppoo for the ginafwm 
+	GameObject temp = Pooler.currentPoller.ReturnPlayerBullets();//gives acses to the ppoo for the ginafwm 
 
 	if(temp==null)
 	return ;

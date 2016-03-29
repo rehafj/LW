@@ -7,7 +7,7 @@ public class Pooler : MonoBehaviour {
 	public GameObject EnemyBullet; 
 	public GameObject  playerBullet;
 	public GameObject[] enemiesTypes;
-	public int Size=4;
+	public int Size=50;
 
 	public GameObject [] EnemyBullets;
 	public GameObject [] playerBullets;
@@ -27,12 +27,14 @@ public class Pooler : MonoBehaviour {
 
 		}
 	void Start () {//
+	///intilize enemy bullet list and creat them - set them to deactive 
 		EnemyBullets = new GameObject[Size];
 		for( int i = 0; i< Size; i++){
 			GameObject temp = Instantiate(EnemyBullet);//create an instance of an pbject 
 			temp.SetActive(false);
 			EnemyBullets[i] = temp;//add it to the array 
 	}
+		///intilize Player bullet list and creat them - set them to deactive 
 
 		playerBullets = new GameObject[20];
 		for( int i = 0; i< 20; i++){
@@ -50,6 +52,7 @@ public class Pooler : MonoBehaviour {
 			if(!EnemyBullets[i].activeInHierarchy)//if its not active in herarcy 
 			//return the pooled object to return it 
 				return EnemyBullets[i];}
+				///else return null
 	return null;
 		}
 

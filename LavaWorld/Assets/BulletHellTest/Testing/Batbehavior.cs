@@ -32,7 +32,7 @@ Animator anim;
 						//works but clunky - refactor 
 	if(movingRight){
 		//transform.Translate(-Vector3.right * 2 * Time.deltaTime);
-		transform.position+= Vector3.right * 2 *Time.deltaTime;
+		transform.position+= Vector3.right * speed *Time.deltaTime;
 	if( transform.position.x > maxXpos){
 			 movingRight = !movingRight;
 				//transform.Translate(-Vector3.up * 0.5f * Time.deltaTime);
@@ -41,7 +41,7 @@ Animator anim;
 
 		//transform.position.y=  Mathf.Sin(1*Time.deltaTime);
 	}else if(!movingRight){
-			transform.Translate(Vector3.right * 2 * Time.deltaTime);
+			transform.Translate(Vector3.right * speed * Time.deltaTime);
 			if( transform.position.x <= minXpos){
 		 movingRight = !movingRight;
 			}	

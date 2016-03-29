@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/LevelOneProto.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/bulletHELLTEST.unity
   - enabled: 1
     path: Assets/BulletHellTest/BulletHellTrans.unity

@@ -15,6 +15,6 @@ public Rigidbody2D myegd;
 
 	//myegd.AddForce(Vector3.forward * speed);
 		
-		myegd.velocity = transform.TransformDirection(Vector3.up * 15);
+		myegd.velocity = transform.TransformDirection(-Vector3.up * 15);
 		myegd.AddForce(myegd.transform.up * 10);	}
 }

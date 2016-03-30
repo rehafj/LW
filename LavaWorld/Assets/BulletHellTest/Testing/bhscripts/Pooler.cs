@@ -6,8 +6,9 @@ public class Pooler : MonoBehaviour {
 	public static Pooler currentPoller;
 	public GameObject EnemyBullet; 
 	public GameObject  playerBullet;
-	public GameObject[] enemiesTypes;
 	public int Size=50;
+
+	public GameObject[] enemiesTypes = new GameObject[3];
 
 	public GameObject [] EnemyBullets;
 	public GameObject [] playerBullets;
@@ -26,7 +27,11 @@ public class Pooler : MonoBehaviour {
 		currentPoller = this;
 
 		}
+
+
 	void Start () {//
+
+
 	///intilize enemy bullet list and creat them - set them to deactive 
 		EnemyBullets = new GameObject[Size];
 		for( int i = 0; i< Size; i++){
@@ -42,6 +47,16 @@ public class Pooler : MonoBehaviour {
 			temp.SetActive(false);
 			playerBullets[i] = temp;//add it to the array 
 	}
+
+
+		for( int i = 0; i< enemiesTypes.Length; i++){
+			for( int j = 0; j< 4; j++ ){
+			GameObject temp = Instantiate(enemiesTypes[i]);//create an instance of an pbject 
+			temp.SetActive(false);
+				enemiesTypes[i] = temp;//add it to the array 
+	}}//spawned 6 enemies 
+
+
 
 	}
 	
@@ -63,11 +78,28 @@ public class Pooler : MonoBehaviour {
 			if(!playerBullets[i].activeInHierarchy)//if its not active in herarcy 
 			//return the pooled object to return it 
 				return playerBullets[i];
-
 	}
 
 	return null;
 		}
+
+
+
+
+	public GameObject returnRandomEnmey(){
+		for( int i = 0 ; i< enemiesTypes.Length; i++){
+			for(int j = 0 ; j< 4 ; j++){
+				if(!enemiesTypes[j].activeInHierarchy)//if its not active in herarcy 
+			//return the pooled object to return it 
+					return enemiesTypes[j];
+	}
+	}
+	Debug.Log("no enemy - null ");
+	return null;
+		}
+
+
+
 
 
 }

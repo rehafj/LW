@@ -59,6 +59,8 @@ public class PlayerStatus : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D coll){
+		Debug.Log("COLLIDER DMG");
+
 		if(coll.gameObject.tag == "Dmg"){//refactor to a method - recive dmg and play anaimtaion 
 				//print("dmg - 10");		
 				anim.Play("Dmg");
@@ -69,7 +71,7 @@ public class PlayerStatus : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D coll){
-
+	Debug.Log("TRIGGER DMG");
 		if(coll.gameObject.tag == "InsDeath"){
 			resetVlues();
 	}

@@ -12,10 +12,10 @@ GameObject:
   - 50: {fileID: 5029312}
   - 58: {fileID: 5809132}
   - 114: {fileID: 11449450}
-  - 114: {fileID: 11486640}
+  - 114: {fileID: 11490150}
   m_Layer: 0
   m_Name: w blue
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b300ca820941340508d715c05fc8a9e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11486640
+--- !u!114 &11490150
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -82,10 +82,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 188920}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d113875276cc84d79868f1536c4df80f, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b974a8c6dd71428596e8d6127d57c7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
   myegd: {fileID: 0}
 --- !u!212 &21286576
 SpriteRenderer:
@@ -123,7 +122,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Water
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 188920}

@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BulletBehavior : MonoBehaviour {
-//public int speed =9;
+public class BHplayerBullets : MonoBehaviour {
+
+	// Use this for initialization
+	//public int speed =9;
 public Rigidbody2D myegd;
 	// Use this for initialization
 	void Start () {
@@ -15,6 +17,6 @@ public Rigidbody2D myegd;
 
 	//myegd.AddForce(Vector3.forward * speed);
 		
-		myegd.velocity = transform.TransformDirection(-Vector3.up * 15);
+		myegd.velocity = transform.TransformDirection(Vector3.up * 15);
 		myegd.AddForce(myegd.transform.up * 10);	}
 }

@@ -32,7 +32,7 @@ public class BhSpawnEnimies : MonoBehaviour {
 	Vector3 tempPos = new Vector3(Random.Range(minX,maxX), transform.position.y, transform.position.z);
 	temp.transform.position = tempPos;
 	temp.transform.rotation = gameObject.transform.rotation;
-	Debug.Log("setting enemy to active  ");
+//	Debug.Log("setting enemy to active  ");
 
 	temp.SetActive(true);
 

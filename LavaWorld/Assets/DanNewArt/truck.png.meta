@@ -1,9 +1,11 @@
 fileFormatVersion: 2
 guid: db6343bf5bf064ca6bdbf650ad09cbbb
-timeCreated: 1459310622
+timeCreated: 1459359626
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: truck_0
+    21300002: truck_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,11 +28,11 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 2048
+  textureFormat: -3
+  maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +40,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +51,39 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: truck_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 17
+        width: 40
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 27.5}
+        - {x: -20, y: -27.5}
+        - {x: 20, y: -27.5}
+        - {x: 20, y: 26.5}
+        - {x: 19, y: 27.5}
+    - name: truck_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 13
+        width: 40
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: -26}
+        - {x: 20, y: 30}
+        - {x: -20, y: 30}
+        - {x: -20, y: -30}
+        - {x: 19, y: -30}
     outline: []
   spritePackingTag: 
   userData: 

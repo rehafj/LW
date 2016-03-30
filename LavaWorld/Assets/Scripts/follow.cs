@@ -22,7 +22,7 @@ public class follow : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        targetDistance = Vector2.Distance(target.position, transform.position);
+        targetDistance = Vector3.Distance(target.position, transform.position);
         if (targetDistance < enemyLookDistance)
         {
             lookAtPlayer();

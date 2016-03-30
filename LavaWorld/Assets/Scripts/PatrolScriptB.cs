@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyPatrolScript : MonoBehaviour
-{
+public class PatrolScriptB : MonoBehaviour {
+
 
     public LayerMask enemyMask;
     public float speed = 1;

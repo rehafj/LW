@@ -54,12 +54,12 @@ public class PlayerStatus : MonoBehaviour {
 		if(this.health<=0){
 		resetVlues();
 		}
-		Debug.Log("currunt point in array"+currentPoint);
+//		Debug.Log("currunt point in array"+currentPoint);
 
 	}
 
 	void OnCollisionEnter2D(Collision2D coll){
-		Debug.Log("COLLIDER DMG");
+//		Debug.Log("COLLIDER DMG");
 
 		if(coll.gameObject.tag == "Dmg"){//refactor to a method - recive dmg and play anaimtaion 
 				//print("dmg - 10");		

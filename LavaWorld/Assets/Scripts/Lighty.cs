@@ -33,47 +33,51 @@ public  Transform[] locations= new Transform[3];
 
 		/// <summary>
 		/// note this is temporary untill we activate deactivate things in a diff way
+		///it will dmg lighty if you hit anywhere -_-
 		/// </summary>
 		/// <param name="plr">Plr.</param>
 
-	void OnTriggerEnter2D(Collider2D plr){
 
-	if(plr.gameObject.tag=="Player"){
-		//Debug.Log("player inlighty area number of times");
 
-			//StartCoroutine(insFire());
-			InvokeRepeating("insFire2",3f,9f);
-		//	Debug.Log("back to collider");
-			//Instantiate(debries, mytrans.position, Quaternion.identity);
-			//x--;
-			//Invoke ("addmore",0.5f);
-			//Debug.Log(x);
-		
-	}
-	}
+	void OnBecameVisible() {
+        enabled = true;
+		InvokeRepeating("insFire2",3f,9f);
 
-	void OnTriggerExit2D(Collider2D plr){
-		if(plr.gameObject.tag=="Player"){
+    }
 
-			CancelInvoke("insFire2");
-			//StopCoroutine(insFire());
-		}
-	}
+
+	void OnBecameInvisible() {
+		CancelInvoke("insFire2");
+        enabled = false;
+    }
+
+
+//
+//	void OnTriggerEnter2D(Collider2D plr){
+//
+//	if(plr.gameObject.tag=="Player"){
+//
+//			InvokeRepeating("insFire2",3f,9f);
+//	
+//	}
+//	}
+//
+//	void OnTriggerExit2D(Collider2D plr){
+//		if(plr.gameObject.tag=="Player"){
+//
+//			CancelInvoke("insFire2");
+//			//StopCoroutine(insFire());
+//		}
+//	}
 //
 	public void insFire2(){
 
-//		for(int i = 0; i<= locations.Length-1; i++){
-//			Debug.Log("spawned at"+i);
-//			Instantiate(fireArea, locations[i].position, Quaternion.identity);
-
 		StartCoroutine(insFire());
 		}
-		//Instantiate(fireArea, SpwanPoint.position, Quaternion.identity);
 
 	
 
 	IEnumerator  insFire(){
-	//for(int i =0 ; i<
 		for(int i = 0; i<= locations.Length-1; i++){
 			//Debug.Log("spawned at"+i);
 			if(num>=0)

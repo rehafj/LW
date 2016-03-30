@@ -83,15 +83,23 @@ public class Pooler : MonoBehaviour {
 	return null;
 		}
 
-
+		/// <summary>
+		/// this is done wrong - ill get back to it later - triverses it wrong - 
+		//i'll change this into a list later 
+		// or create them in an arrayy or list of lists - or dicitonaty with a key - ill get o yhis later 
+		/// </summary>
+		/// <returns>The random enmey.</returns>
 
 
 	public GameObject returnRandomEnmey(){
 		for( int i = 0 ; i< enemiesTypes.Length; i++){
-			for(int j = 0 ; j< 4 ; j++){
-				if(!enemiesTypes[j].activeInHierarchy)//if its not active in herarcy 
+		Debug.Log(i+ "is the index of I");
+			for(int j = 0 ; j<enemiesTypes.Length ; j++){
+				Debug.Log(j+ "is the index of J");
+
+				if(!enemiesTypes[i].activeInHierarchy)//if its not active in herarcy 
 			//return the pooled object to return it 
-					return enemiesTypes[j];
+					return enemiesTypes[i];
 	}
 	}
 	Debug.Log("no enemy - null ");

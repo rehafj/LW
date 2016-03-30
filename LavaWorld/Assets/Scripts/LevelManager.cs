@@ -21,7 +21,7 @@ void Start(){
 ///make the player presistant and just add a method to reset values at the start of game over and then the player loads on evry scene for the fun of it 
 ///or add a check not to check for the player on level 0-4 (gameoever an dmenue ) or add the player for fun!
 	 Player = GameObject.FindGameObjectWithTag("Player");
-	 Debug.Log(Player.name);
+//	 Debug.Log(Player.name);
 	 playerScript = Player.GetComponent<ScriptController>();
 	 playerInstance = Player.GetComponent<PlayerStatus>();//going to check this inside payer class - 
 	 initialPostion = Player.GetComponent<Transform>();

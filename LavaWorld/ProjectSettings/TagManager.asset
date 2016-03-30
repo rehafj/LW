@@ -17,6 +17,8 @@ TagManager:
   - spawnner
   - Ladder
   - Enem
+  - Right
+  - Left
   layers:
   - Default
   - TransparentFX

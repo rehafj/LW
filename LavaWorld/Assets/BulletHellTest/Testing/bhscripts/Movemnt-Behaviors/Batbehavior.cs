@@ -15,15 +15,7 @@ public float width = 5f;
 Animator anim;
 	// Use this for initialization
 	void Start () {
-	//anim = GetComponent<Animator>();
-	//anim.Play("Enem1Entry");
-//	//ulternate method instead of hard values 
-//	//get camera's bonds //0 of x azsis 
-//	Vector3 LeftSide= Camera.main.ViewportToWorldPoint(new Vector3(0,0,0));
-//	//1 on x axsis
-//	maxXpos = LeftSide.x;
-//	Vector3 rightSide= Camera.main.ViewportToWorldPoint(new Vector3(1,0,0));
-//	minXpos = rightSide.x;
+
 	}
 	
 	// Update is called once per frame
@@ -33,17 +25,20 @@ Animator anim;
 	if(movingRight){
 		//transform.Translate(-Vector3.right * 2 * Time.deltaTime);
 		transform.position+= Vector3.right * speed *Time.deltaTime;
-	if( transform.position.x > maxXpos){
-			 movingRight = !movingRight;
+			Debug.Log("movingRight"+movingRight);
+	if(transform.position.x <= maxXpos){
+				Debug.Log("player pos is greater than max X set up");
+			 movingRight =false;
 				//transform.Translate(-Vector3.up * 0.5f * Time.deltaTime);
 			}		
 
 
 		//transform.position.y=  Mathf.Sin(1*Time.deltaTime);
-	}else if(!movingRight){
+	}
+	else if(!movingRight){
 			transform.Translate(Vector3.right * speed * Time.deltaTime);
-			if( transform.position.x <= minXpos){
-		 movingRight = !movingRight;
+			if( transform.position.x >= minXpos){
+		 movingRight = true;
 			}	
 		}	//transform.Translate(Vector3.up * 0.5f * Time.deltaTime);
 

@@ -19,7 +19,7 @@ public class TestManager : MonoBehaviour {
 		spawningThese = FindObjectsOfType<RespawnerGameObj>();
 	for( int i = 0; i< spawningThese.Length; i++){
 		if (spawningThese[i].gameObject.activeSelf== true){//change false to true but on rendereer spectrun thing 
-				print(spawningThese[i].gameObject.name);
+//				print(spawningThese[i].gameObject.name);
 				spawningThese[i].gameObject.SetActive(true);
 		}
 }

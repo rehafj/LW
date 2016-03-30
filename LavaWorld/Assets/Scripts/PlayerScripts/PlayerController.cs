@@ -85,6 +85,7 @@ float timer =0 ;//this might be used later  for a charge shot
 		//add a  check if the player os on ground 
 		if(Input.GetButtonDown("Jump")){//Input.GetKeyDown(KeyCode.JoystickButton1)
 		//Debug.Log("jump pressed");
+		anim.Play("Jump");
 		rgd.AddForce(new Vector2 (0, jumpStr));
 		}
 		}

@@ -43,5 +43,6 @@ public class follow : MonoBehaviour
     void attackPlease()
     {
         theRigidBody.AddForce(transform.forward * enemyMovementSpeed);
+        theRigidBody.velocity = new Vector3(1, 0, 0);
     }
 }

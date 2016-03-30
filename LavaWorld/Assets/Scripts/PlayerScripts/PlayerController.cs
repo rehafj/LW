@@ -196,7 +196,7 @@ float timer =0 ;//this might be used later  for a charge shot
 	if( FoundWater){
 	if(direction == Directions.right){
 
-					Rigidbody2D clone;//created a temp clone of the same type as my bullet 
+				Rigidbody2D clone;//created a temp clone of the same type as my bullet 
 				  clone = Instantiate(Projectile, HoseLocation.position, transform.rotation) as Rigidbody2D;//does the coping 
         	      clone.velocity = transform.TransformDirection(Vector3.right * 15);//makes it face appropriate direction and adds vel ( speed over time) 
         	      clone.AddForce(clone.transform.right * 10);//gives it that extra push ( force) 

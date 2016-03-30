@@ -22,7 +22,7 @@ public class PlayerStatus : MonoBehaviour {
 
 	 
 	public int currentPoint = 0;//current check point pos 
-	public Transform ressetPoint;//change the resset point baased on what happens//reset point scripts finds player and changes the resset point -- and try and reload level-> so move this ot level manager script in future 
+	//public Transform ressetPoint;//change the resset point baased on what happens//reset point scripts finds player and changes the resset point -- and try and reload level-> so move this ot level manager script in future 
 	public Transform []checkPoints = new Transform [3] ;//move this to anther script -- temporary  //make it a vector 3
 
 
@@ -54,6 +54,7 @@ public class PlayerStatus : MonoBehaviour {
 		if(this.health<=0){
 		resetVlues();
 		}
+		Debug.Log("currunt point in array"+currentPoint);
 
 	}
 
@@ -93,10 +94,11 @@ public class PlayerStatus : MonoBehaviour {
 		this.health =100;
 		//Debug.Log("player lost a life");
 		//this will be moved to its own script later on ///might use a for loop to triverse depending on how many checkpoints we want -- check with team 
-		if(currentPoint==0)
+		if(currentPoint==0){
 			Player.transform.position = checkPoints[0].transform.position;
-		else if(currentPoint==1)
-			Player.transform.position = checkPoints[1].transform.position;
+			Debug.Log("at pos 0");}
+		else if(currentPoint==1){
+			Player.transform.position = checkPoints[1].transform.position;}
 	}else
 			currentScene.GameOver();
 	///will add somehting in scene manager idf lives is less than 0 move to game over screen

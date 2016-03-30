@@ -13,17 +13,17 @@ public class UIUpdate : MonoBehaviour {
 	string healthText = "current health: ";
 	static UIUpdate InstanceOfUI;
 
-
+	//going to change this later 
 	void Start () {
 
-
-		if(InstanceOfUI!=null){//it exsits - destory it dont create another o=instacnae //do bnot dupilcate game managers 
-		GameObject.Destroy(gameObject);
-		}
-		else {//instance == nill 
-		GameObject.DontDestroyOnLoad(gameObject);//do not destoyr teh current gameobject ( i..e scene instance) 
-			InstanceOfUI = this;}
-
+//
+//		if(InstanceOfUI!=null){//it exsits - destory it dont create another o=instacnae //do bnot dupilcate game managers 
+//		GameObject.Destroy(gameObject);
+//		}
+//		else {//instance == nill 
+//		GameObject.DontDestroyOnLoad(gameObject);//do not destoyr teh current gameobject ( i..e scene instance) 
+//			InstanceOfUI = this;}
+//
 
 
 myPlayer = GameObject.FindGameObjectWithTag("Player");

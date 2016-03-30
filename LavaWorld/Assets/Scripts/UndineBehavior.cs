@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using Fungus;
 public class UndineBehavior : MonoBehaviour {
 	// Use this for initialization
-
+    //remmeber\to deavtivate script and just hide it
 	GameObject myPlayer;//i need ti cgane this 
 	public GameObject prison;
 	PlayerController status;
@@ -26,6 +26,8 @@ public class UndineBehavior : MonoBehaviour {
 
 	if(coll.gameObject.tag=="Player"){
 			img.enabled = true;
+			//Fungus.SendFungusMessage("Test");
+			//FungusScript.SendFungusMessage("Test");
 			status.FoundWater = true;
 			Undine.Play("Undine");
 

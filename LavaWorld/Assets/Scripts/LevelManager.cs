@@ -59,6 +59,7 @@ public void LoadlevelfromMenue( int Level_number){
 }
 
 public void MoveToNextLevel(int number){
+print("moved to next level");
 	if(number<3){//less than three levels // remmeber to change this depending on how we orginize the levels so far lelv 1 is 0 bh is 1 and lvl 2 is 2 - with menue this will change 
 			currentScene += number;
 				SceneManager.LoadScene(currentScene);
@@ -68,14 +69,15 @@ public void MoveToNextLevel(int number){
 		}
 		}
 public void  GameOver(){
+		print("moved to gameo ver");
 
-		if(playerInstance.lives<=0){
+		//if(playerInstance.lives<=0){
 			playerInstance.resetVlues();
 			SceneManager.LoadScene(4);
 			GameObject.Destroy(Player);
 
 
-		}
+		//}
 
 }//add something else to check win screen ot loose screen 
 	

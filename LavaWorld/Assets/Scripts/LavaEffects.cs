@@ -27,7 +27,8 @@ void DestroyThis(){
 		//add playing animaiton/explotion steam whatever - public so we can modify it based on current item  
 			wasDestroyed = true;
 
-		Destroy(gameObject, 1);
+		//Destroy(gameObject, 1);
+		gameObject.SetActive(false);
 	}
 		else 
 		wasDestroyed = false;

@@ -24,3 +24,6 @@ ExportedObj/
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
+LavaWorld/Assets/Scripts/Testing.meta
+LavaWorld/ProjectSettings/ProjectVersion.txt
+*.meta

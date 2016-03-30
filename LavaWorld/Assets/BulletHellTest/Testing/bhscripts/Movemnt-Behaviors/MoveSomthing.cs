@@ -20,17 +20,16 @@ Rigidbody2D rgb;
 	/// </summary>
 	// Update is called once per frame
 	void Update () {
-		//transform.position = new Vector3(Mathf.PingPong(Time.time, 3), transform.position.y, transform.position.z);
 		rgb.velocity = new Vector2(0,-1) * speed;//move it down 
 		//calcualte teh distance 
 		float distance = Vector3.Distance(transform.position, target.transform.position);
 		//if it is less than half te h distance activate round movment 
 		if(distance<=offset.y){
-		Debug.Log("distance is close to player");
-		timer += Time.deltaTime;
+			Debug.Log("distance is close to player");
+			timer += Time.deltaTime;
 			float xpos = Mathf.Cos(timer)* width;
-		float ypos = Mathf.Sin(timer)* height;
-		transform.position = new Vector3(xpos,ypos, 0);
+			float ypos = Mathf.Sin(timer)* height;
+			transform.position = new Vector3(xpos,ypos, 0);
 		}
 			}
 }

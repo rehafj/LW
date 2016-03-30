@@ -10,7 +10,7 @@ public float timer=1;
 //public GameObject myPooledgameObject; 
 	void Start () {
 		
-InvokeRepeating("LetLooseTheBullets",timer,timer);
+//InvokeRepeating("LetLooseTheBullets",timer,timer);
 	}
 
 	void OnEnable(){

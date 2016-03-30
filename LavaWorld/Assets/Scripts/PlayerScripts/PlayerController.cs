@@ -231,7 +231,7 @@ float timer =0 ;//this might be used later  for a charge shot
 	}
 
 	 void OnEnable(){
-		print("script is enables");
+//		print("script is enables");
 
 	}
 

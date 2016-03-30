@@ -36,7 +36,7 @@ public float timer=1;
 
 
 	void OnDisable() {
-        print("script was removed");
+//        print("script was removed");
 		CancelInvoke();
     }
 

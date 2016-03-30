@@ -88,7 +88,7 @@ public class Pooler : MonoBehaviour {
 
 	public GameObject returnRandomEnmey(){
 		for( int i = 0 ; i< enemiesTypes.Length; i++){
-			for(int j = 0 ; j< 4 ; j++){
+			for(int j = 0 ; j<enemiesTypes.Length ; j++){
 				if(!enemiesTypes[j].activeInHierarchy)//if its not active in herarcy 
 			//return the pooled object to return it 
 					return enemiesTypes[j];

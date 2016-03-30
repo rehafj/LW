@@ -15,6 +15,7 @@ GameObject:
   - 50: {fileID: 5088156}
   - 114: {fileID: 11452312}
   - 114: {fileID: 11478786}
+  - 114: {fileID: 11435854}
   m_Layer: 0
   m_Name: zigzag-Down 1
   m_TagString: Enem
@@ -68,6 +69,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11435854
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea11049e91cb04a99bd2d47f4653814f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  howMuchDamage: 10
+  HitsToDestroy: 3
+  instantKill: 0
+  wasDestroyed: 0
 --- !u!114 &11452312
 MonoBehaviour:
   m_ObjectHideFlags: 1

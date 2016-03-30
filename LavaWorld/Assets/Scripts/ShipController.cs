@@ -9,7 +9,7 @@ public class ShipController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 	rgd = GetComponent<Rigidbody2D>();
-	rgd.isKinematic = true;
+	//rgd.isKinematic = true;
 	 // remmeber to uncheck this in player conrtoler script 
 	}
 	

@@ -23,6 +23,9 @@ public enum Directions {right, left, up, down, idle};
 
  public Transform HoseLocation;
  public Rigidbody2D Projectile;
+ public int specialAmmo = 0; 
+public Rigidbody2D specialProjectile;
+int chargeTime=0;
 
 
 Animator anim;
@@ -76,8 +79,7 @@ float timer =0 ;//this might be used later  for a charge shot
 		else if (playerSideways<0 && isFacingRight)
 		flipPlayer();
 		}
-
-
+		//TODO 
 		/// <summary>
 		/// handles nnormal jumps 
 		/// </summary>
@@ -195,6 +197,9 @@ float timer =0 ;//this might be used later  for a charge shot
 	public void ShootPojectile( Directions direction){
 
 	if( FoundWater){
+	//TODO
+	//if speical ammo >0 create speicla ammo else normal ammo 
+	//make this into a method and clal it here else resume .
 	if(direction == Directions.right){
 
 				Rigidbody2D clone;//created a temp clone of the same type as my bullet 

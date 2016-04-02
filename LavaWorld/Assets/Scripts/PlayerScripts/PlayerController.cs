@@ -76,8 +76,7 @@ float timer =0 ;//this might be used later  for a charge shot
 		else if (playerSideways<0 && isFacingRight)
 		flipPlayer();
 		}
-
-
+		//TODO 
 		/// <summary>
 		/// handles nnormal jumps 
 		/// </summary>

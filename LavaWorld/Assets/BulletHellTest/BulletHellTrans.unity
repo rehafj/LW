@@ -776,11 +776,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 418950, guid: b0ccb6f95d156460d991a17b81324096, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.846
+      value: -3.1
       objectReference: {fileID: 0}
     - target: {fileID: 418950, guid: b0ccb6f95d156460d991a17b81324096, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 8.049
+      value: 9.1
       objectReference: {fileID: 0}
     - target: {fileID: 418950, guid: b0ccb6f95d156460d991a17b81324096, type: 2}
       propertyPath: m_LocalPosition.z
@@ -929,7 +929,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11445204, guid: 9fe21c0ecb5fb46f5911704a28afabfc, type: 2}
       propertyPath: timer
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9fe21c0ecb5fb46f5911704a28afabfc, type: 2}
@@ -1061,11 +1061,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 404770, guid: d02e7b1439eef4c77bd1da6933bdc52e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.23
+      value: 2.44
       objectReference: {fileID: 0}
     - target: {fileID: 404770, guid: d02e7b1439eef4c77bd1da6933bdc52e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 7.61875
+      value: 8.43
       objectReference: {fileID: 0}
     - target: {fileID: 404770, guid: d02e7b1439eef4c77bd1da6933bdc52e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1109,7 +1109,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1523342462
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -27,15 +27,7 @@ public  Transform[] locations= new Transform[3];
 
 	}
 
-		
 
-
-
-		/// <summary>
-		/// note this is temporary untill we activate deactivate things in a diff way
-		///it will dmg lighty if you hit anywhere -_-
-		/// </summary>
-		/// <param name="plr">Plr.</param>
 
 
 
@@ -52,24 +44,7 @@ public  Transform[] locations= new Transform[3];
     }
 
 
-//
-//	void OnTriggerEnter2D(Collider2D plr){
-//
-//	if(plr.gameObject.tag=="Player"){
-//
-//			InvokeRepeating("insFire2",3f,9f);
-//	
-//	}
-//	}
-//
-//	void OnTriggerExit2D(Collider2D plr){
-//		if(plr.gameObject.tag=="Player"){
-//
-//			CancelInvoke("insFire2");
-//			//StopCoroutine(insFire());
-//		}
-//	}
-//
+
 	public void insFire2(){
 
 		StartCoroutine(insFire());

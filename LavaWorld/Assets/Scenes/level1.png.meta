@@ -1,0 +1,688 @@
+fileFormatVersion: 2
+guid: 880711459e18642699ede8010c053f81
+timeCreated: 1459568929
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: level1_0
+    21300002: level1_1
+    21300004: level1_2
+    21300006: level1_3
+    21300008: level1_4
+    21300010: level1_5
+    21300012: level1_6
+    21300014: level1_7
+    21300016: level1_8
+    21300018: level1_9
+    21300020: level1_10
+    21300022: level1_11
+    21300024: level1_12
+    21300026: level1_13
+    21300028: level1_14
+    21300030: level1_15
+    21300032: level1_16
+    21300034: level1_17
+    21300036: level1_18
+    21300038: level1_19
+    21300040: level1_20
+    21300042: level1_21
+    21300044: level1_22
+    21300046: level1_23
+    21300048: level1_24
+    21300050: level1_25
+    21300052: level1_26
+    21300054: level1_27
+    21300056: level1_28
+    21300058: level1_29
+    21300060: level1_30
+    21300062: level1_31
+    21300064: level1_32
+    21300066: level1_33
+    21300068: level1_34
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: level1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5313
+        width: 62
+        height: 574
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 184.31982}
+        - {x: -20, y: -183.68018}
+        - {x: 20, y: -183.68018}
+        - {x: 20, y: 184.31982}
+    - name: level1_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 5312
+        width: 350
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -111.54, y: 165.17993}
+        - {x: -111.54, y: -163.82007}
+        - {x: 113.46, y: -163.82007}
+        - {x: 113.46, y: 165.17993}
+    - name: level1_2
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 5312
+        width: 733
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -234.48001, y: 62.17993}
+        - {x: -234.48001, y: -60.82007}
+        - {x: 235.51999, y: -60.82007}
+        - {x: 235.51999, y: 62.17993}
+    - name: level1_3
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 5634
+        width: 92
+        height: 317
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29.420013, y: 102.76001}
+        - {x: -29.420013, y: -101.23999}
+        - {x: 29.579987, y: -101.23999}
+        - {x: 29.579987, y: 102.76001}
+    - name: level1_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 5913
+        width: 702
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: level1_5
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 5506
+        width: 448
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50.440002, y: 42.339844}
+        - {x: -83.44, y: 26.339844}
+        - {x: -125.44, y: -0.66015625}
+        - {x: -143.44, y: -19.660156}
+        - {x: -143.44, y: -40.660156}
+        - {x: 144.56, y: -40.660156}
+        - {x: 144.56, y: 42.339844}
+    - name: level1_6
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 5633
+        width: 60
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: level1_7
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 5663
+        width: 63
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.980042, y: 21.319824}
+        - {x: -19.980042, y: -20.680176}
+        - {x: 21.019958, y: -20.680176}
+        - {x: 21.019958, y: 21.319824}
+    - name: level1_8
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 5885
+        width: 1758
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -275.2, y: -37.600098}
+        - {x: -255.20001, y: -41.600098}
+        - {x: -75.20001, y: -41.600098}
+        - {x: -66.20001, y: -37.600098}
+        - {x: -64.20001, y: -32.600098}
+        - {x: -64.20001, y: -30.600098}
+        - {x: -62.200012, y: -33.600098}
+        - {x: -58.200012, y: -41.600098}
+        - {x: 204.79999, y: -41.600098}
+        - {x: 215.79999, y: -31.600098}
+        - {x: 258.8, y: -41.600098}
+        - {x: 542.8, y: -41.600098}
+        - {x: 557.8, y: -30.600098}
+        - {x: 563.8, y: -26.600098}
+        - {x: 563.8, y: 24.399902}
+        - {x: 328.8, y: 42.399902}
+        - {x: -562.2, y: 42.399902}
+        - {x: -562.2, y: -27.600098}
+        - {x: -546.2, y: -41.600098}
+        - {x: -492.2, y: -41.600098}
+        - {x: -478.2, y: -30.600098}
+        - {x: -479.2, y: -21.600098}
+        - {x: -407.2, y: -41.600098}
+        - {x: -289.2, y: -41.600098}
+    - name: level1_9
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 5694
+        width: 223
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -70.160034, y: 21.159912}
+        - {x: -71.160034, y: 20.159912}
+        - {x: -71.160034, y: -20.840088}
+        - {x: 72.839966, y: -20.840088}
+        - {x: 72.839966, y: 21.159912}
+    - name: level1_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 5527
+        width: 60
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.300049, y: 63.78003}
+        - {x: -19.300049, y: -63.21997}
+        - {x: 19.699951, y: -63.21997}
+        - {x: 19.699951, y: 63.78003}
+    - name: level1_11
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 5467
+        width: 159
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50.619995, y: 63.879883}
+        - {x: -50.619995, y: -62.120117}
+        - {x: 52.380005, y: -62.120117}
+        - {x: 52.380005, y: 63.879883}
+    - name: level1_12
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 5309
+        width: 259
+        height: 381
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 41.059998, y: 123.26001}
+        - {x: -82.94, y: 123.26001}
+        - {x: -82.94, y: 104.26001}
+        - {x: -65.94, y: 104.26001}
+        - {x: -65.94, y: -117.73999}
+        - {x: -61.940002, y: -121.73999}
+        - {x: 84.06, y: -121.73999}
+        - {x: 84.06, y: 108.26001}
+        - {x: 41.059998, y: 108.26001}
+    - name: level1_13
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 5312
+        width: 766
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -245.46002, y: 62.67993}
+        - {x: -245.46002, y: -61.32007}
+        - {x: 245.53998, y: -61.32007}
+        - {x: 245.53998, y: 62.67993}
+    - name: level1_14
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 5569
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.320007, y: 20.159912}
+        - {x: -20.320007, y: -19.840088}
+        - {x: 21.679993, y: -19.840088}
+        - {x: 21.679993, y: 19.159912}
+        - {x: 20.679993, y: 20.159912}
+    - name: level1_15
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 5505
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.359985, y: 20.199951}
+        - {x: -20.359985, y: -19.800049}
+        - {x: 21.640015, y: -19.800049}
+        - {x: 21.640015, y: 20.199951}
+    - name: level1_16
+      rect:
+        serializedVersion: 2
+        x: 2177
+        y: 5313
+        width: 190
+        height: 412
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -60.71997, y: 132.31982}
+        - {x: -60.71997, y: -131.68018}
+        - {x: 61.28003, y: -131.68018}
+        - {x: 61.28003, y: 132.31982}
+    - name: level1_17
+      rect:
+        serializedVersion: 2
+        x: 2369
+        y: 5312
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.340088, y: 21.179932}
+        - {x: -20.340088, y: -19.820068}
+        - {x: 20.659912, y: -19.820068}
+        - {x: 20.659912, y: 21.179932}
+    - name: level1_18
+      rect:
+        serializedVersion: 2
+        x: 2598
+        y: 5747
+        width: 470
+        height: 299
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 50.71997, y: -34.920166}
+        - {x: 87.71997, y: -22.920166}
+        - {x: 97.71997, y: -9.920166}
+        - {x: 150.71997, y: 34.079834}
+        - {x: 151.71997, y: 38.079834}
+        - {x: 151.71997, y: 67.079834}
+        - {x: 138.71997, y: 96.079834}
+        - {x: -150.28003, y: 96.079834}
+        - {x: -150.28003, y: -56.920166}
+        - {x: -131.28003, y: -88.920166}
+        - {x: -130.28003, y: -89.920166}
+        - {x: -112.28003, y: -89.920166}
+        - {x: -102.28003, y: -37.920166}
+        - {x: -65.28003, y: -53.920166}
+        - {x: 23.71997, y: -52.920166}
+    - name: level1_19
+      rect:
+        serializedVersion: 2
+        x: 2429
+        y: 5313
+        width: 257
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 44.559937, y: 51.819824}
+        - {x: -43.440063, y: 51.819824}
+        - {x: -82.44006, y: 3.8198242}
+        - {x: -82.44006, y: -51.180176}
+        - {x: 83.55994, y: -51.180176}
+        - {x: 83.55994, y: 12.819824}
+        - {x: 72.55994, y: 42.819824}
+    - name: level1_20
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 5310
+        width: 637
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -203.68005, y: 22.399902}
+        - {x: -203.68005, y: -21.600098}
+        - {x: 204.31995, y: -21.600098}
+        - {x: 204.31995, y: 22.399902}
+    - name: level1_21
+      rect:
+        serializedVersion: 2
+        x: 3327
+        y: 5311
+        width: 704
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -225.21997, y: 82.04004}
+        - {x: -225.21997, y: -81.95996}
+        - {x: 225.78003, y: -81.95996}
+        - {x: 225.78003, y: 82.04004}
+    - name: level1_22
+      rect:
+        serializedVersion: 2
+        x: 3301
+        y: 5931
+        width: 980
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -94.36011, y: -35.160156}
+        - {x: 120.63989, y: -35.160156}
+        - {x: 137.6399, y: -16.160156}
+        - {x: 172.6399, y: -35.160156}
+        - {x: 225.6399, y: -35.160156}
+        - {x: 247.6399, y: -14.160156}
+        - {x: 263.6399, y: -21.160156}
+        - {x: 301.6399, y: -10.160156}
+        - {x: 314.6399, y: 2.8398438}
+        - {x: 314.6399, y: 35.839844}
+        - {x: 306.6399, y: 54.839844}
+        - {x: 281.6399, y: 68.83984}
+        - {x: -313.3601, y: 68.83984}
+        - {x: -313.3601, y: -21.160156}
+        - {x: -308.3601, y: -29.160156}
+        - {x: -281.3601, y: -35.160156}
+        - {x: -207.3601, y: -35.160156}
+        - {x: -190.3601, y: -15.160156}
+        - {x: -114.36011, y: -18.160156}
+    - name: level1_23
+      rect:
+        serializedVersion: 2
+        x: 3641
+        y: 6143
+        width: 580
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: level1_24
+      rect:
+        serializedVersion: 2
+        x: 4449
+        y: 5886
+        width: 94
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.140137, y: 32.039795}
+        - {x: -30.140137, y: -32.960205}
+        - {x: 30.859863, y: -32.960205}
+        - {x: 30.859863, y: 32.039795}
+    - name: level1_25
+      rect:
+        serializedVersion: 2
+        x: 4033
+        y: 5277
+        width: 414
+        height: 484
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128.11987, y: -7.2199707}
+        - {x: 110.11987, y: 34.78003}
+        - {x: 86.11987, y: 54.78003}
+        - {x: 74.11987, y: 53.78003}
+        - {x: 74.11987, y: 151.78003}
+        - {x: 70.11987, y: 155.78003}
+        - {x: 12.119873, y: 155.78003}
+        - {x: 8.119873, y: 151.78003}
+        - {x: 8.119873, y: 135.78003}
+        - {x: -70.88013, y: 135.78003}
+        - {x: -73.88013, y: 131.78003}
+        - {x: -83.88013, y: 74.78003}
+        - {x: -90.88013, y: 71.78003}
+        - {x: -113.88013, y: 50.78003}
+        - {x: -116.88013, y: 35.78003}
+        - {x: -132.88013, y: 33.78003}
+        - {x: -132.88013, y: 8.780029}
+        - {x: -115.88013, y: 8.780029}
+        - {x: -132.88013, y: -14.219971}
+        - {x: -132.88013, y: -135.21997}
+        - {x: -112.88013, y: -155.21997}
+        - {x: 133.11987, y: -155.21997}
+        - {x: 133.11987, y: 9.780029}
+        - {x: 130.11987, y: 8.780029}
+      - - {x: 130.11987, y: 55.78003}
+        - {x: 132.11987, y: 53.78003}
+        - {x: 133.11987, y: 53.78003}
+        - {x: 133.11987, y: 131.78003}
+        - {x: 130.11987, y: 130.78003}
+    - name: level1_26
+      rect:
+        serializedVersion: 2
+        x: 4450
+        y: 5600
+        width: 447
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -143.5, y: 41.5}
+        - {x: -143.5, y: -41.5}
+        - {x: 142.5, y: -41.5}
+        - {x: 143.5, y: -40.5}
+        - {x: 143.5, y: 39.5}
+        - {x: 141.5, y: 41.5}
+    - name: level1_27
+      rect:
+        serializedVersion: 2
+        x: 4447
+        y: 5279
+        width: 386
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -121.920166, y: 83.559814}
+        - {x: -123.920166, y: 81.559814}
+        - {x: -123.920166, y: -82.440186}
+        - {x: 124.079834, y: -82.440186}
+        - {x: 124.079834, y: 81.559814}
+        - {x: 122.079834, y: 83.559814}
+    - name: level1_28
+      rect:
+        serializedVersion: 2
+        x: 4577
+        y: 5730
+        width: 224
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36.71997, y: 51.19995}
+        - {x: -71.71997, y: -30.800049}
+        - {x: -71.71997, y: -52.80005}
+        - {x: 72.28003, y: -52.80005}
+        - {x: 72.28003, y: -32.80005}
+        - {x: 31.28003, y: 51.19995}
+      - - {x: 48.28003, y: -4.800049}
+        - {x: 50.28003, y: -6.800049}
+        - {x: 53.28003, y: -5.800049}
+        - {x: 53.28003, y: -2.8000488}
+        - {x: 51.28003, y: -0.8000488}
+        - {x: 48.28003, y: -1.8000488}
+    - name: level1_29
+      rect:
+        serializedVersion: 2
+        x: 5313
+        y: 5280
+        width: 191
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -60.180176, y: 236.19995}
+        - {x: -61.180176, y: 235.19995}
+        - {x: -61.180176, y: -235.80005}
+        - {x: 61.819824, y: -235.80005}
+        - {x: 61.819824, y: 235.19995}
+        - {x: 60.819824, y: 236.19995}
+    - name: level1_30
+      rect:
+        serializedVersion: 2
+        x: 5089
+        y: 5280
+        width: 226
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -71.04004, y: 133.69995}
+        - {x: -72.04004, y: 132.69995}
+        - {x: -72.04004, y: -133.30005}
+        - {x: 73.95996, y: -133.30005}
+        - {x: 73.95996, y: 133.69995}
+    - name: level1_31
+      rect:
+        serializedVersion: 2
+        x: 5057
+        y: 5540
+        width: 32
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: level1_32
+      rect:
+        serializedVersion: 2
+        x: 5024
+        y: 5538
+        width: 35
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: level1_33
+      rect:
+        serializedVersion: 2
+        x: 4993
+        y: 5536
+        width: 29
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: level1_34
+      rect:
+        serializedVersion: 2
+        x: 4959
+        y: 5532
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

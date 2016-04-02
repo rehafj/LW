@@ -20,11 +20,11 @@ Rigidbody2D rgb;
 	/// </summary>
 	// Update is called once per frame
 	void Update () {
-		rgb.velocity = new Vector2(0,-1) * speed;//move it down 
+	//	rgb.velocity = new Vector2(0,-1) * speed;//move it down 
 		//calcualte teh distance 
-		float distance = Vector3.Distance(transform.position, target.transform.position);
+	//	float distance = Vector3.Distance(transform.position, target.transform.position);
 		//if it is less than half te h distance activate round movment 
-		if(distance<=offset.y){
+	//	if(distance<=offset.y){
 			Debug.Log("distance is close to player");
 			timer += Time.deltaTime;
 			float xpos = Mathf.Cos(timer)* width;
@@ -32,4 +32,4 @@ Rigidbody2D rgb;
 			transform.position = new Vector3(xpos,ypos, 0);
 		}
 			}
-}
+//}

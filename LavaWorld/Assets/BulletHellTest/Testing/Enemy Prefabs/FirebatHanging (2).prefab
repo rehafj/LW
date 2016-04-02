@@ -14,6 +14,10 @@ GameObject:
   - 114: {fileID: 11437948}
   - 114: {fileID: 11472528}
   - 114: {fileID: 11431702}
+  - 58: {fileID: 5867450}
+  - 114: {fileID: 11495240}
+  - 111: {fileID: 11105866}
+  - 95: {fileID: 9549076}
   m_Layer: 0
   m_Name: FirebatHanging (2)
   m_TagString: Enem
@@ -28,7 +32,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 146252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 9.559, z: 0}
+  m_LocalPosition: {x: -0, y: 1, z: 0}
   m_LocalScale: {x: 1.7897775, y: 1.7897775, z: 1.7897775}
   m_Children: []
   m_Father: {fileID: 0}
@@ -50,6 +54,51 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &5867450
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146252}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.15999998
+--- !u!95 &9549076
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146252}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c1b7a633c0e2b49bcb8ce42c5ebd520e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!111 &11105866
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146252}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c2f663bb1e35d4182a51f8b8eb9e2bf8, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &11431702
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -93,6 +142,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 019f58860605e4b469e7e78fda64617c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11495240
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 798fb3c46f7074152badf545bf6f8e86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.5
 --- !u!114 &11498502
 MonoBehaviour:
   m_ObjectHideFlags: 1

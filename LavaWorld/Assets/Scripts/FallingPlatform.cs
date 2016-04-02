@@ -12,12 +12,14 @@ public class FallingPlatform : MonoBehaviour {
 	Rigidbody2D rgd;
 	Vector3 currentPos;
 	BoxCollider2D colr;
+	Animator anim;
 
 	void Awake(){
 	rgd = GetComponent<Rigidbody2D>();
 	currentPos = gameObject.transform.position;
 		//Debug.Log(currentPos);
 	colr = GetComponent<BoxCollider2D>();
+	anim = GetComponent<Animator>();
 	}
 	
 	// Update is called once per fram
@@ -25,8 +27,11 @@ public class FallingPlatform : MonoBehaviour {
 	/// OF we want to male the player stand on platform we can add things where oncollider2dexit set it off - many ways to o this discuss with team 
 	/// </summary>
 	public void Falling(){
+		anim.SetBool("timepass", true);
+
 			rgd.isKinematic= false;
 			colr.isTrigger= true;
+		anim.Play("FallingPlat");
 		//colr.enabled = false;
 
 	}
@@ -44,8 +49,9 @@ public class FallingPlatform : MonoBehaviour {
 		//Debug.Log("entred trigger");
 		//	colr.enabled = false;
 			rgd.isKinematic= true;
+		
 
-		Invoke("recreate",2);
+		Invoke("recreate",1);
 
 			//Destroy(gameObject,2);
 			//make a method to move it upwards 
@@ -54,10 +60,12 @@ public class FallingPlatform : MonoBehaviour {
 
 
 	void recreate(){
+		anim.SetBool("timepass", false);
 		gameObject.transform.position =currentPos;
 		//colr.enabled = true;
 		steppedOn = false;
 		colr.isTrigger= false;
+
 
 
 

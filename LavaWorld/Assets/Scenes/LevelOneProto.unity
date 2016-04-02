@@ -1150,27 +1150,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11443534, guid: 8ed735daa74ba4519b6ef86bf307df54, type: 2}
-      propertyPath: fallTimer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 485016, guid: 8ed735daa74ba4519b6ef86bf307df54, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 5.4761853
-      objectReference: {fileID: 0}
-    - target: {fileID: 485016, guid: 8ed735daa74ba4519b6ef86bf307df54, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 5.476182
-      objectReference: {fileID: 0}
     - target: {fileID: 485016, guid: 8ed735daa74ba4519b6ef86bf307df54, type: 2}
       propertyPath: m_LocalScale.z
-      value: 5.476182
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 21273708, guid: 8ed735daa74ba4519b6ef86bf307df54, type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: cc6a30aa311a94732bc5a9e032eb4450,
-        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ed735daa74ba4519b6ef86bf307df54, type: 2}
   m_IsPrefabParent: 0
@@ -3509,27 +3492,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
---- !u!1 &1018180012 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 196976, guid: 8ed735daa74ba4519b6ef86bf307df54, type: 2}
-  m_PrefabInternal: {fileID: 335628753}
---- !u!95 &1018180013
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1018180012}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b459e38fdcf144ed7827abcec6ca07ee, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!4 &1060185521 stripped
 Transform:
   m_PrefabParentObject: {fileID: 448854, guid: 3d4f700e3103e47bd8ae6ed76232a7b3, type: 2}
@@ -6042,7 +6004,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 448854, guid: 3d4f700e3103e47bd8ae6ed76232a7b3, type: 2}
       propertyPath: m_LocalScale.z
-      value: 2.7176754
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 21263426, guid: 3d4f700e3103e47bd8ae6ed76232a7b3, type: 2}
       propertyPath: m_SortingOrder

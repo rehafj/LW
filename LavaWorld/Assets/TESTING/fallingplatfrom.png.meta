@@ -1,9 +1,23 @@
 fileFormatVersion: 2
 guid: cc6a30aa311a94732bc5a9e032eb4450
-timeCreated: 1459574978
+timeCreated: 1459582530
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: fallingplatfrom_0
+    21300002: fallingplatfrom_1
+    21300004: fallingplatfrom_2
+    21300006: fallingplatfrom_3
+    21300008: fallingplatfrom_4
+    21300010: fallingplatfrom_5
+    21300012: fallingplatfrom_6
+    21300014: fallingplatfrom_7
+    21300016: fallingplatfrom_8
+    21300018: fallingplatfrom_9
+    21300020: fallingplatfrom_10
+    21300022: fallingplatfrom_11
+    21300024: fallingplatfrom_12
+    21300026: fallingplatfrom_13
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,11 +40,11 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 2048
+  textureFormat: -3
+  maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +52,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +63,230 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: fallingplatfrom_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 57
+        width: 98
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: fallingplatfrom_1
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 55
+        width: 94
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43.5, y: 17.856163}
+        - {x: -43.5, y: -13.143837}
+        - {x: -33.5, y: -16.143837}
+        - {x: 35.5, y: -16.143837}
+        - {x: 39.5, y: -11.143837}
+        - {x: 44.5, y: 1.856163}
+        - {x: 44.5, y: 17.856163}
+    - name: fallingplatfrom_2
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 53
+        width: 93
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29.616425, y: 19.506847}
+        - {x: -43.383575, y: 19.506847}
+        - {x: -43.383575, y: -16.493153}
+        - {x: -33.383575, y: -19.493153}
+        - {x: 29.616425, y: -19.493153}
+        - {x: 40.616425, y: -3.4931526}
+        - {x: 43.616425, y: 2.5068474}
+        - {x: 43.616425, y: 14.506847}
+    - name: fallingplatfrom_3
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 53
+        width: 92
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42.191772, y: 20.506847}
+        - {x: -42.191772, y: -2.4931526}
+        - {x: -35.191772, y: -20.493153}
+        - {x: 20.808228, y: -20.493153}
+        - {x: 43.808228, y: -0.49315262}
+        - {x: 43.808228, y: 20.506847}
+    - name: fallingplatfrom_4
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 51
+        width: 94
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43.273987, y: 23.657536}
+        - {x: -43.273987, y: -12.342464}
+        - {x: -31.273987, y: -23.342464}
+        - {x: 37.726013, y: -23.342464}
+        - {x: 44.726013, y: -11.342464}
+        - {x: 44.726013, y: 23.657536}
+    - name: fallingplatfrom_5
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 0
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: fallingplatfrom_6
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 41
+        width: 93
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42.006836, y: 27.910957}
+        - {x: -42.006836, y: -5.0890427}
+        - {x: -29.006836, y: -18.089043}
+        - {x: -20.006836, y: -17.089043}
+        - {x: -17.006836, y: -8.089043}
+        - {x: -17.006836, y: -23.089043}
+        - {x: 26.993164, y: -23.089043}
+        - {x: 43.993164, y: -17.089043}
+        - {x: 43.993164, y: 27.910957}
+    - name: fallingplatfrom_7
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 36
+        width: 92
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.109558, y: -5.21233}
+        - {x: 36.10956, y: -15.21233}
+        - {x: 43.10956, y: -6.21233}
+        - {x: 43.10956, y: 18.78767}
+        - {x: 27.109558, y: 26.78767}
+        - {x: -42.89044, y: 26.78767}
+        - {x: -42.89044, y: -17.21233}
+        - {x: -18.890442, y: -26.21233}
+        - {x: 13.109558, y: -26.21233}
+        - {x: 22.109558, y: -10.21233}
+        - {x: 22.109558, y: -6.21233}
+        - {x: 20.109558, y: -4.21233}
+      - - {x: 28.109558, y: -6.21233}
+        - {x: 25.109558, y: -9.21233}
+        - {x: 26.109558, y: -12.21233}
+        - {x: 30.109558, y: -12.21233}
+        - {x: 32.10956, y: -10.21233}
+        - {x: 32.10956, y: -8.21233}
+        - {x: 30.109558, y: -6.21233}
+    - name: fallingplatfrom_9
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 30
+        width: 93
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42.547974, y: 29.239725}
+        - {x: -42.547974, y: -15.760275}
+        - {x: -28.547974, y: -27.760275}
+        - {x: 17.452026, y: -27.760275}
+        - {x: 44.452026, y: -14.760275}
+        - {x: 44.452026, y: 29.239725}
+    - name: fallingplatfrom_10
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 24
+        width: 92
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42.280823, y: 30.19178}
+        - {x: -42.280823, y: -11.80822}
+        - {x: -26.280823, y: -16.80822}
+        - {x: -23.280823, y: -16.80822}
+        - {x: -21.280823, y: -13.80822}
+        - {x: -19.280823, y: -13.80822}
+        - {x: -23.280823, y: -15.80822}
+        - {x: -23.280823, y: -18.80822}
+        - {x: -19.280823, y: -29.80822}
+        - {x: 27.719177, y: -29.80822}
+        - {x: 33.719177, y: -27.80822}
+        - {x: 43.719177, y: -6.80822}
+        - {x: 43.719177, y: 24.19178}
+        - {x: 36.719177, y: 30.19178}
+    - name: fallingplatfrom_11
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 23
+        width: 90
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23.486267, y: 28.767122}
+        - {x: 8.486267, y: 12.767122}
+        - {x: 7.486267, y: 7.7671223}
+        - {x: 11.486267, y: 2.7671223}
+        - {x: 14.486267, y: 2.7671223}
+        - {x: 12.486267, y: 2.7671223}
+        - {x: -7.513733, y: 16.767122}
+        - {x: -36.513733, y: 28.767122}
+        - {x: -39.513733, y: 28.767122}
+        - {x: -41.513733, y: 19.767122}
+        - {x: -41.513733, y: -21.232878}
+        - {x: -22.513733, y: -28.232878}
+        - {x: 31.486267, y: -28.232878}
+        - {x: 42.486267, y: -19.232878}
+        - {x: 42.486267, y: 26.767122}
+        - {x: 41.486267, y: 28.767122}
+    - name: fallingplatfrom_13
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 57
+        width: 94
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 

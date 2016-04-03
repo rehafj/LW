@@ -1431,7 +1431,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 365853887}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -73.319, y: 263.46, z: 0}
+  m_LocalPosition: {x: -73.319, y: 256, z: 0}
   m_LocalScale: {x: 5.302902, y: 5.302906, z: 5.302906}
   m_Children:
   - {fileID: 869126913}
@@ -8292,6 +8292,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prison: {fileID: 0}
+  status: {fileID: 0}
+  myPlayerTest: {fileID: 0}
   img: {fileID: 0}
 --- !u!212 &2064685238
 SpriteRenderer:

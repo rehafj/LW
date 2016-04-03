@@ -4,18 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ground
-  - Player
-  - InsDeath
-  - Dmg
-  - movingPlat
-  - up
-  - down
-  - DestinationPoint
-  - InitialPoint
+  - New Tag
   - Water
-  - spawnner
-  - Ladder
+  - Ground
+  - movingPlat
+  - DestinationPoint
+  - Dmg
+  - InsDeath
   - Enem
   - Right
   - Left
@@ -28,8 +23,6 @@ TagManager:
   - UI
   - 
   - 
-  - player
-  - level
   - ENV
   - 
   - 
@@ -52,7 +45,18 @@ TagManager:
   - 
   - 
   - 
+  - 
+  - 
   m_SortingLayers:
+  - name: BackEndObjects
+    uniqueID: 2185113043
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: frontEnd
+    uniqueID: 2747058049
+    locked: 0
+  - name: Player
+    uniqueID: 1019564691
     locked: 0

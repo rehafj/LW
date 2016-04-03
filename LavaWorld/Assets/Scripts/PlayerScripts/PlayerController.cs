@@ -23,9 +23,18 @@ public enum Directions {right, left, up, down, idle};
 
  public Transform HoseLocation;
  public Rigidbody2D Projectile;
- public int specialAmmo = 0; 
-public Rigidbody2D specialProjectile;
-int chargeTime=0;
+
+ //var used for charing a bullet 
+ public float chargeTime=0;
+ float maxTime=5; 
+ public Rigidbody2D chargedShot;
+ public bool chargedShotReady = false;
+ Rigidbody2D typeofprojectile ;
+
+
+ //these are used to count down based on timer - once reaced resets and counts down 
+ public float coolDownTimer=1;// the lower this is th more bullets on screen at a time 
+ float DownTime =0;
 
 
 Animator anim;
@@ -34,6 +43,8 @@ public bool FoundWater = false; // will acsess this value from  teh water creatu
 float timer =0 ;//this might be used later  for a charge shot 
 	// Use this for initialization
 	void Start () {
+		typeofprojectile =  Projectile;
+
 		//Debug.Log(myDirection);
 		rgd = GetComponent<Rigidbody2D>();
 		rgd.isKinematic = false;
@@ -55,6 +66,8 @@ float timer =0 ;//this might be used later  for a charge shot
 		}
 
 		ShootingDirectionsSwitch();
+		ChargeShot();
+
 		//timer=0;
 	}
 
@@ -142,20 +155,25 @@ float timer =0 ;//this might be used later  for a charge shot
 	/// playing animation based on direction ( and sets up shooting //refavtor this 
 	/// </summary>
 	void ShootingDirectionsSwitch(){
-		if(Input.GetButtonDown("shoot")){
-		timer= timer+ Time.deltaTime;
+	if(DownTime>0)
+			DownTime -= Time.deltaTime;
+
+		else if(Input.GetButtonDown("shoot")){
+			
+			timer= timer+ Time.deltaTime;
+			chargeTime+=Time.deltaTime;
 			switch(myDirection){
 			case  Directions.right : {
 					anim.Play("shoot");
-					ShootPojectile(myDirection); 
+					//ShootPojectile(myDirection); 
 					break;}
 			case Directions.left:{
 					//print("left");
 					anim.Play("shoot");
-					ShootPojectile(myDirection); 
+					//ShootPojectile(myDirection); 
 					break;}
 			case Directions.up:{
-					ShootPojectile(myDirection); 
+					//ShootPojectile(myDirection); 
 					//print("up");
 					break;}
 			case Directions.down:{
@@ -164,23 +182,12 @@ float timer =0 ;//this might be used later  for a charge shot
 					break;}
 
 			default:{
-			//discuss this later - can he shoot wiythout moving?
-			//or in here he charges?
-				//will shot left or right depening on last direction used if idle 
-					ShootPojectile(myDirection); 
-					if(timer>3)
-					{
-					Debug.LogError("held for 3 sec");
-					Debug.LogError("timer s" + timer);
-
-					//play animaiton for charing 
-					//call charge shoot method 
-					//
-
-					}
-					//print("idle");
+		
 					break;	}
+
 							}
+			ShootPojectile(myDirection); 
+
 									}
 			}
 
@@ -192,57 +199,87 @@ float timer =0 ;//this might be used later  for a charge shot
 			/// <summary>
 			/// actually shoots the projectile - this will not work unless the player got the water magical thing
 			//this will be refactored onto the gun as a sperate script - if time 
+			//added diff proj type 
 			/// </summary>
 			/// <param name="direction">takes in the Direction based on key type look up .</param>
+
+//TODO call it useing a pooler 1) 2) add a bullet bbehacior script to move the bullet based on player direciton 3) make it in its own method 
+//TODO refactor code so i dont create 4 colones and just send the value in s(same way i did a charge shot - cleaner) 
 	public void ShootPojectile( Directions direction){
 
-	if( FoundWater){
-	//TODO
-	//if speical ammo >0 create speicla ammo else normal ammo 
-	//make this into a method and clal it here else resume .
-	if(direction == Directions.right){
 
-				Rigidbody2D clone;//created a temp clone of the same type as my bullet 
-				  clone = Instantiate(Projectile, HoseLocation.position, transform.rotation) as Rigidbody2D;//does the coping 
+		setprojectileType();//set the projectile type 
+
+		if( FoundWater){//only shoot if water is avaible 
+			Rigidbody2D clone;
+
+		if(direction == Directions.right){
+
+				//created a temp clone of the same type as my bullet 
+				  clone = Instantiate(typeofprojectile, HoseLocation.position, HoseLocation.transform.rotation) as Rigidbody2D;//does the coping 
         	      clone.velocity = transform.TransformDirection(Vector3.right * 15);//makes it face appropriate direction and adds vel ( speed over time) 
         	      clone.AddForce(clone.transform.right * 10);//gives it that extra push ( force) 
         	      //note gravity scale is set to low on prefab - so it doesnt fire at angles / if needed we can play with it ( its pretty cool ) :D 
 
 	} else if( direction == Directions.left){
-
-			Rigidbody2D clone;
-				  clone = Instantiate(Projectile, HoseLocation.position, transform.rotation) as Rigidbody2D;
+				  clone = Instantiate(typeofprojectile, HoseLocation.position, transform.rotation) as Rigidbody2D;
         	      clone.velocity = transform.TransformDirection(-Vector3.right * 15);
         	      clone.AddForce(clone.transform.right * 10);
 	}
 	else if ( direction == Directions.up){
 
-			Rigidbody2D clone;
-				  clone = Instantiate(Projectile, HoseLocation.position, transform.rotation) as Rigidbody2D;
+				clone = Instantiate(typeofprojectile, HoseLocation.position, transform.rotation) as Rigidbody2D;
         	      clone.velocity = transform.TransformDirection(Vector3.up * 15);
         	      clone.AddForce(clone.transform.right * 10);
 	}
 
-	//THIS IS TEmporary UNTILL WE DEVCE WHAT TO DO 
 	else if(direction == Directions.idle){
-				Rigidbody2D clone;
-				clone = Instantiate(Projectile, HoseLocation.position, transform.rotation) as Rigidbody2D;
+				clone = Instantiate(typeofprojectile, HoseLocation.position, transform.rotation) as Rigidbody2D;
+
 				if(isFacingRight)
 				clone.velocity = transform.TransformDirection(Vector3.right* 15);
 				else 
 					clone.velocity = transform.TransformDirection(-Vector3.right* 15);
 
 			}
+			DownTime = coolDownTimer;
+			chargedShotReady = false;
 	}
 	}
+	 void ChargeShot(){
+	if(Input.GetButton("shoot") && chargeTime<= maxTime){
+			Debug.Log("charging");
+			chargeTime+=Time.deltaTime;
+			if(chargeTime>= maxTime)
+				ReleaseChargeShot( myDirection);
 
-	 void OnEnable(){
-//		print("script is enables");
+			//can remove below if not desired effect - it will reset the charge if player relsaes button ( has to charge again ) 
+		} if( Input.GetButtonUp("shoot")){
+			Debug.Log("button was released");
+				chargeTime=0;
+
+			}
+
+	}
+
+	 void ReleaseChargeShot (Directions direction){
+
+		   Debug.Log("fired charge Shot");
+			chargedShotReady = true;
+		   ShootPojectile(myDirection);
+			chargeTime=0;
 
 	}
 
 
+	void setprojectileType(){
 
+	if (chargedShotReady==true){
+				 typeofprojectile = chargedShot;}
+
+	else{
+				 typeofprojectile = Projectile;}
+				}
 		}//end of class 
 
 //			alternate method and testing 
@@ -254,15 +291,9 @@ float timer =0 ;//this might be used later  for a charge shot
 //think og line cast to check if grouunded - better than comparing the players current velcoty on y 
 //	void OnCollsionEnter2D ( Collider2D coll) {
 //
-//		if( coll.gameObject.tag == "Ground"){
+//		if( coll.gameObject.tag == "Ground"){//if the raycasr is colliding with the ground 
 //		print("emtred coll");
 //			isGrounded = true;
 //			}
 //	}
-//	void OnColsionExit2D(Collision coll){
-//
-//
-//	if( coll.gameObject.tag == "Ground"){
-//			isGrounded = false;
-//			}
-//	}
+

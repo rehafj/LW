@@ -4,21 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ground
-  - Player
-  - InsDeath
-  - Dmg
-  - movingPlat
-  - up
-  - down
-  - DestinationPoint
-  - InitialPoint
-  - Water
-  - spawnner
-  - Ladder
-  - Enem
-  - Right
-  - Left
+  - New Tag
   layers:
   - Default
   - TransparentFX
@@ -28,9 +14,9 @@ TagManager:
   - UI
   - 
   - 
-  - player
-  - level
-  - ENV
+  - 
+  - 
+  - 
   - 
   - 
   - 

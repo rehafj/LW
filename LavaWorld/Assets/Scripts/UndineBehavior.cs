@@ -6,12 +6,14 @@ public class UndineBehavior : MonoBehaviour {
     //remmeber\to deavtivate script and just hide it
 	GameObject myPlayer;//i need ti cgane this 
 	public GameObject prison;
-	PlayerController status;
+	public PlayerController status;
+	public PlayerController myPlayerTest;
 	 Animator Undine;
 	public  Renderer img;
 
 	void Start () {
 		Undine = GetComponent<Animator>();
+		myPlayerTest = FindObjectOfType<PlayerController>();
 		myPlayer = GameObject.FindGameObjectWithTag("Player");
 		status = myPlayer.GetComponent<PlayerController>();
 		img = GetComponent<Renderer>();
@@ -23,12 +25,13 @@ public class UndineBehavior : MonoBehaviour {
 
 
 	void OnTriggerEnter2D( Collider2D coll){
+		//Debug.Log("collided");
 
 	if(coll.gameObject.tag=="Player"){
-			img.enabled = true;
-			//Fungus.SendFungusMessage("Test");
-			//FungusScript.SendFungusMessage("Test");
 			status.FoundWater = true;
+			//myPlayerTest.FoundWater = true;
+			Debug.Log("collided");
+			img.enabled = true;
 			Undine.Play("Undine");
 
 }

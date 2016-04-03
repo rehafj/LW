@@ -7,6 +7,11 @@ public class ShipController : MonoBehaviour {
 	public SpriteRenderer myImg;
 	public int speed =3; 
 	Rigidbody2D rgd;
+
+	public float coolDownTimer=1;								// the lower this is th more bullets on screen at a time 
+ 	float DownTime =0;
+
+
 	// Use this for initialization
 	void Start () {
 	rgd = GetComponent<Rigidbody2D>();
@@ -18,8 +23,12 @@ public class ShipController : MonoBehaviour {
 	void FixedUpdate () {
 
 	MoveTheTruck();
+		if(DownTime>0)
+			DownTime -= Time.deltaTime;
 
-		if( Input.GetButtonDown("shoot")){
+
+		else if( Input.GetButtonDown("shoot")){
+
 			FireBullers();
 		}
 	}
@@ -35,6 +44,7 @@ public class ShipController : MonoBehaviour {
 	temp.transform.rotation = gameObject.transform.rotation;//based on the bullets behavior - 
 	temp.SetActive(true);
 
+		DownTime = coolDownTimer;
 
 	}
 

@@ -196,6 +196,8 @@ MonoBehaviour:
   howMuchDamage: 10
   HitsToDestroy: 8
   instantKill: 0
+  CannotGetHit: 0
+  timetoreswpan: 5
   wasDestroyed: 0
   fireArea: {fileID: 124072, guid: fec65877ce18a456c8139ef487826947, type: 2}
   locations:
@@ -228,6 +230,8 @@ MonoBehaviour:
   howMuchDamage: 10
   HitsToDestroy: 8
   instantKill: 0
+  CannotGetHit: 0
+  timetoreswpan: 5
   wasDestroyed: 0
 --- !u!114 &11492336
 MonoBehaviour:

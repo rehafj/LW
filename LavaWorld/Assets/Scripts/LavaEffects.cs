@@ -15,7 +15,7 @@ public class LavaEffects : MonoBehaviour {
 
 
 	public bool instantKill = false;
-	public bool canGetHit=true;
+	public bool CannotGetHit=false;
 	public float timetoreswpan =5f;
 	public bool wasDestroyed;
 	RespawnerGameObj postion_gameobject;
@@ -54,12 +54,12 @@ void OnTriggerEnter2D( Collider2D coll){
 //
 //	}
 //
-	 if( coll.gameObject.tag=="Water" && canGetHit ==false){
+		if( coll.gameObject.tag=="Water" && CannotGetHit ==false){
 			Debug.Log(" monster was hit and can get hit was false ");
 			HitsToDestroy-=1;
 			DestroyThis();
 	}
-	else if( coll.gameObject.tag=="Water" && canGetHit ==true)
+		else if( coll.gameObject.tag=="Water" && CannotGetHit ==true)
 			Debug.Log(" monster was hit and can get hit was true ");
 
 
@@ -79,12 +79,12 @@ void OnTriggerEnter2D( Collider2D coll){
 
 	}
 
-	else if( coll.gameObject.tag=="Water" && canGetHit ==false){
+		else if( coll.gameObject.tag=="Water" && CannotGetHit ==false){
 			Debug.Log(" monster was hit and can get hit was false ");
 			HitsToDestroy-=1;
 			DestroyThis();
 	}
-		else if( coll.gameObject.tag=="Water" && canGetHit ==true)
+		else if( coll.gameObject.tag=="Water" && CannotGetHit ==true)
 			Debug.Log(" monster was hit and can get hit was true ");
 
 
@@ -107,8 +107,9 @@ public bool RetrunWasDestroyed (){
 public void  ResetEnemValues(){
 		gameObject.SetActive(true);
 		HitsToDestroy = initialHitsToDestory;
+		if(postion_gameobject!=null){
 		postion_gameobject.ResetDefaultpostions();//returns in to its original postion 
-
+		}
 }
 
 

@@ -512,32 +512,17 @@ GameObject:
   - 212: {fileID: 885282959}
   - 50: {fileID: 885282958}
   - 61: {fileID: 885282957}
-  - 114: {fileID: 885282956}
   - 95: {fileID: 885282955}
   - 60: {fileID: 885282954}
   - 114: {fileID: 885282953}
-  - 58: {fileID: 885282952}
-  - 114: {fileID: 885282950}
   - 114: {fileID: 885282951}
   m_Layer: 8
-  m_Name: Finch
+  m_Name: truck
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &885282950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 885282949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8861a1be3d39540b4866c3e370cc15a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentScene: {fileID: 0}
 --- !u!114 &885282951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,21 +537,6 @@ MonoBehaviour:
   Truckimg: {fileID: 21300000, guid: db6343bf5bf064ca6bdbf650ad09cbbb, type: 3}
   myImg: {fileID: 885282959}
   speed: 3
---- !u!58 &885282952
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5876102, guid: 5b91207b8e87e4069b38bea22ac0af29,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 885282949}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -0.08}
-  serializedVersion: 2
-  m_Radius: 0.06373662
 --- !u!114 &885282953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -579,7 +549,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863bb8f3be9b94768901b1057443b998, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Playerinstance: {fileID: 0}
   currentScene: {fileID: 0}
   health: 0
   lives: 0
@@ -590,6 +559,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  RespwanPoint: {x: 0, y: 0, z: 0}
 --- !u!60 &885282954
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -620,7 +590,7 @@ Animator:
   m_GameObject: {fileID: 885282949}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: db686f99bf8bf498ab23869f7effff50, type: 2}
+  m_Controller: {fileID: 9100000, guid: 345be6cc4a67246ffa605744dee490ab, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -628,25 +598,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &885282956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11491014, guid: 5b91207b8e87e4069b38bea22ac0af29,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 885282949}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63daf99b3ee3749198887f0f53f36268, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  jumpStr: 250
-  propelStrength: 480
-  HoseLocation: {fileID: 470154447}
-  Projectile: {fileID: 5049936, guid: c23220e98c78d4054862bbc222360508, type: 2}
-  isFacingRight: 0
-  FoundWater: 0
 --- !u!61 &885282957
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -654,7 +605,7 @@ BoxCollider2D:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 885282949}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: f12575f521b88411ba2ee5d2d518def0, type: 2}
   m_IsTrigger: 0
@@ -707,7 +658,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300030, guid: 7a5355ca52d874d969bbe914cd2a286f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: db6343bf5bf064ca6bdbf650ad09cbbb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

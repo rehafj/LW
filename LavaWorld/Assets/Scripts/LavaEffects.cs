@@ -12,6 +12,7 @@ public class LavaEffects : MonoBehaviour {
 	public int howMuchDamage = 10;
 	public int HitsToDestroy = 3;//i.e. this object's health 
 	public bool instantKill = false;
+	public bool canGetHit=true;
 
 	public bool wasDestroyed;
 
@@ -48,7 +49,7 @@ void OnTriggerEnter2D( Collider2D coll){
 
 	}
 
-	else if( coll.gameObject.tag=="Water"){
+	else if( coll.gameObject.tag=="Water" && canGetHit ==false){
 
 			HitsToDestroy-=1;
 			DestroyThis();
@@ -70,7 +71,7 @@ void OnTriggerEnter2D( Collider2D coll){
 
 	}
 
-	else if( coll.gameObject.tag=="Water"){
+		else if( coll.gameObject.tag=="Water"&& canGetHit ==false){
 
 			HitsToDestroy-=1;
 			DestroyThis();
@@ -83,7 +84,7 @@ void OnTriggerEnter2D( Collider2D coll){
 public void DoDamageToPlayer(){
 
 	 	playerStatusScript.GetDamageFromFire(howMuchDamage);
-		currentController.KnockBack();
+//		currentController.KnockBack();
 }
 
 public bool RetrunWasDestroyed (){

@@ -13,10 +13,11 @@ public class WaterProjectile : MonoBehaviour {
 	/// </summary>
 	/// <param name="coll">Coll.</param>
 	void OnCollisionEnter2D(Collision2D coll){
-		if(coll.gameObject.tag =="Enem" ||coll.gameObject.tag =="Dmg"  || coll.gameObject.tag =="Ground" ){
-				Destroy(gameObject);
+		//if(coll.gameObject.tag =="Enem" ||coll.gameObject.tag =="Dmg"  || coll.gameObject.tag =="Ground" ){
+		if(coll.gameObject.tag!="Player")
+					Destroy(gameObject);
 
-	}}//TODO add behavior to bullets so that they do dmg on contact to objects 
+	}//}//TODO add behavior to bullets so that they do dmg on contact to objects 
 //	void OnTriggerEnter2D(Collider2D coll){
 //		if(coll.gameObject.tag !="Player"){
 //				Destroy(gameObject);

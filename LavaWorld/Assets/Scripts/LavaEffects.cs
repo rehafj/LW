@@ -8,6 +8,7 @@ public class LavaEffects : MonoBehaviour {
 //PlayerStatus MyPlayer;
 	GameObject myPlayer;
 	PlayerStatus playerStatusScript;
+	PlayerController currentController;
 	public int howMuchDamage = 10;
 	public int HitsToDestroy = 3;//i.e. this object's health 
 	public bool instantKill = false;
@@ -19,7 +20,7 @@ public void Start(){
 
 myPlayer = GameObject.FindGameObjectWithTag("Player");
 playerStatusScript = myPlayer.GetComponent<PlayerStatus>();
-
+	currentController = myPlayer.GetComponent<PlayerController>();
 }
 
 void DestroyThis(){
@@ -63,8 +64,9 @@ void OnTriggerEnter2D( Collider2D coll){
 			if(instantKill){
 			playerStatusScript.resetVlues();
 			}
-			else
+			else{
 				DoDamageToPlayer();
+			}
 
 	}
 
@@ -81,8 +83,7 @@ void OnTriggerEnter2D( Collider2D coll){
 public void DoDamageToPlayer(){
 
 	 	playerStatusScript.GetDamageFromFire(howMuchDamage);
-		//Debug.Log("changed health value it is now "+ playerStatusScript.health);
-
+		currentController.KnockBack();
 }
 
 public bool RetrunWasDestroyed (){

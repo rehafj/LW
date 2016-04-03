@@ -31,6 +31,8 @@ GameObject:
   - 60: {fileID: 6028948}
   - 114: {fileID: 11466294}
   - 58: {fileID: 5876102}
+  - 114: {fileID: 11450822}
+  - 114: {fileID: 11466590}
   m_Layer: 8
   m_Name: Finch
   m_TagString: Player
@@ -65,6 +67,8 @@ GameObject:
   - 92: {fileID: 9269432}
   - 124: {fileID: 12420522}
   - 81: {fileID: 8177544}
+  - 114: {fileID: 11472322}
+  - 114: {fileID: 11474730}
   m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -79,7 +83,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 150798}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 308.1, y: -23.3, z: 0}
+  m_LocalPosition: {x: 4.84, y: -23.83, z: 0}
   m_LocalScale: {x: 2.04, y: 2.05, z: 1}
   m_Children:
   - {fileID: 472444}
@@ -202,16 +206,11 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: 0.093208775, y: 0.014436722}
-      - {x: 0.08381404, y: 0.049594402}
-      - {x: 0.04718181, y: 0.085853815}
-      - {x: -0.0044106133, y: 0.11716008}
-      - {x: -0.06404899, y: 0.09953356}
-      - {x: -0.0748516, y: 0.014647484}
-      - {x: -0.1097492, y: 0.03605485}
-      - {x: -0.08534606, y: -0.11132026}
-      - {x: -0.027356192, y: -0.1637342}
-      - {x: 0.06731118, y: -0.16305423}
+    - - {x: -0.19999999, y: 0.275}
+      - {x: -0.19999999, y: -0.275}
+      - {x: 0.19999999, y: -0.275}
+      - {x: 0.19999999, y: 0.265}
+      - {x: 0.19, y: 0.275}
 --- !u!61 &6113524
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -257,6 +256,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11450822
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 150798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4d134b9b1eb496caf321b855d80267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Truckimg: {fileID: 21300000, guid: db6343bf5bf064ca6bdbf650ad09cbbb, type: 3}
+  myImg: {fileID: 21225936}
+  speed: 3
 --- !u!114 &11466294
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -275,11 +288,48 @@ MonoBehaviour:
   Player: {fileID: 421084}
   anim: {fileID: 9571868}
   currentPoint: 0
-  ressetPoint: {fileID: 0}
   checkPoints:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &11466590
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 150798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8861a1be3d39540b4866c3e370cc15a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScene: {fileID: 0}
+--- !u!114 &11472322
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 171164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb9cf0df5514547dfb79213b86b57da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerPostion: {fileID: 0}
+  targetlocation: {x: 0, y: 0, z: 0}
+--- !u!114 &11474730
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 171164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2ead1dddeb40440489993b28dec8447, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test: []
+  spawningThese: []
 --- !u!114 &11491014
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -296,6 +346,8 @@ MonoBehaviour:
   propelStrength: 480
   HoseLocation: {fileID: 472444}
   Projectile: {fileID: 5049936, guid: c23220e98c78d4054862bbc222360508, type: 2}
+  specialAmmo: 0
+  specialProjectile: {fileID: 0}
   isFacingRight: 0
   FoundWater: 0
 --- !u!124 &12420522

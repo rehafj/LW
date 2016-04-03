@@ -1,14 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
-/// <summary>
-/// just for testing
-///added a new comment 
-/// </summary>
-public class Flyer : MonoBehaviour {
 
+public class DebrieBulletBehavior : MonoBehaviour {
+Rigidbody2D myegd;
 	// Use this for initialization
 	void Start () {
-	
+		myegd = GetComponent<Rigidbody2D>();
+
 	}
 	
 	// Update is called once per frame

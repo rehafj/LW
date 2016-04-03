@@ -285,6 +285,10 @@ MonoBehaviour:
   propelStrength: 480
   HoseLocation: {fileID: 68705937}
   Projectile: {fileID: 5049936, guid: c23220e98c78d4054862bbc222360508, type: 2}
+  chargeTime: 0
+  chargedShot: {fileID: 0}
+  chargedShotReady: 0
+  coolDownTimer: 1
   isFacingRight: 0
   FoundWater: 0
 --- !u!61 &382668792
@@ -871,7 +875,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
 --- !u!33 &1141212461
 MeshFilter:
   m_ObjectHideFlags: 0

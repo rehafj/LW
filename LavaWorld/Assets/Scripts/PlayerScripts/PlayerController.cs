@@ -202,6 +202,9 @@ float timer =0 ;//this might be used later  for a charge shot
 	//make this into a method and clal it here else resume .
 	if(direction == Directions.right){
 
+//TODO call it useing a pooler 1) 2) add a bullet bbehacior script to move the bullet based on player direciton 3) make it in its own method 
+
+
 				Rigidbody2D clone;//created a temp clone of the same type as my bullet 
 				  clone = Instantiate(Projectile, HoseLocation.position, transform.rotation) as Rigidbody2D;//does the coping 
         	      clone.velocity = transform.TransformDirection(Vector3.right * 15);//makes it face appropriate direction and adds vel ( speed over time) 

@@ -1299,7 +1299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &525732818
 Transform:
   m_ObjectHideFlags: 0
@@ -1392,6 +1392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prison: {fileID: 0}
+  status: {fileID: 0}
   img: {fileID: 0}
 --- !u!212 &525732823
 SpriteRenderer:
@@ -3214,10 +3215,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 435695309}
   m_Script: {fileID: 11500000, guid: 863bb8f3be9b94768901b1057443b998, type: 3}
---- !u!4 &1120696427 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 421084, guid: 5b91207b8e87e4069b38bea22ac0af29, type: 2}
-  m_PrefabInternal: {fileID: 1290712670}
 --- !u!114 &1120696428 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11418696, guid: f883c8e605ddb49eaaaaa01ead2ab8a5,
@@ -3425,7 +3422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1190095341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3442,7 +3439,7 @@ MonoBehaviour:
   attackDistance: 0
   enemyMovementSpeed: 0
   damping: 0
-  target: {fileID: 1120696427}
+  target: {fileID: 0}
 --- !u!58 &1190095342
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3498,7 +3495,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
 --- !u!1001 &1211455588
 Prefab:
   m_ObjectHideFlags: 0
@@ -4391,7 +4388,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1490786069
 Transform:
   m_ObjectHideFlags: 0

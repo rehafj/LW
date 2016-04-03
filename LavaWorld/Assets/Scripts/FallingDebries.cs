@@ -20,9 +20,11 @@ public int x =1;
 	}
 
 
-	void OnTriggerEnter2D(Collider2D plr){
-		if(plr.gameObject.tag=="Player"){
-	Debug.Log("collided and falling debries start");
+	 
+	//void OnTriggerEnter2D(Collider2D plr){
+	//	if(plr.gameObject.tag=="Player"){
+	void OnBecameVisible() {
+	//Debug.Log("collided and falling debries start");
 
 			InvokeRepeating("InsFallingObjects",0.1f,0.5f);
 			//Instantiate(debries, mytrans.position, Quaternion.identity);
@@ -31,21 +33,32 @@ public int x =1;
 			//Debug.Log(x);
 		
 	}
-	}
+
 
 	void InsFallingObjects(){
 	//x++;
 
-		Instantiate(debries, mytrans.position, Quaternion.identity);
+	GameObject temp = Pooler.currentPoller.ReturnEnemyBullets();//gives acses to the ppoo for the ginafwm 
+
+	if(temp==null)
+	return ;
+
+	temp.transform.position = gameObject.transform.position;
+	temp.transform.rotation = gameObject.transform.rotation;//based on the bullets behavior - 
+	temp.SetActive(true);
+
+
+	//	Instantiate(debries, mytrans.position, Quaternion.identity);
 
 	}
 
 
 
-	void OnTriggerExit2D(Collider2D plr){
-		if(plr.gameObject.tag=="Player"){
+	//void OnTriggerExit2D(Collider2D plr){
+	//	if(plr.gameObject.tag=="Player"){
+	void OnBecameInvisible() {
+
 
 		CancelInvoke("InsFallingObjects");
 		}
 	}
-}

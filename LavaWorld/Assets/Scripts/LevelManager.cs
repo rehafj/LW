@@ -63,8 +63,8 @@ print("moved to next level");
 	if(number<3){//less than three levels // remmeber to change this depending on how we orginize the levels so far lelv 1 is 0 bh is 1 and lvl 2 is 2 - with menue this will change 
 			currentScene += number;
 				SceneManager.LoadScene(currentScene);
-				playerScript.manageScripts();
-				Player.transform.position =  new Vector3(0,0,0);
+//				playerScript.manageScripts();
+			//	Player.transform.position =  new Vector3(0,0,0);
 
 		}
 		}

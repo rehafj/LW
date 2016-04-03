@@ -9,28 +9,33 @@ public class LavaEffects : MonoBehaviour {
 	GameObject myPlayer;
 	PlayerStatus playerStatusScript;
 	PlayerController currentController;
-	public int howMuchDamage = 10;
-	public int HitsToDestroy = 3;//i.e. this object's health 
+	public int howMuchDamage = 10;					
+	public int HitsToDestroy = 3;		 int initialHitsToDestory;
+	//i.e. this object's health
+
+
 	public bool instantKill = false;
 	public bool canGetHit=true;
-
+	public float timetoreswpan =5f;
 	public bool wasDestroyed;
-
+	RespawnerGameObj postion_gameobject;
 
 public void Start(){
 
 myPlayer = GameObject.FindGameObjectWithTag("Player");
-playerStatusScript = myPlayer.GetComponent<PlayerStatus>();
-	currentController = myPlayer.GetComponent<PlayerController>();
+playerStatusScript = myPlayer.GetComponent<PlayerStatus>();//TO MANAGE PLAYER HEALTH 
+currentController = myPlayer.GetComponent<PlayerController>();//FOR KNOCKBACK 
+initialHitsToDestory = HitsToDestroy;
+postion_gameobject = GetComponent<RespawnerGameObj>();
+
 }
 
 void DestroyThis(){
 	if(HitsToDestroy<=0){
-		//add playing animaiton/explotion steam whatever - public so we can modify it based on current item  
 			wasDestroyed = true;
 
-		//Destroy(gameObject, 1);
 		gameObject.SetActive(false);
+		Invoke ("ResetEnemValues", timetoreswpan);
 	}
 		else 
 		wasDestroyed = false;
@@ -39,21 +44,24 @@ void DestroyThis(){
 
 void OnTriggerEnter2D( Collider2D coll){
 
-	if(coll.gameObject.tag=="Player"){
-			
-			if(instantKill){
-			playerStatusScript.resetVlues();
-			}
-			else
-				DoDamageToPlayer();
-
-	}
-
-	else if( coll.gameObject.tag=="Water" && canGetHit ==false){
-
+//	if(coll.gameObject.tag=="Player"){
+//			
+//			if(instantKill){
+//			playerStatusScript.resetVlues();
+//			}
+//			else
+//				DoDamageToPlayer();
+//
+//	}
+//
+	 if( coll.gameObject.tag=="Water" && canGetHit ==false){
+			Debug.Log(" monster was hit and can get hit was false ");
 			HitsToDestroy-=1;
 			DestroyThis();
 	}
+	else if( coll.gameObject.tag=="Water" && canGetHit ==true)
+			Debug.Log(" monster was hit and can get hit was true ");
+
 
 }
 
@@ -71,16 +79,20 @@ void OnTriggerEnter2D( Collider2D coll){
 
 	}
 
-		else if( coll.gameObject.tag=="Water"&& canGetHit ==false){
-
+	else if( coll.gameObject.tag=="Water" && canGetHit ==false){
+			Debug.Log(" monster was hit and can get hit was false ");
 			HitsToDestroy-=1;
 			DestroyThis();
 	}
+		else if( coll.gameObject.tag=="Water" && canGetHit ==true)
+			Debug.Log(" monster was hit and can get hit was true ");
+
 
 }
 
 
-//chaneg this inside the player script status  - better anbd change ti to recive dmg -> invoke it from here 
+
+//chaneg this inside the player script status  - better anbd change ti to recive dmg -> call it from here 
 public void DoDamageToPlayer(){
 
 	 	playerStatusScript.GetDamageFromFire(howMuchDamage);
@@ -91,5 +103,14 @@ public bool RetrunWasDestroyed (){
 
 		return wasDestroyed;
 }
+
+public void  ResetEnemValues(){
+		gameObject.SetActive(true);
+		HitsToDestroy = initialHitsToDestory;
+		postion_gameobject.ResetDefaultpostions();//returns in to its original postion 
+
+}
+
+
 
 }

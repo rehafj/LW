@@ -64,12 +64,12 @@ public class Blob : MonoBehaviour {
 			Debug.Log("setting to false");
 			yield return new WaitForSeconds(waitTime);
 			canMove = false;
-			ThisEnemiesVulnrability.canGetHit = false;
+			ThisEnemiesVulnrability.canGetHit = true;
 		}
 		else if(!canMove){
 			yield return new WaitForSeconds(waitTime);
 			canMove = true;
-			ThisEnemiesVulnrability.canGetHit = true;
+			ThisEnemiesVulnrability.canGetHit = false;
 			Debug.Log("setting to true");
 
 			}

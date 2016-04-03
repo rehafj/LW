@@ -16,10 +16,10 @@ Rigidbody2D initialRidgidbody;
 	void Start () {
 	//instance = GetComponent<GameObject>();
 
-	if(this.isActiveAndEnabled== true){
-	gameObject.SetActive(false);
-
-	}
+//	if(this.isActiveAndEnabled== true){
+//	gameObject.SetActive(false);
+//
+//	}
 	iniitalPostion = transform.position;
 	initialRotation = transform.rotation;
 	intialScale = transform.localScale;
@@ -37,7 +37,7 @@ Rigidbody2D initialRidgidbody;
 	}
 
 
-	public void ResetDefault(){
+	public void ResetDefaultpostions(){
 
 	transform.position = iniitalPostion;
 	initialRotation = transform.rotation;

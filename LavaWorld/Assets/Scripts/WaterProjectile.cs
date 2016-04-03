@@ -16,7 +16,7 @@ public class WaterProjectile : MonoBehaviour {
 		if(coll.gameObject.tag =="Enem" ||coll.gameObject.tag =="Dmg"  || coll.gameObject.tag =="Ground" ){
 				Destroy(gameObject);
 
-	}}
+	}}//TODO add behavior to bullets so that they do dmg on contact to objects 
 //	void OnTriggerEnter2D(Collider2D coll){
 //		if(coll.gameObject.tag !="Player"){
 //				Destroy(gameObject);

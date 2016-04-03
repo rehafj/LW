@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - New Tag
+  - Water
+  - Ground
+  - movingPlat
+  - DestinationPoint
+  - Dmg
+  - InsDeath
+  - Enem
   layers:
   - Default
   - TransparentFX
@@ -14,7 +21,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - ENV
   - 
   - 
   - 

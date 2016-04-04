@@ -3,17 +3,19 @@ using System.Collections;
 
 public class FlyingEnemyMove : MonoBehaviour
 {
-    private PlayerController thePlayer;
+    public PlayerController thePlayer;
     public float moveSpeed;
     public float playerRange;
     public LayerMask playerLayer;
     public bool playerInrange;
+    public Rigidbody2D rgd;
 
     // Use this for initialization
     void Start()
     {
         //finds the player controller to make sure there is a player
         thePlayer = FindObjectOfType<PlayerController>();
+		rgd = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -22,10 +24,12 @@ public class FlyingEnemyMove : MonoBehaviour
         //will only attack in range of player, as long as the player is on the player layer
         playerInrange = Physics2D.OverlapCircle(transform.position, playerRange, playerLayer);
         if (playerInrange)
-        {
+        {rgd.isKinematic = false;
             //will move towards the player if player controller object is found
             transform.position = Vector3.MoveTowards(transform.position, thePlayer.transform.position, moveSpeed * Time.deltaTime);
 
+        } else if ( !playerInrange){
+			rgd.isKinematic = true;
         }
 
     }

@@ -29,7 +29,7 @@ GameObject:
   - 4: {fileID: 466770}
   m_Layer: 0
   m_Name: Tile Layer 1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,7 +82,7 @@ GameObject:
   - 4: {fileID: 470484}
   m_Layer: 0
   m_Name: Tile Layer 2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

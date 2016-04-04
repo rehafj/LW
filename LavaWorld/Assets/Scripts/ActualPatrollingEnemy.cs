@@ -11,8 +11,8 @@ public class ActualPatrollingEnemy : MonoBehaviour
     public LayerMask whatIsWalled;
     private bool hittingWall;
 
-    private bool notAtEdge;
-    public Transform edgeCheck;
+    //private bool notAtEdge;
+  //  public Transform edgeCheck;
 
 
 
@@ -24,34 +24,44 @@ public class ActualPatrollingEnemy : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //this is the magic that determines whether there is a wall in front of the patrolling enemy
         hittingWall = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, whatIsWalled);
+        Debug.Log(hittingWall );
 
-        //this is to check if the enemy is on the edge, and will make it turn back
-        notAtEdge = Physics2D.OverlapCircle(edgeCheck.position, wallCheckRadius, whatIsWalled);
-
-        //an empty child must be created called "wall check" and "edge check" in order for it to be used properly
-        //this is basically the collider that Josh was talking about so that it goes off of walls and such
-        //this wall check whould be moved so that it will collide with a wall
-        //this edge check should be moved so that it will collide with the ground (left bottom corner)
-        if (hittingWall || !notAtEdge)
+		if (hittingWall )//|| !notAtEdge
         {
-            moveRight = !moveRight;
-        }
+           moveRight = !moveRight;
+           } 
+     
+
+      //  }
 
         //this is the code that will simply make the enemy move, we need to add more magic to make it do a check
-        if (moveRight)
+        if (moveRight == true)
         {
             transform.localScale = new Vector3(-1f, 1f, 1f);
             GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
         }
-        else
+        else if( moveRight ==false)
         {
             transform.localScale = new Vector3(1f, 1f, 1f);
             GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
         }
     }
+
+	IEnumerator SetDirection(float waitTime) {
+				moveRight = false;
+
+        yield return new WaitForSeconds(waitTime);
+      
+    }
+
+//    public void SetDirection(){
+//		moveRight = !moveRight;
+//	
+//	}
+
 }
 

@@ -32,7 +32,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 146252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 1, z: 0}
+  m_LocalPosition: {x: -0, y: 9.559, z: 0}
   m_LocalScale: {x: 1.7897775, y: 1.7897775, z: 1.7897775}
   m_Children: []
   m_Father: {fileID: 0}
@@ -113,6 +113,8 @@ MonoBehaviour:
   howMuchDamage: 10
   HitsToDestroy: 3
   instantKill: 0
+  CannotGetHit: 0
+  timetoreswpan: 5
   wasDestroyed: 0
 --- !u!114 &11437948
 MonoBehaviour:

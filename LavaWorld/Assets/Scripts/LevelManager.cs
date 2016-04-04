@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 /// we will use this to move from level to level soon 
 /// this script should presist and not have duplicate copies so it cpuld manage the level we are in 
 /// </summary>
-
+//TODO fix this script 
 public class LevelManager : MonoBehaviour {
 
 ////current level
@@ -22,7 +22,6 @@ void Start(){
 ///or add a check not to check for the player on level 0-4 (gameoever an dmenue ) or add the player for fun!
 	 Player = GameObject.FindGameObjectWithTag("Player");
 //	 Debug.Log(Player.name);
-	 playerScript = Player.GetComponent<ScriptController>();
 	 playerInstance = Player.GetComponent<PlayerStatus>();//going to check this inside payer class - 
 	 initialPostion = Player.GetComponent<Transform>();
 
@@ -63,20 +62,18 @@ print("moved to next level");
 	if(number<3){//less than three levels // remmeber to change this depending on how we orginize the levels so far lelv 1 is 0 bh is 1 and lvl 2 is 2 - with menue this will change 
 			currentScene += number;
 				SceneManager.LoadScene(currentScene);
-				playerScript.manageScripts();
-				Player.transform.position =  new Vector3(0,0,0);
 
 		}
 		}
 public void  GameOver(){
 		print("moved to gameo ver");
 
-		//if(playerInstance.lives<=0){
+		if(playerInstance.lives<=0){
 			playerInstance.resetVlues();
 			SceneManager.LoadScene(4);
 			GameObject.Destroy(Player);
 
-
+			}
 		//}
 
 }//add something else to check win screen ot loose screen 

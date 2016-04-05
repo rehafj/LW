@@ -28,7 +28,7 @@ public class ActualPatrollingEnemy : MonoBehaviour
     {
         //this is the magic that determines whether there is a wall in front of the patrolling enemy
         hittingWall = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, whatIsWalled);
-        Debug.Log(hittingWall );
+//        Debug.Log(hittingWall );
 
 		if (hittingWall )//|| !notAtEdge
         {

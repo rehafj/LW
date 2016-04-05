@@ -33,12 +33,13 @@ public class Pooler : MonoBehaviour {
 
 
 	///intilize enemy bullet list and creat them - set them to deactive 
-		EnemyBullets = new GameObject[Size];
-		for( int i = 0; i< Size; i++){
-			GameObject temp = Instantiate(EnemyBullet);//create an instance of an pbject 
-			temp.SetActive(false);
-			EnemyBullets[i] = temp;//add it to the array 
-	}
+	CreateEnemyBullets();
+//		EnemyBullets = new GameObject[Size];
+//		for( int i = 0; i< Size; i++){
+//			GameObject temp = Instantiate(EnemyBullet);//create an instance of an pbject 
+//			temp.SetActive(false);
+//			EnemyBullets[i] = temp;//add it to the array 
+//	}
 		///intilize Player bullet list and creat them - set them to deactive 
 
 		playerBullets = new GameObject[20];
@@ -61,7 +62,7 @@ public class Pooler : MonoBehaviour {
 	}
 	
 
-	public GameObject ReturnEnemyBullets(){
+	public virtual GameObject ReturnEnemyBullets(){
 		for( int i = 0 ; i< EnemyBullets.Length; i++){
 
 			if(!EnemyBullets[i].activeInHierarchy)//if its not active in herarcy 
@@ -108,6 +109,26 @@ public class Pooler : MonoBehaviour {
 
 
 
+
+	public virtual void CreateEnemyBullets(){
+		EnemyBullets = new GameObject[Size];
+		for( int i = 0; i< Size; i++){
+			GameObject temp = Instantiate(EnemyBullet);//create an instance of an pbject 
+			temp.SetActive(false);
+			EnemyBullets[i] = temp;//add it to the array 
+	}}
+	public virtual void CreateEnemyBullets( GameObject x){
+		EnemyBullets = new GameObject[Size];
+		for( int i = 0; i< Size; i++){
+			GameObject temp = Instantiate(EnemyBullet);//create an instance of an pbject 
+			temp.SetActive(false);
+			EnemyBullets[i] = temp;//add it to the array 
+	
+	}
+
+
+
+	}
 
 
 }

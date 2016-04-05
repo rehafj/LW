@@ -9,6 +9,9 @@ public class FlyingEnemyMove : MonoBehaviour
     public LayerMask playerLayer;
     public bool playerInrange;
     public Rigidbody2D rgd;
+    public Animator anim;
+    Vector3 InitalPostion;
+   
 
     // Use this for initialization
     void Start()
@@ -16,20 +19,24 @@ public class FlyingEnemyMove : MonoBehaviour
         //finds the player controller to make sure there is a player
         thePlayer = FindObjectOfType<PlayerController>();
 		rgd = GetComponent<Rigidbody2D>();
+		anim = GetComponent<Animator>();
+		InitalPostion = GetComponent<Transform>().position;
     }
 
     // Update is called once per frame
     void Update()
-    {
+	{	
         //will only attack in range of player, as long as the player is on the player layer
         playerInrange = Physics2D.OverlapCircle(transform.position, playerRange, playerLayer);
         if (playerInrange)
-        {rgd.isKinematic = false;
+		{	anim.SetBool("Moving", true);
             //will move towards the player if player controller object is found
             transform.position = Vector3.MoveTowards(transform.position, thePlayer.transform.position, moveSpeed * Time.deltaTime);
 
         } else if ( !playerInrange){
-			rgd.isKinematic = true;
+				anim.SetBool("Moving", true);
+
+			gameObject.transform.position = InitalPostion;
         }
 
     }

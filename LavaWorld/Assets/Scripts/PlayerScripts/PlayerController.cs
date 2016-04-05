@@ -224,14 +224,14 @@ void Start () {
 																/// </summary>
 	 void ChargeShot(){
 	if(Input.GetButton("shoot") && chargeTime<= maxTime){
-			Debug.Log("charging");
+//			Debug.Log("charging");
 			chargeTime+=Time.deltaTime;
 			if(chargeTime>= maxTime)
 				ReleaseChargeShot( myDirection);
 
 		}
 	 if( Input.GetButtonUp("shoot")){
-			Debug.Log("button was released");
+//			Debug.Log("button was released");
 			chargeTime=0;
 
 			}

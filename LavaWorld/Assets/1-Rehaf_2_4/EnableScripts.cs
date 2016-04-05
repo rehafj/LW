@@ -18,11 +18,12 @@ int TimesVisble = 0;
 	void OnBecameVisible() {
 		TimesVisble+=1;
 
-		if(TimesVisble==1){//so it does not call it each frame - will slow it down 
+		if(TimesVisble==1){//so it does not call it each frame - will slow it down NVM onbecameivisble works once triggred does not call evryframe
 			EnableScriptsAttached();
 			TimesVisble=2;
 		
-		}print("in onbecame visbale ");
+		}
+		//print("in onbecame visbale ");
 
 
 	}

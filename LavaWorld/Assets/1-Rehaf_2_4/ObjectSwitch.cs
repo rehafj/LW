@@ -16,6 +16,7 @@ public class ObjectSwitch : MonoBehaviour {
 	public Vector3 Oldmyscale;
 	public Vector3 newScaled;
 
+	public  float waitTime=8;
 	// Use this for initialization
 	void Start () {
 	mysprite = gameObject.GetComponent<SpriteRenderer>().sprite;
@@ -48,7 +49,7 @@ public class ObjectSwitch : MonoBehaviour {
 			Debug.Log("hitviawater");
 			if ( current.HitsToDestroy < (tempHealth)){
 
-				StartCoroutine("changeGameObject",0.2f);
+				StartCoroutine("changeGameObject",waitTime);
 								current.HitsToDestroy = tempHealth;
 			}
 
@@ -68,7 +69,7 @@ public class ObjectSwitch : MonoBehaviour {
 		current.howMuchDamage = 0;
 		rgd.constraints = RigidbodyConstraints2D.FreezeAll;
 		colliderEdges.size = platform.bounds.size;
-		yield return new WaitForSeconds(5f);
+		yield return new WaitForSeconds(waitTime);
 		colliderEdges.size = initialSprite.bounds.size;
 		mysprite= initialSprite;
 		//current.enabled = false;

@@ -14,7 +14,7 @@ public class ActualPatrollingEnemy : MonoBehaviour
     //private bool notAtEdge;
   //  public Transform edgeCheck;
 
-
+  ///move this to a genric script that plays animations - maybe if alopt 
 
     //on the rigid body 2d, add a fixed angle so he doesn't rotate and a circle collider for reasons
     // Use this for initialization

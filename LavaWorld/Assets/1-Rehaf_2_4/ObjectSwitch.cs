@@ -16,6 +16,7 @@ public class ObjectSwitch : MonoBehaviour {
 	public Vector3 Oldmyscale;
 	public Vector3 newScaled;
 
+	public Animator anim;
 	public  float waitTime=8;
 	// Use this for initialization
 	void Start () {
@@ -31,6 +32,9 @@ public class ObjectSwitch : MonoBehaviour {
 	//Oldmyscale = gameObject.transform.localScale;
 
 	colliderEdges = GetComponent<BoxCollider2D>();
+
+	anim = GetComponent<Animator>();
+	anim.SetBool("moving",true);
 //		myscale.x = colliderEdges.size.x;
 //		myscale.y = colliderEdges.size.y;
 //
@@ -61,6 +65,8 @@ public class ObjectSwitch : MonoBehaviour {
 	IEnumerator changeGameObject(float waitTime) {
        // yield return new WaitForSeconds(2f);
         Debug.Log("EnteredIenmuerator");
+        //anim.SetBool("moving",false);
+        anim.enabled = false;
         ///ask about htis - does not recive it unles i get componenet but doing it this way is too taxting ?
         gameObject.GetComponent<SpriteRenderer>().sprite = platform;
 		//mysprite = platform;
@@ -70,6 +76,9 @@ public class ObjectSwitch : MonoBehaviour {
 		rgd.constraints = RigidbodyConstraints2D.FreezeAll;
 		colliderEdges.size = platform.bounds.size;
 		yield return new WaitForSeconds(waitTime);
+
+		anim.enabled = true;
+
 		colliderEdges.size = initialSprite.bounds.size;
 		mysprite= initialSprite;
 		//current.enabled = false;

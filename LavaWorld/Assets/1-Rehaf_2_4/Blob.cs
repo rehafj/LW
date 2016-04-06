@@ -15,13 +15,13 @@ public class Blob : MonoBehaviour {
 	public float expandedColliderSize = 1.5f;
 	public bool canMove;
 	LavaEffects ThisEnemiesVulnrability;
-
+	Animator anim;
 	void Start () {
 	rgd = GetComponent<Rigidbody2D>();
 	mycol = GetComponent<BoxCollider2D>();
 	initialSize = mycol.size; //save the current colider size 
 	ThisEnemiesVulnrability = GetComponent<LavaEffects>();
-
+	anim.GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -32,12 +32,16 @@ public class Blob : MonoBehaviour {
 		StartCoroutine(WaitAndMove(waitTimr));
 
 	if(canMove){
+			//anim.SetBool("attack",false);
+
 		if(movingtowardEnd){
 				rgd.velocity = new Vector3(speed , rgd.velocity.y, 0f);
 		} 
 		else if ( !movingtowardEnd){
 			rgd.velocity = new Vector3(-speed ,rgd.velocity.y , 0f);
 			}
+			//anim.SetBool("attack",true);
+
 			}
 	}
 
@@ -67,6 +71,8 @@ public class Blob : MonoBehaviour {
 			ThisEnemiesVulnrability.CannotGetHit = true;
 		}
 		else if(!canMove){
+			//anim.SetBool("attack",false);
+
 			yield return new WaitForSeconds(waitTime);
 			canMove = true;
 			ThisEnemiesVulnrability.CannotGetHit = false;

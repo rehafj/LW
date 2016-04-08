@@ -21,7 +21,7 @@ public class Blob : MonoBehaviour {
 	mycol = GetComponent<BoxCollider2D>();
 	initialSize = mycol.size; //save the current colider size 
 	ThisEnemiesVulnrability = GetComponent<LavaEffects>();
-	anim.GetComponent<Animator>();
+	//anim.GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame

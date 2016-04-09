@@ -623,7 +623,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentScene: 0
   myPlayerHealth: 100
-  myPlayerLives: 8
+  myPlayerLives: 3
 --- !u!1 &1175452181
 GameObject:
   m_ObjectHideFlags: 0

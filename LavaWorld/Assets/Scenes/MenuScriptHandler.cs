@@ -53,6 +53,7 @@ public class MenuScriptHandler : MonoBehaviour {
 
 
     public void PlayAgain(){
+    mylevelInstace.currentScene= 0;
 		SceneManager.LoadScene(0);
 
     }

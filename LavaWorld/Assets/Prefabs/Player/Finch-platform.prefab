@@ -44,6 +44,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 401412}
+  - 58: {fileID: 5884748}
   m_Layer: 0
   m_Name: GroundCheck
   m_TagString: Untagged
@@ -82,7 +83,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 102142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 287.9, y: -133, z: 0}
+  m_LocalPosition: {x: 462, y: -168, z: 0}
   m_LocalScale: {x: 2.04, y: 2.05, z: 1}
   m_Children:
   - {fileID: 404802}
@@ -120,6 +121,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.08}
   serializedVersion: 2
   m_Radius: 0.06373662
+--- !u!58 &5884748
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164576}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.07
 --- !u!95 &9504896
 Animator:
   serializedVersion: 3
@@ -152,12 +167,17 @@ MonoBehaviour:
   jumpStr: 300
   propelStrength: 540
   isFacingRight: 0
+  groundChecker: {fileID: 401412}
+  checkRadius: 0
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 256
   HoseLocation: {fileID: 404802}
   Projectile: {fileID: 5049936, guid: c23220e98c78d4054862bbc222360508, type: 2}
   chargeTime: 0
   chargedShot: {fileID: 5032748, guid: aecfd9d684b4e4673adbe54603196f2a, type: 2}
   coolDownTimer: 1
-  FoundWater: 0
+  FoundWater: 1
   knockbackforce: 100
   lengthKnock: 2
   knockcounter: 0.5

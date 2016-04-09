@@ -18,7 +18,7 @@ LevelManager lvl;
 
 	if(timer<=0){
 	timer=60;
-	lvl.MoveToNextLevel(1);
+	lvl.MoveToNextLevel();
 	//lvl.GameOver();
 	}
 	}

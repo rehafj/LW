@@ -94,16 +94,16 @@ public class Pooler : MonoBehaviour {
 
 	public GameObject returnRandomEnmey(){
 		for( int i = 0 ; i< enemiesTypes.Length; i++){
-		Debug.Log(i+ "is the index of I");
+	//	Debug.Log(i+ "is the index of I");
 			for(int j = 0 ; j<enemiesTypes.Length ; j++){
-				Debug.Log(j+ "is the index of J");
+//				Debug.Log(j+ "is the index of J");
 
 				if(!enemiesTypes[i].activeInHierarchy)//if its not active in herarcy 
 			//return the pooled object to return it 
 					return enemiesTypes[i];
 	}
 	}
-	Debug.Log("no enemy - null ");
+//	Debug.Log("no enemy - null ");
 	return null;
 		}
 

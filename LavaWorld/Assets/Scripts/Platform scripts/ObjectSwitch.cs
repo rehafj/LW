@@ -63,8 +63,6 @@ public class ObjectSwitch : MonoBehaviour {
 
 
 	IEnumerator changeGameObject(float waitTime) {
-       // yield return new WaitForSeconds(2f);
-        Debug.Log("EnteredIenmuerator");
         //anim.SetBool("moving",false);
         anim.enabled = false;
         ///ask about htis - does not recive it unles i get componenet but doing it this way is too taxting ?

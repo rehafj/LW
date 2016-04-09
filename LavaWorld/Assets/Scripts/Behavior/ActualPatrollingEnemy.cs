@@ -7,6 +7,7 @@ public class ActualPatrollingEnemy : MonoBehaviour
     public bool moveRight;
 
     public Transform wallCheck;
+    public Transform x;
     public float wallCheckRadius;
     public LayerMask whatIsWalled;
     private bool hittingWall;

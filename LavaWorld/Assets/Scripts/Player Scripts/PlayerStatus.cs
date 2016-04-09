@@ -12,7 +12,7 @@ public class PlayerStatus : MonoBehaviour {
 
 	//public   PlayerStatus Playerinstance;
 	public LevelManager currentScene;
-	public static PlayerStatus PlayerinstanceTest;
+	//public static PlayerStatus PlayerinstanceTest;
 	/// player status var 
 	public int health;
 	public int lives;
@@ -29,22 +29,12 @@ public class PlayerStatus : MonoBehaviour {
 
 	void Start(){
 
-//	///these lies are used to transfer the player an dmake sure there are no duplicate co[ies - might move this to scene manager - but i dont need 
-//	// 
-//		if(PlayerinstanceTest!=null){
-//		GameObject.Destroy(gameObject);
-//		}
-//		 else {//instance == nill 
-//		GameObject.DontDestroyOnLoad(gameObject);
-//			PlayerinstanceTest = this;
-//		
-//	}
-//
+
 //
 		 currentScene = FindObjectOfType<LevelManager>();//sets it to scene manager 
 
-		 this.health = 100;
-		 this.lives = 3;
+		health = PlayerPrefs.GetInt("PlayerHealth");;
+		lives = PlayerPrefs.GetInt("PlayerLives");
 		 Player  = GetComponent<Transform>();
 		 anim = GetComponent<Animator>();
 	}
@@ -65,7 +55,8 @@ public class PlayerStatus : MonoBehaviour {
 		if(coll.gameObject.tag == "Dmg"){//refactor to a method - recive dmg and play anaimtaion 
 				//print("dmg - 10");		
 				anim.Play("Dmg");
-				this.health -=10; 		
+				this.health -=10; 
+				//coll. = false;		
 				Destroy(coll.gameObject);
 			}
 
@@ -95,18 +86,12 @@ public class PlayerStatus : MonoBehaviour {
 
 		this.lives-=1;
 		this.health =100;
-		//Debug.Log("player lost a life");
-		//this will be moved to its own script later on ///might use a for loop to triverse depending on how many checkpoints we want -- check with team 
-		//if(currentPoint==0){
-		//	Player.transform.position = checkPoints[0].transform.position;
-	//	//	Debug.Log("at pos 0");}
-	//	else if(currentPoint==1){
-//Player.transform.position = checkPoints[1].transform.position;}
-//	}else
-			//currentScene.GameOver();
-	///will add somehting in scene manager idf lives is less than 0 move to game over screen
 
-	}}//else quit to menue 
+
+	}
+	else 
+		currentScene.GameOver();
+	}//else quit to menue 
 
 	/// <summary>
 	/// this method is used among scriprs that would deal their own damage formual and sends it here to reduce dmg and play anaimtion...etc from one script 
@@ -127,3 +112,24 @@ public class PlayerStatus : MonoBehaviour {
 }
 
 
+//Debug.Log("player lost a life");
+		//this will be moved to its own script later on ///might use a for loop to triverse depending on how many checkpoints we want -- check with team 
+		//if(currentPoint==0){
+		//	Player.transform.position = checkPoints[0].transform.position;
+	//	//	Debug.Log("at pos 0");}
+	//	else if(currentPoint==1){
+//Player.transform.position = checkPoints[1].transform.position;}
+//	}else
+			//currentScene.GameOver();
+	///will add somehting in scene manager idf lives is less than 0 move to game over screen
+	///these lies are used to transfer the player an dmake sure there are no duplicate co[ies - might move this to scene manager - but i dont need 
+//	// 
+//		if(PlayerinstanceTest!=null){
+//		GameObject.Destroy(gameObject);
+//		}
+//		 else {//instance == nill 
+//		GameObject.DontDestroyOnLoad(gameObject);
+//			PlayerinstanceTest = this;
+//		
+//	}
+//

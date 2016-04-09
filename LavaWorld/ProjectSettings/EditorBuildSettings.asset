@@ -8,7 +8,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/NotSureIfInUse/OldThings/Scenes/bulletHELLTEST.unity
   - enabled: 0
-    path: Assets/Scenes/thebreach.unity
+    path: Assets/NotSureIfInUse/OldThings/thebreach.unity
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
   - enabled: 1
     path: Assets/Scenes/newScene.unity
   - enabled: 1
@@ -16,12 +18,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SceneSand.unity
   - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+  - enabled: 0
     path: Assets/NotSureIfInUse/OldThings/Scenes/MainMenu.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/NotSureIfInUse/OldThings/Scenes/levelOne.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/NotSureIfInUse/OldThings/Scenes/GameOver.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Tests/Bri-testingLevel.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/NotSureIfInUse/OldThings/Scenes/LevelOneProto.unity

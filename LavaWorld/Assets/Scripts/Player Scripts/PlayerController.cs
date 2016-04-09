@@ -11,11 +11,15 @@ public enum Directions {right, left, up, down, idle};
  Directions myDirection = Directions.idle;
 
  Rigidbody2D rgd; 
-// bool isGrounded = false;
  public float speed=10;
  public float jumpStr=500;
  public float propelStrength=10;
  public bool isFacingRight;
+
+bool isGrounded = false;
+ public  Transform groundChecker;
+ public float checkRadius;
+ public LayerMask groundMask;
 
 													/*shooting / bullet varibles*/
  public Transform HoseLocation;
@@ -50,9 +54,9 @@ void Start () {
 	
 
 	void FixedUpdate () {
+		isGrounded = Physics2D.OverlapCircle(groundChecker.position, checkRadius, groundMask);
 		MovePlayer();
-								//if(isGrounded)
-		if(rgd.velocity.y==0)//ground check this will change into its own method with casting to check for gound ( better than this ) this is basiclaly checking the y speed of my player( 0) means not up or falling 
+		if(isGrounded)//rgd.velocity.y==0)//ground check this will change into its own method with casting to check for gound ( better than this ) this is basiclaly checking the y speed of my player( 0) means not up or falling 
 		{
 		JumpAction();
 		if(FoundWater){

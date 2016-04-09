@@ -11,30 +11,21 @@ public class UIUpdate : MonoBehaviour {
 	GameObject myPlayer;
 	PlayerStatus playerStatusScript;
 	string healthText = "current health: ";
-	static UIUpdate InstanceOfUI;
+	//static UIUpdate InstanceOfUI;
 
 	//going to change this later 
 	void Start () {
 
-//
-//		if(InstanceOfUI!=null){//it exsits - destory it dont create another o=instacnae //do bnot dupilcate game managers 
-//		GameObject.Destroy(gameObject);
-//		}
-//		else {//instance == nill 
-//		GameObject.DontDestroyOnLoad(gameObject);//do not destoyr teh current gameobject ( i..e scene instance) 
-//			InstanceOfUI = this;}
-//
-
-
-myPlayer = GameObject.FindGameObjectWithTag("Player");
-playerStatusScript = myPlayer.GetComponent<PlayerStatus>();
+//myPlayer = GameObject.FindGameObjectWithTag("Player");
+//playerStatusScript = myPlayer.GetComponent<PlayerStatus>();
+		playerStatusScript= FindObjectOfType<PlayerStatus>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		//healht playerStatusScript.health).ToString;
-
+		//playerStatusScript
 		myhealthText.text =healthText + playerStatusScript.health.ToString() +"\ncurrent lives:"+playerStatusScript.lives.ToString() ;
-
+		//myhealthText.text =	"current lives:"+playerStatusScript.lives.ToString() ;
 	}
 }

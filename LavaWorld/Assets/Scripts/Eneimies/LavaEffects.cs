@@ -44,16 +44,6 @@ void DestroyThis(){
 
 void OnTriggerEnter2D( Collider2D coll){
 
-//	if(coll.gameObject.tag=="Player"){
-//			
-//			if(instantKill){
-//			playerStatusScript.resetVlues();
-//			}
-//			else
-//				DoDamageToPlayer();
-//
-//	}
-//
 		if( coll.gameObject.tag=="Water" && CannotGetHit ==false){
 			Debug.Log(" monster was hit and can get hit was false ");
 			HitsToDestroy-=1;
@@ -63,6 +53,16 @@ void OnTriggerEnter2D( Collider2D coll){
 			Debug.Log(" monster was hit and can get hit was true ");
 
 
+	if(coll.gameObject.tag=="Player"){
+			
+			if(instantKill){
+			playerStatusScript.resetVlues();
+			}
+			else{
+				DoDamageToPlayer();
+			}
+
+	}
 }
 
 
@@ -115,3 +115,14 @@ public void  ResetEnemValues(){
 
 
 }
+
+//	if(coll.gameObject.tag=="Player"){
+//			
+//			if(instantKill){
+//			playerStatusScript.resetVlues();
+//			}
+//			else
+//				DoDamageToPlayer();
+//
+//	}
+//

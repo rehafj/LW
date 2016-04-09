@@ -25,7 +25,7 @@ Rigidbody2D rgb;
 	//	float distance = Vector3.Distance(transform.position, target.transform.position);
 		//if it is less than half te h distance activate round movment 
 	//	if(distance<=offset.y){
-			Debug.Log("distance is close to player");
+//			Debug.Log("distance is close to player");
 			timer += Time.deltaTime;
 			float xpos = Mathf.Cos(timer)* width;
 			float ypos = Mathf.Sin(timer)* height;

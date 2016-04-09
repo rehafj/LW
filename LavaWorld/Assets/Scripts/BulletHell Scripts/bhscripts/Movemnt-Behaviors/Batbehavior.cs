@@ -25,9 +25,9 @@ Animator anim;
 	if(movingRight){
 		//transform.Translate(-Vector3.right * 2 * Time.deltaTime);
 		transform.position+= Vector3.right * speed *Time.deltaTime;
-			Debug.Log("movingRight"+movingRight);
+	//		Debug.Log("movingRight"+movingRight);
 	if(transform.position.x <= maxXpos){
-				Debug.Log("player pos is greater than max X set up");
+//				Debug.Log("player pos is greater than max X set up");
 			 movingRight =false;
 				//transform.Translate(-Vector3.up * 0.5f * Time.deltaTime);
 			}		

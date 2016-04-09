@@ -4,10 +4,10 @@ using UnityEngine.UI;
 //delete this 
 public class Testing : MonoBehaviour {
 public Transform x;
-	WaterProjectile bulletsl;
+	//WaterProjectile bulletsl;
 	// Use this for initialization
 	void Start () {
-	bulletsl = FindObjectOfType<WaterProjectile>();
+//	bulletsl = FindObjectOfType<WaterProjectile>();
 	}
 	
 	// Update is called once per frame

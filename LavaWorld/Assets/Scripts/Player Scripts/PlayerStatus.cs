@@ -63,7 +63,7 @@ public class PlayerStatus : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D coll){
-	Debug.Log("TRIGGER DMG");
+//	Debug.Log("TRIGGER DMG");
 		if(coll.gameObject.tag == "InsDeath"){
 			resetVlues();
 	}

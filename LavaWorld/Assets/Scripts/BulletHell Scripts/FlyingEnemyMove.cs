@@ -11,7 +11,7 @@ public class FlyingEnemyMove : MonoBehaviour
     public Rigidbody2D rgd;
     public Animator anim;
     Vector3 InitalPostion;
-   
+   public RespawnerGameObj pos;
 
     // Use this for initialization
     void Start()
@@ -21,6 +21,7 @@ public class FlyingEnemyMove : MonoBehaviour
 		rgd = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 		InitalPostion = GetComponent<Transform>().position;
+		pos = GetComponent<RespawnerGameObj>();
     }
 
     // Update is called once per frame
@@ -47,4 +48,10 @@ public class FlyingEnemyMove : MonoBehaviour
         //and uncheck the box with this script (FlyingEnemyMove)
         Gizmos.DrawSphere(transform.position, playerRange);
     }
+
+    //temporary fix - c if otgers need it just update it o respawner script but check again how it was used it before
+//	void OnBecameInvisible(){
+//
+//		pos.ResetDefaultpostions();
+//	}
 }

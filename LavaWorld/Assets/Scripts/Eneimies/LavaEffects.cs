@@ -24,7 +24,7 @@ public void Start(){
 
 myPlayer = GameObject.FindGameObjectWithTag("Player");
 playerStatusScript = myPlayer.GetComponent<PlayerStatus>();//TO MANAGE PLAYER HEALTH 
-currentController = myPlayer.GetComponent<PlayerController>();//FOR KNOCKBACK 
+currentController = myPlayer.GetComponent<PlayerController>();//FOR KNOCKBACK Purpose 
 initialHitsToDestory = HitsToDestroy;
 postion_gameobject = GetComponent<RespawnerGameObj>();
 

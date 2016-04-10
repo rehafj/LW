@@ -13,7 +13,7 @@ public class MoveToNextLevel : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D coll){
 	if(coll.gameObject.CompareTag("Player")){
 
-	mamage.MoveToNextLevel();
+		mamage.MoveToNextLevel();
 	}
 
 	}

@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 /// <summary>
 /// this script iwll be used to triverse across levels - so far  just created one method for the menu selection 
-/// we will use this to move from level to level soon 
+/// we will use this to move from level to level soon j
 /// this script should presist and not have duplicate copies so it cpuld manage the level we are in 
 /// </summary>
 //TODO fix this script 
@@ -13,76 +13,75 @@ public class LevelManager : MonoBehaviour {
 public static LevelManager InstanceOfLeve;
 
 PlayerStatus playerInstance;
-public	int currentScene;
+public	int sceneCounter;
 public int myPlayerHealth; 
 public int myPlayerLives;
+public int nextLevel;
 void Awake(){
 		//playerInstance = FindObjectOfType<PlayerStatus>();
+		//Debug.Log("current scene on awake  " +sceneCounter);
+		//Debug.Log("nextlevel scene on awake  " +nextLevel);
 
-}
-void Start(){
-
-
-	if(InstanceOfLeve!=null){//it exsits - destory it dont create another o=instacnae //do bnot dupilcate game managers 
+		if(InstanceOfLeve!=null){//it exsits - destory it dont create another o=instacnae //do bnot dupilcate game managers 
 		GameObject.Destroy(gameObject);
+		Debug.Log("DESTROOYED  INSTANCE");
 		}
 
 	else {//instance == nill 
 		GameObject.DontDestroyOnLoad(gameObject);//do not destoyr teh current gameobject ( i..e scene instance) 
 				InstanceOfLeve = this;
-		//GameObject.DontDestroyOnLoad(Player);
 	}
 
 
-		//if( Player!=null){
-
-
-//if(playerInstance.Playerinstance !=null){//check this out or move it to player script 
-	//	GameObject.Destroy(Player);
-		//	Debug.Log("player instance!=null");
-		//}
-
-	// }
 
 }
-//void Update(){
-//
-////SceneManager.LoadScene(0);
-//
-//}
+void Start(){
+
+
+
+
+}
 
 
 
 public void SetInitialThings(){
-		currentScene++;
 		PlayerPrefs.SetInt("PlayerLives", myPlayerLives);
 		PlayerPrefs.SetInt("PlayerHealth", myPlayerHealth);
 
 }
 
 public void MoveToNextLevel(){
-	//less than three levels // remmeber to change this depending on how we orginize the levels so far lelv 1 is 0 bh is 1 and lvl 2 is 2 - with menue this will change 
-			//currentScene += number;
-			currentScene++;
-
-
+	
 			playerInstance = FindObjectOfType<PlayerStatus>();//ask about this - if i move the scene manager it wont read it on awake unless i have 
 			//un;ess i have other //would it be bad if i had one player.dfind ocated here ? 
-		if(playerInstance != null){
-				Debug.Log("Player lives is " + playerInstance.lives);
+		if(playerInstance != null){//there is a player in the scene 
+			//	Debug.Log("Player lives is " + playerInstance.lives);
 				PlayerPrefs.SetInt("PlayerLives",playerInstance.lives);
 				PlayerPrefs.SetInt("PlayerHealth", playerInstance.health);
-				Debug.Log("setting the thing to player prefs /n health moves is "+ PlayerPrefs.GetInt("PlayerHealth")+"and the lives is" + PlayerPrefs.GetInt("PlayerLives"));
 
 	}
-		else if (playerInstance == null){Debug.Log("player is null");}
+		else {
+			//	Debug.Log("player is null");
+			}
 		//	PlayerPrefs.SetInt("PlayerLives")
 			//Debug.Log("Ceunner scene"+currentScene);
 			//Debug.Log(" number sent over"+number);
-				SceneManager.LoadScene(currentScene);
+			nextLevel=sceneCounter+1;
+			Debug.Log("moving to level"+ nextLevel);
+			SceneManager.LoadScene(nextLevel);
 				//Debug.Log("inside method - increaed curent scene");
 		}
-		 
+//
+//	void OnLevelWasLoaded(){
+//		nextLevel=sceneCounter+1;
+//		if(sceneCounter>4){
+//			sceneCounter=0;
+//
+//		}
+		//Debug.Log("Currnet clip"+currentClip);
+	
+
+
 
 
 		
@@ -93,8 +92,9 @@ public void  GameOver(){
 
 
 public void RestartGame(){
+		sceneCounter=0;
+
 		SceneManager.LoadScene(0);
-		currentScene=0;
 
 
 

@@ -4937,7 +4937,7 @@ GameObject:
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1498294468
 Transform:
   m_ObjectHideFlags: 0
@@ -5231,8 +5231,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1564672268}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 226.8, y: -35.8, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 166.58, y: -106.13, z: 0}
+  m_LocalScale: {x: 0.55497336, y: 0.55497336, z: 0.55497336}
   m_Children: []
   m_Father: {fileID: 2058616277}
   m_RootOrder: 0
@@ -5658,7 +5658,7 @@ Prefab:
     - target: {fileID: 11483286, guid: 80f21cd7c738144d1874a59411d68bfe, type: 2}
       propertyPath: checkPoints.Array.data[0]
       value: 
-      objectReference: {fileID: 1592895699}
+      objectReference: {fileID: 1564672269}
     - target: {fileID: 11483286, guid: 80f21cd7c738144d1874a59411d68bfe, type: 2}
       propertyPath: checkPoints.Array.data[1]
       value: 
@@ -5675,6 +5675,14 @@ Prefab:
       propertyPath: groundChecker
       value: 
       objectReference: {fileID: 185649558}
+    - target: {fileID: 11483286, guid: 80f21cd7c738144d1874a59411d68bfe, type: 2}
+      propertyPath: particleexp
+      value: 
+      objectReference: {fileID: 193296, guid: cbbc8d1d7e73f464282e54684f6f120f, type: 2}
+    - target: {fileID: 11483286, guid: 80f21cd7c738144d1874a59411d68bfe, type: 2}
+      propertyPath: checkPoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 1498294468}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 80f21cd7c738144d1874a59411d68bfe, type: 2}
   m_IsPrefabParent: 0
@@ -6570,7 +6578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2058616277
 Transform:
   m_ObjectHideFlags: 0

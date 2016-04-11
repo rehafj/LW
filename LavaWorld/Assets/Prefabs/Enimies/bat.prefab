@@ -16,7 +16,7 @@ GameObject:
   - 114: {fileID: 11442286}
   - 61: {fileID: 6150776}
   - 95: {fileID: 9507272}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: bat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,6 +114,7 @@ MonoBehaviour:
   playerInrange: 0
   rgd: {fileID: 0}
   anim: {fileID: 0}
+  pos: {fileID: 0}
 --- !u!114 &11442286
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -178,7 +179,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 119858}

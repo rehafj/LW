@@ -11,17 +11,18 @@ public class LevelManager : MonoBehaviour {
 
 ////current level
 public static LevelManager InstanceOfLeve;
-
+int currentScene;
 PlayerStatus playerInstance;
 public	int sceneCounter;
 public int myPlayerHealth; 
 public int myPlayerLives;
 public int nextLevel;
+	public FungusTesting narration;
 void Awake(){
 		//playerInstance = FindObjectOfType<PlayerStatus>();
 		//Debug.Log("current scene on awake  " +sceneCounter);
 		//Debug.Log("nextlevel scene on awake  " +nextLevel);
-
+		Time.timeScale =1;
 		if(InstanceOfLeve!=null){//it exsits - destory it dont create another o=instacnae //do bnot dupilcate game managers 
 		GameObject.Destroy(gameObject);
 		Debug.Log("DESTROOYED  INSTANCE");
@@ -31,6 +32,7 @@ void Awake(){
 		GameObject.DontDestroyOnLoad(gameObject);//do not destoyr teh current gameobject ( i..e scene instance) 
 				InstanceOfLeve = this;
 	}
+		narration = FindObjectOfType<FungusTesting>();
 
 
 
@@ -99,6 +101,9 @@ public void RestartGame(){
 
 
 }
+
+
+
 		//}
 
 }//add something else to check win screen ot loose screen 

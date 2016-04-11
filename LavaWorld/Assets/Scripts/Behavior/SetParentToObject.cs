@@ -13,8 +13,8 @@ public class SetParentToObject : MonoBehaviour {
     }}
 
 	void OnTriggerExit2D(Collider2D other)
-    {
-		other.transform.parent = null;
+	{if(other.gameObject.tag=="Player"){
+		other.transform.parent = null;}
     }}
 
 

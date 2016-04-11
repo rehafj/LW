@@ -20,6 +20,7 @@ public class PlayerStatus : MonoBehaviour {
 	// current player position and animator 
 	public Transform Player ;
 	public Animator anim;
+	public GameObject particleexp;
 
 	 //remove these points - naother ways is better --- add a script that anges check points on player script 
 	public int currentPoint = 0;//current check point pos 
@@ -83,6 +84,8 @@ public class PlayerStatus : MonoBehaviour {
 	if(lives>0){
 		//StartCoroutine("waitAndPlayDeath");
 		anim.Play("IDLE");
+		//StartCoroutine("ResspawnPlayer");
+			ResspawnPlayer();
 
 		this.lives-=1;
 		this.health =100;
@@ -107,6 +110,23 @@ public class PlayerStatus : MonoBehaviour {
 
 	 
 			return health.ToString();
+
+	}
+
+
+	//use this in another script to respawn the player - cant set it deactive here 
+	public void  ResspawnPlayer(){
+	gameObject.SetActive(false);
+		Instantiate(particleexp, gameObject.transform.position, gameObject.transform.rotation);
+		Invoke("setPlayerToActive",5f);
+
+	}
+
+	public void setPlayerToActive(){
+	Debug.Log("in incoke");
+	Player.transform.position= checkPoints[0].transform.position;
+		gameObject.SetActive(true);
+
 
 	}
 }

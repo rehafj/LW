@@ -25,7 +25,7 @@ public class MenuScriptHandler : MonoBehaviour {
 		else 
 		{
 			Debug.LogError("An instance of level manager does now exsist - Resetiing values-will not change across levels");
-			mylevelInstace.currentScene=0;
+			mylevelInstace.sceneCounter=0;
 		PlayerPrefs.SetInt("PlayerLives", 3);
 		PlayerPrefs.SetInt("PlayerHealth", 100);
 
@@ -33,7 +33,10 @@ public class MenuScriptHandler : MonoBehaviour {
 		StartCoroutine(WaitAndMove(2.0F));
 
 	}
-	public void LevelSelect(){}
+	public void InstructionsMenu(){
+
+	SceneManager.LoadScene(6);
+	}
 
 	public void QuitTheGame(){
 	Application.Quit();
@@ -47,13 +50,11 @@ public class MenuScriptHandler : MonoBehaviour {
         yield return new WaitForSeconds(1f);
 
 		SceneManager.LoadScene(1);
-
-
     }
 
 
     public void PlayAgain(){
-    mylevelInstace.currentScene= 0;
+		mylevelInstace.sceneCounter= 0;
 		SceneManager.LoadScene(0);
 
     }

@@ -55,12 +55,14 @@ void Start () {
 
 	void FixedUpdate () {
 		isGrounded = Physics2D.OverlapCircle(groundChecker.position, checkRadius, groundMask);
+//		Debug.Log("AM I ON GROUND ? "+ isGrounded);
 		MovePlayer();
 		if(isGrounded)//rgd.velocity.y==0)//ground check this will change into its own method with casting to check for gound ( better than this ) this is basiclaly checking the y speed of my player( 0) means not up or falling 
 		{
-		JumpAction();
-		if(FoundWater){
-		ProppelPlayer();}
+			Debug.Log("CAN JUMP");
+			JumpAction();
+			if(FoundWater){
+				ProppelPlayer();}
 		}
 		ShootingDirectionsSwitch();
 		ChargeShot();

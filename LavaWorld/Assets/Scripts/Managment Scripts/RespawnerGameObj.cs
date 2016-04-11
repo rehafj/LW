@@ -48,4 +48,10 @@ Rigidbody2D initialRidgidbody;
 			initialRidgidbody.velocity= Vector3.zero;
 		}
 	}
+
+	///CHECK HOW THIS IS USED before if i used this script with naything that resets values if not use below method 
+	void OnBecameInvisible(){
+
+		ResetDefaultpostions();
+	}
 }

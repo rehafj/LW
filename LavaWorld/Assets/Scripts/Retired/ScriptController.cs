@@ -24,7 +24,7 @@ public class ScriptController : MonoBehaviour {
 	// Update is called once per frame
 	public void manageScripts () {
 	//temp sul for testing - wastes things not good 
-	if(currentScene.currentScene == 1){//maybe tmove this to level manager when it checks for scenes as it is called once per trigger - testing only 
+		if(currentScene.sceneCounter == 1){//maybe tmove this to level manager when it checks for scenes as it is called once per trigger - testing only 
 		platfromController.enabled= false;//change this so it does not add but has it as a contant 1-2-3 ..etc ( better incase of replay or resetting - error wil happen otherwise 
 		shipController.enabled = true;
 	}

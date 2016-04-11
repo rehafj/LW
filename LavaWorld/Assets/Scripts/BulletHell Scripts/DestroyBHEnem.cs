@@ -7,7 +7,7 @@ public class DestroyBHEnem : MonoBehaviour {
 	// Use this for initialization
 	void OnEnable () {
 
-	Invoke( "Destroy", 8f);
+	Invoke( "Destroy", 10f);
 	}
 	
 	// Update is called once per frame

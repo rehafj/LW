@@ -7,10 +7,14 @@ public class BhSpawnEnimies : MonoBehaviour {
 	float randomXvalue;
 	public float timer  = 2;
 	float minX, maxX;
+	ShipController myship;
 	void Start () {
+		myship= FindObjectOfType<ShipController>();
 		minX = transform.position.x - 6f;
 		maxX = transform.position.x + 6f;
-		InvokeRepeating("SpawnEnemies",timer,timer);
+		myship.enabled=false;
+		Invoke("startRepeating",10f);
+	//	InvokeRepeating("SpawnEnemies",timer,timer);
 	}
 
 	void OnEnable(){
@@ -38,6 +42,10 @@ public class BhSpawnEnimies : MonoBehaviour {
 
 
 	}
+	void startRepeating(){
+		myship.enabled=true;
+
+	InvokeRepeating("SpawnEnemies",timer,timer);}
 
 
 	void OnDisable() {

@@ -24,7 +24,7 @@ public class MainCameraController : MonoBehaviour {
    /// </summary>
 
    // Update is called once per frame
-   void LateUpdate()
+   void Update()
    {//// if our camera is not a child we can implement ths not oto show the flow but we habe tp scale it right amd this will save the y pos of the camera 
     ///right not its relative to the player 
        targetlocation = new Vector3(PlayerPosition.transform.position.x, transform.position.y, transform.position.z);

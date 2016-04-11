@@ -1,14 +1,11 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: f4ad5a145f7f1324fb4fb1250916b7d5
-timeCreated: 1459308681
-=======
-guid: 9d7dc849c73f44132ae097fd824537a0
-timeCreated: 1459306567
->>>>>>> refs/remotes/origin/master
+timeCreated: 1460341623
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Fire Spitter Bullet Hell-Sheet_0
+    21300002: Fire Spitter Bullet Hell-Sheet_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -31,11 +28,11 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 2048
+  textureFormat: -3
+  maxTextureSize: 512
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -43,7 +40,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -54,7 +51,29 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Fire Spitter Bullet Hell-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 26
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Fire Spitter Bullet Hell-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 28
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 

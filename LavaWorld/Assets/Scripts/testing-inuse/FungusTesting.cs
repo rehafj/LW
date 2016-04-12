@@ -24,6 +24,7 @@ public PlayerController plr;
 	if(coll.gameObject.tag=="Player"){
 				Debug.Log("Collided");
 			SendFungusMessage("FUN");
+		
 			//plr.enabled =false;
 
 }

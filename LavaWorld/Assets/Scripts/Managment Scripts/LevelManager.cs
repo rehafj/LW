@@ -17,7 +17,7 @@ public	int sceneCounter;
 public int myPlayerHealth; 
 public int myPlayerLives;
 public int nextLevel;
-	public FungusTesting narration;
+	//public FungusTesting narration;
 void Awake(){
 		//playerInstance = FindObjectOfType<PlayerStatus>();
 		//Debug.Log("current scene on awake  " +sceneCounter);
@@ -32,7 +32,7 @@ void Awake(){
 		GameObject.DontDestroyOnLoad(gameObject);//do not destoyr teh current gameobject ( i..e scene instance) 
 				InstanceOfLeve = this;
 	}
-		narration = FindObjectOfType<FungusTesting>();
+		//narration = FindObjectOfType<FungusTesting>();
 
 
 

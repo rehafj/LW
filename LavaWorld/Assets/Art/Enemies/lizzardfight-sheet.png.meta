@@ -1,9 +1,68 @@
 fileFormatVersion: 2
 guid: ef2aeba98638046769818d0cf0f34df6
-timeCreated: 1459928383
+timeCreated: 1460423053
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: lizzardfight-sheet_1
+    21300002: lizzardfight-sheet_2
+    21300004: lizzardfight-sheet_3
+    21300006: lizzardfight-sheet_4
+    21300008: lizzardfight-sheet_5
+    21300010: lizzardfight-sheet_6
+    21300012: lizzardfight-sheet_7
+    21300014: lizzardfight-sheet_8
+    21300016: lizzardfight-sheet_9
+    21300018: lizzardfight-sheet_10
+    21300020: lizzardfight-sheet_11
+    21300022: lizzardfight-sheet_12
+    21300024: lizzardfight-sheet_13
+    21300026: lizzardfight-sheet_14
+    21300028: lizzardfight-sheet_15
+    21300030: lizzardfight-sheet_16
+    21300032: lizzardfight-sheet_17
+    21300034: lizzardfight-sheet_18
+    21300036: lizzardfight-sheet_19
+    21300038: lizzardfight-sheet_20
+    21300040: lizzardfight-sheet_21
+    21300042: lizzardfight-sheet_22
+    21300044: lizzardfight-sheet_23
+    21300046: lizzardfight-sheet_24
+    21300048: lizzardfight-sheet_25
+    21300050: lizzardfight-sheet_26
+    21300052: lizzardfight-sheet_27
+    21300054: lizzardfight-sheet_28
+    21300056: lizzardfight-sheet_29
+    21300058: lizzardfight-sheet_30
+    21300060: lizzardfight-sheet_31
+    21300062: lizzardfight-sheet_32
+    21300064: lizzardfight-sheet_33
+    21300066: lizzardfight-sheet_34
+    21300068: lizzardfight-sheet_35
+    21300070: lizzardfight-sheet_36
+    21300072: lizzardfight-sheet_37
+    21300074: lizzardfight-sheet_38
+    21300076: lizzardfight-sheet_39
+    21300078: lizzardfight-sheet_40
+    21300080: lizzardfight-sheet_41
+    21300082: lizzardfight-sheet_42
+    21300084: lizzardfight-sheet_43
+    21300086: lizzardfight-sheet_44
+    21300088: lizzardfight-sheet_45
+    21300090: lizzardfight-sheet_46
+    21300092: lizzardfight-sheet_47
+    21300094: lizzardfight-sheet_48
+    21300096: lizzardfight-sheet_49
+    21300098: lizzardfight-sheet_50
+    21300100: lizzardfight-sheet_51
+    21300102: lizzardfight-sheet_52
+    21300104: lizzardfight-sheet_53
+    21300106: lizzardfight-sheet_54
+    21300108: lizzardfight-sheet_55
+    21300110: lizzardfight-sheet_56
+    21300112: lizzardfight-sheet_57
+    21300114: lizzardfight-sheet_58
+    21300116: lizzardfight-sheet_59
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -27,7 +86,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
-  maxTextureSize: 1024
+  maxTextureSize: 512
   textureSettings:
     filterMode: 0
     aniso: 16
@@ -38,7 +97,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +108,656 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: lizzardfight-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 176
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 176
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 176
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 176
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 176
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 176
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 176
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 176
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 176
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 176
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 176
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1955
+        y: 176
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 176
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 176
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_15
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 176
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2591
+        y: 176
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2751
+        y: 176
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 176
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 163
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_20
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 163
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_21
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 163
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_22
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 163
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_23
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 163
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_24
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 163
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_25
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 163
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 163
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 163
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 163
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 163
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 163
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1955
+        y: 163
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_32
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 163
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_33
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 163
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_34
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 163
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_35
+      rect:
+        serializedVersion: 2
+        x: 2591
+        y: 163
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_36
+      rect:
+        serializedVersion: 2
+        x: 2751
+        y: 163
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_37
+      rect:
+        serializedVersion: 2
+        x: 2916
+        y: 163
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_38
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 57
+        width: 101
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_39
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 57
+        width: 102
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_40
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 57
+        width: 102
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_41
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 57
+        width: 102
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_42
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 57
+        width: 108
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_43
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 57
+        width: 102
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 57
+        width: 108
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 57
+        width: 108
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_46
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 57
+        width: 115
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_47
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 94
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_48
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 57
+        width: 101
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_49
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 57
+        width: 102
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_50
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 57
+        width: 102
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_51
+      rect:
+        serializedVersion: 2
+        x: 1961
+        y: 57
+        width: 102
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_52
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 57
+        width: 109
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_53
+      rect:
+        serializedVersion: 2
+        x: 2279
+        y: 57
+        width: 109
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_54
+      rect:
+        serializedVersion: 2
+        x: 2439
+        y: 57
+        width: 108
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_55
+      rect:
+        serializedVersion: 2
+        x: 2598
+        y: 57
+        width: 108
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_56
+      rect:
+        serializedVersion: 2
+        x: 2757
+        y: 94
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_57
+      rect:
+        serializedVersion: 2
+        x: 2763
+        y: 57
+        width: 109
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_58
+      rect:
+        serializedVersion: 2
+        x: 2923
+        y: 57
+        width: 108
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lizzardfight-sheet_59
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 57
+        width: 102
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 

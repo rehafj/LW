@@ -8,6 +8,7 @@ public class BhSpawnEnimies : MonoBehaviour {
 	public float timer  = 2;
 	float minX, maxX;
 	ShipController myship;
+	//temporarily disables the player through this script for 10 sec ( when the enimies start spawning, the player can move = its done here -> move this somehwere else better 
 	void Start () {
 		myship= FindObjectOfType<ShipController>();
 		minX = transform.position.x - 6f;

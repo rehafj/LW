@@ -118,13 +118,13 @@ public class PlayerStatus : MonoBehaviour {
 	public void  ResspawnPlayer(){
 	gameObject.SetActive(false);
 		Instantiate(particleexp, gameObject.transform.position, gameObject.transform.rotation);
-		Invoke("setPlayerToActive",5f);
+		Invoke("setPlayerToActive",2f);
 
 	}
 
 	public void setPlayerToActive(){
-	Debug.Log("in incoke");
-	Player.transform.position= checkPoints[0].transform.position;
+	//Debug.Log("in incoke");
+		Player.transform.position= checkPoints[currentPoint].transform.position;
 		gameObject.SetActive(true);
 
 

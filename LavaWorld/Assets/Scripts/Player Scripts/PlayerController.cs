@@ -27,8 +27,8 @@ bool isGrounded = false;
 		Rigidbody2D typeofprojectile ;
 
 														/*charge shot var */
- public float chargeTime=0;
- 		float maxTime=5; 
+  float chargeTime=0;
+ public	float maxTime=5; 
  public Rigidbody2D chargedShot;
 		bool chargedShotReady = false;
 

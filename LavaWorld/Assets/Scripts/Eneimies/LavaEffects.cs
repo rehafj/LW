@@ -22,6 +22,7 @@ public class LavaEffects : MonoBehaviour {
 
 	SpriteRenderer myImg;
 	Color originalColor;
+	public GameObject EnemyExp;
 public void Start(){
 
 myPlayer = GameObject.FindGameObjectWithTag("Player");
@@ -37,7 +38,8 @@ postion_gameobject = GetComponent<RespawnerGameObj>();
 void DestroyThis(){
 	if(HitsToDestroy<=0){
 			wasDestroyed = true;
-
+			if(EnemyExp!=null){
+			Instantiate(EnemyExp,gameObject.transform.position, gameObject.transform.rotation);}
 		gameObject.SetActive(false);
 		Invoke ("ResetEnemValues", timetoreswpan);
 	}

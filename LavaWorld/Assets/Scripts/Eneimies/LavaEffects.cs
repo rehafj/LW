@@ -89,7 +89,10 @@ void OnTriggerEnter2D( Collider2D coll){
 
 		else if( coll.gameObject.tag=="Water" && CannotGetHit ==false){
 //			Debug.Log(" monster was hit and can get hit was false ");
+
 			HitsToDestroy-=1;
+			if(HitsToDestroy>0){
+			StartCoroutine("FlashEnemy",0f);}
 			DestroyThis();
 	}
 		else if( coll.gameObject.tag=="Water" && CannotGetHit ==true)

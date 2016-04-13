@@ -18,7 +18,7 @@ GameObject:
   - 114: {fileID: 11450458}
   - 111: {fileID: 11133734}
   - 95: {fileID: 9504640}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FirebatHanging (2)
   m_TagString: Enem
   m_Icon: {fileID: 0}
@@ -127,6 +127,7 @@ MonoBehaviour:
   CannotGetHit: 0
   timetoreswpan: 5
   wasDestroyed: 0
+  EnemyExp: {fileID: 193296, guid: cbbc8d1d7e73f464282e54684f6f120f, type: 2}
 --- !u!114 &11450458
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -204,7 +205,15 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: EnemyExp
+      value: 
+      objectReference: {fileID: 193296, guid: cbbc8d1d7e73f464282e54684f6f120f, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 148530}

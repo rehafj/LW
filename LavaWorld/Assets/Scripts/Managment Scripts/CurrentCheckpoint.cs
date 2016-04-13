@@ -17,7 +17,7 @@ public PlayerStatus player;
 
 void OnTriggerEnter2D(Collider2D col){
 		if(col.gameObject.tag == "Player"){
-		Debug.Log("collided with a check point");
+		//Debug.Log("collided with a check point");
 			//Debug.LogError("it connected with checkpoint"+thisCheckPoint);
 		//	player.currentPoint = this.thisCheckPoint;//sets it to what ever is in unity inspectpor 
 			}

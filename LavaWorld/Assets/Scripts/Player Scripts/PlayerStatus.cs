@@ -25,19 +25,20 @@ public class PlayerStatus : MonoBehaviour {
 	 //remove these points - naother ways is better --- add a script that anges check points on player script 
 	public int currentPoint = 0;//current check point pos 
 	//public Transform ressetPoint;//change the resset point baased on what happens//reset point scripts finds player and changes the resset point -- and try and reload level-> so move this ot level manager script in future 
-	public Transform []checkPoints = new Transform [3] ;//move this to anther script -- temporary  //make it a vector 3
+	//public Transform []checkPoints = new Transform [3] ;//move this to anther script -- temporary  //make it a vector 3
 	public Vector3 RespwanPoint;
 
 	void Start(){
 
 
-//
-		 currentScene = FindObjectOfType<LevelManager>();//sets it to scene manager 
+		currentScene = FindObjectOfType<LevelManager>();//sets it to scene manager 
 
 		health = PlayerPrefs.GetInt("PlayerHealth");;
 		lives = PlayerPrefs.GetInt("PlayerLives");
 		 Player  = GetComponent<Transform>();
 		 anim = GetComponent<Animator>();
+		RespwanPoint = gameObject.transform.position;
+
 	}
 
 
@@ -73,6 +74,11 @@ public class PlayerStatus : MonoBehaviour {
 			//if something has this tag and it doesnt have a script attach it will send in basic dmg of 10hp
 				GetDamageFromFire( 10);
 			}
+
+		if(coll.gameObject.tag =="CheckPoint"){
+
+		RespwanPoint = coll.transform.position;
+		}
 
 	}
 	/// <summary>
@@ -116,7 +122,7 @@ public class PlayerStatus : MonoBehaviour {
 
 	//use this in another script to respawn the player - cant set it deactive here 
 	public void  ResspawnPlayer(){
-	gameObject.SetActive(false);
+		gameObject.SetActive(false);
 		Instantiate(particleexp, gameObject.transform.position, gameObject.transform.rotation);
 		Invoke("setPlayerToActive",2f);
 
@@ -124,7 +130,8 @@ public class PlayerStatus : MonoBehaviour {
 
 	public void setPlayerToActive(){
 	//Debug.Log("in incoke");
-		Player.transform.position= checkPoints[currentPoint].transform.position;
+		//Player.transform.position= checkPoints[currentPoint].transform.position;
+		Player.transform.position = RespwanPoint;
 		gameObject.SetActive(true);
 
 

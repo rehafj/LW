@@ -22,7 +22,7 @@ public PlayerController plr;
 	void OnTriggerEnter2D( Collider2D coll){
 
 	if(coll.gameObject.tag=="Player"){
-				Debug.Log("Collided");
+			//	Debug.Log("Collided");
 			SendFungusMessage("FUN");
 		
 			//plr.enabled =false;

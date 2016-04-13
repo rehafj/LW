@@ -43,10 +43,7 @@ public class ObjectSwitch : MonoBehaviour {
 	//OriginalHolder =initialGameObject;
 	}
 	
-	// Update is called once per frame
-	void Update () {
 
-	}
 
 	void OnCollisionEnter2D(Collision2D coll) {
         if (coll.gameObject.tag == "Water")	{

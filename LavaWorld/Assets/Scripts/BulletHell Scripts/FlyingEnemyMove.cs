@@ -35,7 +35,7 @@ public class FlyingEnemyMove : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, thePlayer.transform.position, moveSpeed * Time.deltaTime);
 
         } else if ( !playerInrange){
-				anim.SetBool("Moving", true);
+				anim.SetBool("Moving", false);
 
 			gameObject.transform.position = InitalPostion;
         }

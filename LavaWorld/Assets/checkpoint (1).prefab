@@ -12,7 +12,7 @@ GameObject:
   - 114: {fileID: 11497560}
   - 114: {fileID: 11427050}
   m_Layer: 8
-  m_Name: activeCheckpoint
+  m_Name: checkpoint (1)
   m_TagString: CheckPoint
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0

@@ -1357,11 +1357,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 464300, guid: 31f2ccb9bd1b74dab80a98953b582af8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -6.924
+      value: -19.896
       objectReference: {fileID: 0}
     - target: {fileID: 464300, guid: 31f2ccb9bd1b74dab80a98953b582af8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 6.094
+      value: 15.292
       objectReference: {fileID: 0}
     - target: {fileID: 464300, guid: 31f2ccb9bd1b74dab80a98953b582af8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1541,7 +1541,7 @@ Transform:
   - {fileID: 1915212965}
   - {fileID: 1718666815}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 27
 --- !u!1001 &1681632973
 Prefab:
   m_ObjectHideFlags: 0

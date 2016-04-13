@@ -1636,7 +1636,6 @@ MonoBehaviour:
   localizationId: 
   hideCommands: []
   currentScene: -1
-  plr: {fileID: 1966140889}
 --- !u!58 &441070194
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6009,11 +6008,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 496998, guid: 80f21cd7c738144d1874a59411d68bfe, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 144.65
+      value: 616.42
       objectReference: {fileID: 0}
     - target: {fileID: 496998, guid: 80f21cd7c738144d1874a59411d68bfe, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -101.51
+      value: -103.13
       objectReference: {fileID: 0}
     - target: {fileID: 496998, guid: 80f21cd7c738144d1874a59411d68bfe, type: 2}
       propertyPath: m_LocalPosition.z
@@ -6559,12 +6558,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 485016, guid: 8ed735daa74ba4519b6ef86bf307df54, type: 2}
   m_PrefabInternal: {fileID: 147249795}
---- !u!114 &1966140889 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11469546, guid: 80f21cd7c738144d1874a59411d68bfe,
-    type: 2}
-  m_PrefabInternal: {fileID: 1761155526}
-  m_Script: {fileID: 11500000, guid: 63daf99b3ee3749198887f0f53f36268, type: 3}
 --- !u!114 &1966140891 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11483286, guid: 80f21cd7c738144d1874a59411d68bfe,

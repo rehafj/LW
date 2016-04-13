@@ -17,6 +17,7 @@ public	int sceneCounter;
 public int myPlayerHealth; 
 public int myPlayerLives;
 public int nextLevel;
+public bool isHardMode = false;
 	//public FungusTesting narration;
 void Awake(){
 		//playerInstance = FindObjectOfType<PlayerStatus>();
@@ -47,10 +48,17 @@ void Start(){
 
 
 public void SetInitialThings(){
+		if(isHardMode == false){
 		PlayerPrefs.SetInt("PlayerLives", myPlayerLives);
-		PlayerPrefs.SetInt("PlayerHealth", myPlayerHealth);
+		PlayerPrefs.SetInt("PlayerHealth", myPlayerHealth);}
+		else {
+			PlayerPrefs.SetInt("PlayerLives", 3 );
+			PlayerPrefs.SetInt("PlayerHealth", 100);
+			}
+		}
 
-}
+
+
 
 public void MoveToNextLevel(){
 	

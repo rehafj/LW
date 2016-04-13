@@ -16,6 +16,8 @@ public class Blob : MonoBehaviour {
 	public bool canMove;
 	LavaEffects ThisEnemiesVulnrability;
 	 Animator anim;
+
+	public float forceY =0;
 	void Start () {
 
 	rgd = GetComponent<Rigidbody2D>();
@@ -79,6 +81,7 @@ public class Blob : MonoBehaviour {
 			//anim.Stop("BlOBattac");
 			anim.SetBool("attack",true);
 			ThisEnemiesVulnrability.CannotGetHit = true;
+			rgd.AddForce(new Vector2(0, forceY));
 		}
 		else if(!canMove){
 			//anim.SetBool("attack",false);

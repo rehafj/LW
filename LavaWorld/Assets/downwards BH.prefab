@@ -16,7 +16,7 @@ GameObject:
   - 114: {fileID: 11447826}
   - 95: {fileID: 9533162}
   - 58: {fileID: 5846180}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: downwards BH
   m_TagString: Enem
   m_Icon: {fileID: 0}
@@ -124,6 +124,7 @@ MonoBehaviour:
   CannotGetHit: 0
   timetoreswpan: 6
   wasDestroyed: 0
+  EnemyExp: {fileID: 146312, guid: e552497a350724099857f237ae2ff9e7, type: 2}
 --- !u!114 &11483848
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -171,7 +172,15 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: EnemyExp
+      value: 
+      objectReference: {fileID: 146312, guid: e552497a350724099857f237ae2ff9e7, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 147230}

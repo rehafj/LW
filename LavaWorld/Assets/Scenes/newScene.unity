@@ -956,6 +956,10 @@ Prefab:
       propertyPath: HitsToDestroy
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 11476494, guid: 31f2ccb9bd1b74dab80a98953b582af8, type: 2}
+      propertyPath: EnemyExp
+      value: 
+      objectReference: {fileID: 146312, guid: e552497a350724099857f237ae2ff9e7, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 31f2ccb9bd1b74dab80a98953b582af8, type: 2}
   m_IsPrefabParent: 0
@@ -1251,6 +1255,7 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
+    - {fileID: 6150530, guid: e54438c040e9943f8af6f10108af774a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e54438c040e9943f8af6f10108af774a, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &412564807
@@ -4713,6 +4718,7 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
+    - {fileID: 6150530, guid: e54438c040e9943f8af6f10108af774a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e54438c040e9943f8af6f10108af774a, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1423944538
@@ -5547,6 +5553,18 @@ Prefab:
     - target: {fileID: 11469546, guid: 80f21cd7c738144d1874a59411d68bfe, type: 2}
       propertyPath: FoundWater
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 164576, guid: 80f21cd7c738144d1874a59411d68bfe, type: 2}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 156040, guid: 80f21cd7c738144d1874a59411d68bfe, type: 2}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 102142, guid: 80f21cd7c738144d1874a59411d68bfe, type: 2}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 80f21cd7c738144d1874a59411d68bfe, type: 2}

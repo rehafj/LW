@@ -21,7 +21,7 @@ public class LavaEffects : MonoBehaviour {
 	RespawnerGameObj postion_gameobject;
 
 	SpriteRenderer myImg;
-
+	Color originalColor;
 public void Start(){
 
 myPlayer = GameObject.FindGameObjectWithTag("Player");
@@ -29,6 +29,8 @@ playerStatusScript = myPlayer.GetComponent<PlayerStatus>();//TO MANAGE PLAYER HE
 currentController = myPlayer.GetComponent<PlayerController>();//FOR KNOCKBACK Purpose 
 initialHitsToDestory = HitsToDestroy;
 postion_gameobject = GetComponent<RespawnerGameObj>();
+		myImg = GetComponent<SpriteRenderer>();
+		originalColor = myImg.color;
 
 }
 
@@ -118,7 +120,32 @@ public void  ResetEnemValues(){
 
 
 IEnumerator  FlashEnemy(float waittime){
-		yield return new WaitForSeconds( waittime);
+	for(int i = 0 ; i < 2; i++){
+
+			changeColorAlpha();
+			yield return new WaitForSeconds( 0.1f);
+			myImg.color = originalColor;
+			yield return new WaitForSeconds( 0.1f);
+
+
+			}}
+
+//			myImg.color = originalColor;
+//			yield return new WaitForSeconds( 0.2f);
+//			changeColorAlpha();
+//			yield return new WaitForSeconds( 0.2f);
+//			myImg.color = originalColor;
+
+
+			//}
+
+
+
+
+void changeColorAlpha(){
+	Color temp = myImg.color;
+	temp.a = 0;
+	myImg.color = temp;
 }
 
 

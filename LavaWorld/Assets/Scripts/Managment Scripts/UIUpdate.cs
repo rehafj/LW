@@ -37,7 +37,7 @@ public class UIUpdate : MonoBehaviour {
 
 		if(levelCountDown!=null){
 			timerText.text = "survive " + levelCountDown.timer.ToString("F2")+ "!!";
-			Debug.Log(levelCountDown.timer);
+//			Debug.Log(levelCountDown.timer);
 			if((levelCountDown.timer-50f)>0f)
 				TimeingDown.text = (levelCountDown.timer - 50).ToString("F2");
 			else				TimeingDown.enabled = false;

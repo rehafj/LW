@@ -5518,6 +5518,10 @@ Prefab:
       propertyPath: jumpStr
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 11469546, guid: 80f21cd7c738144d1874a59411d68bfe, type: 2}
+      propertyPath: propelStrength
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 80f21cd7c738144d1874a59411d68bfe, type: 2}
   m_IsPrefabParent: 0

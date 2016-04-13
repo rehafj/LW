@@ -28,7 +28,7 @@ public class ObjectSwitch : MonoBehaviour {
 	//OriginalHolder = initialGameObject;
 	current = gameObject.GetComponent<LavaEffects>();
 	tempHealth = current.HitsToDestroy;
-	current.enabled = false;
+	current.enabled = true;
 	//Oldmyscale = gameObject.transform.localScale;
 
 	colliderEdges = GetComponent<BoxCollider2D>();

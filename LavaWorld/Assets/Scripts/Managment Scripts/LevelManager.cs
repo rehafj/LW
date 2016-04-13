@@ -52,7 +52,8 @@ public void SetInitialThings(){
 		PlayerPrefs.SetInt("PlayerLives", myPlayerLives);
 		PlayerPrefs.SetInt("PlayerHealth", myPlayerHealth);}
 		else {
-			PlayerPrefs.SetInt("PlayerLives", 3 );
+			LavaEffects.multipLayer = 3;
+			PlayerPrefs.SetInt("PlayerLives", 1 );
 			PlayerPrefs.SetInt("PlayerHealth", 100);
 			}
 		}

@@ -13,7 +13,7 @@ public int platFormSpeed=1;
 // note - if we want to move it when the player jumps on it just keep hold condition below else comment it out:) - and resets it to its  first pos!
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 	if(hold){
 		if(moving){
 			transform.position=   Vector3.MoveTowards(transform.position, pointB.position, platFormSpeed*Time.deltaTime);

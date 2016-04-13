@@ -20,6 +20,8 @@ public class LavaEffects : MonoBehaviour {
 	public bool wasDestroyed;
 	RespawnerGameObj postion_gameobject;
 
+	SpriteRenderer myImg;
+
 public void Start(){
 
 myPlayer = GameObject.FindGameObjectWithTag("Player");
@@ -45,8 +47,9 @@ void DestroyThis(){
 void OnTriggerEnter2D( Collider2D coll){
 
 		if( coll.gameObject.tag=="Water" && CannotGetHit ==false){
-			Debug.Log(" monster was hit and can get hit was false ");
+			//Debug.Log(" monster was hit and can get hit was false ");
 			HitsToDestroy-=1;
+			StartCoroutine("FlashEnemy",0f);
 			DestroyThis();
 	}
 		else if( coll.gameObject.tag=="Water" && CannotGetHit ==true)
@@ -111,6 +114,13 @@ public void  ResetEnemValues(){
 		postion_gameobject.ResetDefaultpostions();//returns in to its original postion 
 		}
 }
+
+
+
+IEnumerator  FlashEnemy(float waittime){
+		yield return new WaitForSeconds( waittime);
+}
+
 
 
 

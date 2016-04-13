@@ -8,12 +8,6 @@ public class FloorIsLava : MonoBehaviour {
 	void Start () {
 		playerhealth = FindObjectOfType<PlayerStatus>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
 //	void OnTriggerStay2D(Collider2D other) {
 //			if(other.gameObject.tag=="Player"){
 //			Invoke("Subtracthealth",2f);
@@ -28,7 +22,7 @@ public class FloorIsLava : MonoBehaviour {
 		if(other.gameObject.tag=="Player"){
 		InvokeRepeating("Subtracthealth",1,0.4f);
 
-				Debug.Log("entred floor is alva");
+			//	Debug.Log("entred floor is alva");
 //			Debug.Log(playerhealth.health);
 //			}
     }}
@@ -40,7 +34,7 @@ public class FloorIsLava : MonoBehaviour {
 
 	void OnTriggerExit2D(Collider2D other) {
 		if(other.gameObject.tag=="Player"){
-			Debug.Log("exiting trigger");
+		//	Debug.Log("exiting trigger");
 
 			CancelInvoke();
 //			Debug.Log(playerhealth.health);

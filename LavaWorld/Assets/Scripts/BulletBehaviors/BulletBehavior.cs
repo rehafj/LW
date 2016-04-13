@@ -11,7 +11,7 @@ public Rigidbody2D myegd;
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 
 	//myegd.AddForce(Vector3.forward * speed);
 		

@@ -12,6 +12,7 @@ public class FlyingEnemyMove : MonoBehaviour
     public Animator anim;
     Vector3 InitalPostion;
    public RespawnerGameObj pos;
+	public bool isFacingRight = false;
 
     // Use this for initialization
     void Start()
@@ -29,8 +30,19 @@ public class FlyingEnemyMove : MonoBehaviour
 	{	
         //will only attack in range of player, as long as the player is on the player layer
         playerInrange = Physics2D.OverlapCircle(transform.position, playerRange, playerLayer);
+
         if (playerInrange)
 		{	anim.SetBool("Moving", true);
+			if( transform.position.x > thePlayer.transform.position.x && isFacingRight){
+				flipIt();
+				}
+			else if (transform.position.x < thePlayer.transform.position.x && !isFacingRight){
+				flipIt();
+			}
+
+			
+
+
             //will move towards the player if player controller object is found
             transform.position = Vector3.MoveTowards(transform.position, thePlayer.transform.position, moveSpeed * Time.deltaTime);
 
@@ -48,6 +60,24 @@ public class FlyingEnemyMove : MonoBehaviour
         //and uncheck the box with this script (FlyingEnemyMove)
         Gizmos.DrawSphere(transform.position, playerRange);
     }
+
+
+	void flipIt()
+	{
+		isFacingRight = !isFacingRight;
+		Vector3 myscale = transform.localScale; //just like saving temp var - remember? 
+		myscale.x = myscale.x *-1;
+		transform.localScale = myscale;
+	}
+
+	void flipItRight()
+	{
+		//isFacingRight = !isFacingRight;
+		Vector3 myscale = transform.localScale; //just like saving temp var - remember? 
+		myscale.x = myscale.x *1;
+		transform.localScale = myscale;
+	}
+		
 
     //temporary fix - c if otgers need it just update it o respawner script but check again how it was used it before
 //	void OnBecameInvisible(){

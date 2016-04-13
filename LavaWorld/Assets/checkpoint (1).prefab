@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 411000}
   - 61: {fileID: 6124924}
-  - 114: {fileID: 11497560}
   - 114: {fileID: 11427050}
   m_Layer: 8
   m_Name: checkpoint (1)
@@ -25,7 +24,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 163572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 196.58, y: -113, z: 0}
+  m_LocalPosition: {x: -2.2, y: -5.51, z: 0}
   m_LocalScale: {x: 0.55497336, y: 0.55497336, z: 0.55497336}
   m_Children: []
   m_Father: {fileID: 0}
@@ -56,19 +55,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeCheckpoint: 0
---- !u!114 &11497560
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 163572}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f89588fe29df743b68227223108a938e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thisCheckPoint: 1
-  player: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

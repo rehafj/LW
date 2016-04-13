@@ -14,6 +14,7 @@ public class UIUpdate : MonoBehaviour {
 	PlayerStatus playerStatusScript;
 	Timer levelCountDown;
 	string healthText = "current health: ";
+	public Slider myslider;
 //	string TimerRemaing = "left";
 	//static UIUpdate InstanceOfUI;
 	//float countDown;
@@ -27,14 +28,16 @@ public class UIUpdate : MonoBehaviour {
 //playerStatusScript = myPlayer.GetComponent<PlayerStatus>();
 		playerStatusScript= FindObjectOfType<PlayerStatus>();
 		levelCountDown = FindObjectOfType<Timer>();
-	}
+		myslider.value = 70f;
+		//Debug.Log(	myslider.value);
+		}
 	
 	// Update is called once per frame
 	void Update () {
 		//healht playerStatusScript.health).ToString;
 		//playerStatusScript
 		myhealthText.text =healthText + playerStatusScript.health.ToString() +"\ncurrent lives:"+playerStatusScript.lives.ToString() ;
-
+		myslider.value = playerStatusScript.health;
 		if(levelCountDown!=null){
 			timerText.text = "survive " + levelCountDown.timer.ToString("F2")+ "!!";
 //			Debug.Log(levelCountDown.timer);

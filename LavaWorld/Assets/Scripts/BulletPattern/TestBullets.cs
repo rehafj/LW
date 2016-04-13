@@ -20,14 +20,14 @@ public Transform HoseLocation;
 	// Use this for initialization
 	void Start () {
 		//Debug.Log(myDirection);
-		Debug.Log("frame rate:"+ (1/Time.deltaTime));
+		//Debug.Log("frame rate:"+ (1/Time.deltaTime));
 
 		rgd = GetComponent<Rigidbody2D>();
 		HoseLocation = GetComponent<Transform>();
 	}
 
 	void Update(){
-		Debug.Log("frame rate:"+ (1/Time.deltaTime));
+	//	Debug.Log("frame rate:"+ (1/Time.deltaTime));
 
 	}
 	// Update is called once per frame

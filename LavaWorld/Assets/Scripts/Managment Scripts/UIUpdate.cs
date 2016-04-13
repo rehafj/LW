@@ -16,7 +16,7 @@ public class UIUpdate : MonoBehaviour {
 	string healthText = "current health: ";
 //	string TimerRemaing = "left";
 	//static UIUpdate InstanceOfUI;
-	float countDown;
+	//float countDown;
 	//going to change this later 
 	void Awake(){
 		
@@ -27,7 +27,6 @@ public class UIUpdate : MonoBehaviour {
 //playerStatusScript = myPlayer.GetComponent<PlayerStatus>();
 		playerStatusScript= FindObjectOfType<PlayerStatus>();
 		levelCountDown = FindObjectOfType<Timer>();
-		countDown = levelCountDown.timer-50f;
 	}
 	
 	// Update is called once per frame

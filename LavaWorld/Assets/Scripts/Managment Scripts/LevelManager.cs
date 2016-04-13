@@ -25,7 +25,7 @@ void Awake(){
 		Time.timeScale =1;
 		if(InstanceOfLeve!=null){//it exsits - destory it dont create another o=instacnae //do bnot dupilcate game managers 
 		GameObject.Destroy(gameObject);
-		Debug.Log("DESTROOYED  INSTANCE");
+		//Debug.Log("DESTROOYED  INSTANCE");
 		}
 
 	else {//instance == nill 
@@ -69,7 +69,7 @@ public void MoveToNextLevel(){
 			//Debug.Log("Ceunner scene"+currentScene);
 			//Debug.Log(" number sent over"+number);
 			nextLevel=sceneCounter+1;
-			Debug.Log("moving to level"+ nextLevel);
+			//Debug.Log("moving to level"+ nextLevel);
 			SceneManager.LoadScene(nextLevel);
 				//Debug.Log("inside method - increaed curent scene");
 		}

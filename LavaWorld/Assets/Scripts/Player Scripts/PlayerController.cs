@@ -59,7 +59,7 @@ void Start () {
 		MovePlayer();
 		if(isGrounded)//rgd.velocity.y==0)//ground check this will change into its own method with casting to check for gound ( better than this ) this is basiclaly checking the y speed of my player( 0) means not up or falling 
 		{
-			Debug.Log("CAN JUMP");
+		//	Debug.Log("CAN JUMP");
 			JumpAction();
 			if(FoundWater){
 				ProppelPlayer();}
@@ -90,7 +90,8 @@ void Start () {
 	void JumpAction(){//corresponds to x value 
 		if(Input.GetButtonDown("Jump")){
 			anim.Play("Jump");
-			rgd.AddForce(new Vector2 (0, jumpStr));
+			rgd.velocity = new Vector3(rgd.velocity.x, jumpStr, 0);
+			//rgd.AddForce(new Vector2 (0, jumpStr));
 			}
 		}
 
@@ -196,19 +197,19 @@ void Start () {
 				//created a temp clone of the same type/s as my bullet 
 				  clone = Instantiate(typeofprojectile, HoseLocation.position, HoseLocation.transform.rotation) as Rigidbody2D;//does the coping 
         	      clone.velocity = transform.TransformDirection(Vector3.right * 15);//makes it face appropriate direction and adds vel ( speed over time) 
-        	      clone.AddForce(clone.transform.right * 10);//gives it that extra push ( force) 
+        	     // clone.AddForce(clone.transform.right * 10);//gives it that extra push ( force) 
         	      //note gravity scale is set to low on prefab - so it doesnt fire at angles / if needed we can play with it ( its pretty cool ) :D 
 
 	} else if( direction == Directions.left){
 				  clone = Instantiate(typeofprojectile, HoseLocation.position, transform.rotation) as Rigidbody2D;
         	      clone.velocity = transform.TransformDirection(-Vector3.right * 15);
-        	      clone.AddForce(clone.transform.right * 10);
+        	     // clone.AddForce(clone.transform.right * 10);
 	}
 	else if ( direction == Directions.up){
 
 				clone = Instantiate(typeofprojectile, HoseLocation.position, transform.rotation) as Rigidbody2D;
         	      clone.velocity = transform.TransformDirection(Vector3.up * 15);
-        	      clone.AddForce(clone.transform.right * 10);
+        	      //clone.AddForce(clone.transform.right * 10);
 	}
 
 	else if(direction == Directions.idle){
@@ -246,7 +247,7 @@ void Start () {
 
 	 void ReleaseChargeShot (Directions direction){
 
-		   Debug.Log("fired charge Shot");
+		 //  Debug.Log("fired charge Shot");
 			chargedShotReady = true;
 		    ShootPojectile(myDirection);
 			chargeTime=0;
@@ -266,7 +267,7 @@ void Start () {
 
 
 	public void KnockBack(){
-		Debug.Log("knockedBakc");
+		//Debug.Log("knockedBakc");
 		if(isFacingRight)
 			rgd.AddForce (transform.right * knockbackforce);
 		else

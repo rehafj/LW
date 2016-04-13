@@ -72,7 +72,7 @@ public class Blob : MonoBehaviour {
 	IEnumerator WaitAndMove(float waitTime) {
 		//canMove = false;
 		if( canMove == true){
-			Debug.Log("setting to false");
+//			Debug.Log("setting to false");
 			yield return new WaitForSeconds(waitTime);
 			canMove = false;
 			//anim.Play("BlOBattac");
@@ -87,7 +87,7 @@ public class Blob : MonoBehaviour {
 			canMove = true;
 			anim.SetBool("attack",false);
 			ThisEnemiesVulnrability.CannotGetHit = false;
-			Debug.Log("setting to true");
+		//	Debug.Log("setting to true");
 
 			}
 

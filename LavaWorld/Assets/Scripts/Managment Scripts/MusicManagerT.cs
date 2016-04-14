@@ -51,7 +51,7 @@ public class MusicManagerT : MonoBehaviour {
 	}
 	void OnLevelWasLoaded(){
 		sceneNumber = SceneManager.GetActiveScene().buildIndex;
-		Debug.Log(sceneNumber);
+//		Debug.Log(sceneNumber);
 			myMusic.Stop();
 		if(sceneNumber>0 && sceneNumber<4){
 //			Debug.Log("in scenes of play - putting player music");

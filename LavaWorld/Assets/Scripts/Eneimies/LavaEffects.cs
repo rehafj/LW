@@ -34,6 +34,7 @@ playerStatusScript = myPlayer.GetComponent<PlayerStatus>();//TO MANAGE PLAYER HE
 currentController = myPlayer.GetComponent<PlayerController>();//FOR KNOCKBACK Purpose 
 initialHitsToDestory = HitsToDestroy;
 postion_gameobject = GetComponent<RespawnerGameObj>();
+
 		myImg = GetComponent<SpriteRenderer>();
 		originalColor = myImg.color;
 

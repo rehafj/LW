@@ -124,7 +124,9 @@ void Start () {
 
 	void ProppelPlayer(){
 		if(myDirection==Directions.down &&(Input.GetButtonDown("shoot"))){
-			rgd.AddForce(new Vector2 (0, propelStrength));
+			rgd.velocity = new Vector3(rgd.velocity.x, propelStrength, 0);
+
+			//rgd.AddForce(new Vector2 (0, propelStrength));
 		}}
 
 													/// <summary>

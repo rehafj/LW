@@ -28,7 +28,7 @@ public class ObjectSwitch : MonoBehaviour {
 	//OriginalHolder = initialGameObject;
 	current = gameObject.GetComponent<LavaEffects>();
 	tempHealth = current.HitsToDestroy;
-	current.enabled = false;
+	current.enabled = true;
 	//Oldmyscale = gameObject.transform.localScale;
 
 	colliderEdges = GetComponent<BoxCollider2D>();
@@ -41,11 +41,6 @@ public class ObjectSwitch : MonoBehaviour {
 //		platform.border.Set (myscale.x, myscale.y, myscale.z,0);
 
 	//OriginalHolder =initialGameObject;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
 	}
 
 	void OnCollisionEnter2D(Collision2D coll) {

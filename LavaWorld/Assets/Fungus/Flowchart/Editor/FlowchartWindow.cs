@@ -191,7 +191,6 @@ namespace Fungus
 			GUILayout.Space(8);
 
 			FlowchartEditor flowchartEditor = Editor.CreateEditor (flowchart) as FlowchartEditor;
-			flowchartEditor.DrawVariablesGUI();
 			DestroyImmediate(flowchartEditor);
 
 			Rect variableWindowRect = GUILayoutUtility.GetLastRect();

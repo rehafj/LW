@@ -23,6 +23,10 @@ public class LavaEffects : MonoBehaviour {
 	SpriteRenderer myImg;
 	Color originalColor;
 	public GameObject EnemyExp;
+
+	public static int multip = 1;
+
+
 public void Start(){
 
 myPlayer = GameObject.FindGameObjectWithTag("Player");
@@ -106,7 +110,7 @@ void OnTriggerEnter2D( Collider2D coll){
 //chaneg this inside the player script status  - better anbd change ti to recive dmg -> call it from here 
 public void DoDamageToPlayer(){
 
-	 	playerStatusScript.GetDamageFromFire(howMuchDamage);
+		playerStatusScript.GetDamageFromFire(howMuchDamage * multip);
 //		currentController.KnockBack();
 }
 

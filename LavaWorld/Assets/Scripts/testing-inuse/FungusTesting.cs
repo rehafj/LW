@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 public class FungusTesting : Flowchart {
 //public Flowchart myflowchart;
 public int currentScene;
-//public PlayerController plr;
+public PlayerController plr;
 	// Use this for initialization
 
 	void Awake(){
 	//Time.timeScale=0;
-//	plr = FindObjectOfType<PlayerController>(); 
+	plr = FindObjectOfType<PlayerController>();
 	currentScene = SceneManager.GetActiveScene().buildIndex;
 		startMessgesBasedOnScene( currentScene);
 
@@ -57,12 +57,6 @@ public void StartBulletHelllDailog(){
 
 
 			}
-	}
-
-
-
-	public void TestRecive(){
-	Debug.Log("got here");
 	}
 	}
 

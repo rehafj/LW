@@ -31,10 +31,6 @@ Rigidbody2D initialRidgidbody;
 
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
 
 	public void ResetDefaultpostions(){
@@ -52,6 +48,17 @@ Rigidbody2D initialRidgidbody;
 	///CHECK HOW THIS IS USED before if i used this script with naything that resets values if not use below method 
 	void OnBecameInvisible(){
 
-		ResetDefaultpostions();
+		StartCoroutine("DelayRespawn");
+		//ResetDefaultpostions();
 	}
+
+	IEnumerator DelayRespawn(){
+
+		yield return new WaitForSeconds(5f);
+		ResetDefaultpostions();
+
+
+	}
+
+
 }

@@ -17,6 +17,7 @@ public	int sceneCounter;
 public int myPlayerHealth; 
 public int myPlayerLives;
 public int nextLevel;
+public bool isHardMode = false;
 	//public FungusTesting narration;
 void Awake(){
 		//playerInstance = FindObjectOfType<PlayerStatus>();
@@ -25,7 +26,7 @@ void Awake(){
 		Time.timeScale =1;
 		if(InstanceOfLeve!=null){//it exsits - destory it dont create another o=instacnae //do bnot dupilcate game managers 
 		GameObject.Destroy(gameObject);
-		Debug.Log("DESTROOYED  INSTANCE");
+		//Debug.Log("DESTROOYED  INSTANCE");
 		}
 
 	else {//instance == nill 
@@ -47,8 +48,16 @@ void Start(){
 
 
 public void SetInitialThings(){
+	if( isHardMode ==false){
+		LavaEffects.multip = 1;
 		PlayerPrefs.SetInt("PlayerLives", myPlayerLives);
-		PlayerPrefs.SetInt("PlayerHealth", myPlayerHealth);
+		PlayerPrefs.SetInt("PlayerHealth", myPlayerHealth);}
+	else if(isHardMode){
+			LavaEffects.multip = 3;
+			PlayerPrefs.SetInt("PlayerLives", 2 );
+			PlayerPrefs.SetInt("PlayerHealth", myPlayerHealth);}
+
+		
 
 }
 
@@ -69,7 +78,7 @@ public void MoveToNextLevel(){
 			//Debug.Log("Ceunner scene"+currentScene);
 			//Debug.Log(" number sent over"+number);
 			nextLevel=sceneCounter+1;
-			Debug.Log("moving to level"+ nextLevel);
+			//Debug.Log("moving to level"+ nextLevel);
 			SceneManager.LoadScene(nextLevel);
 				//Debug.Log("inside method - increaed curent scene");
 		}

@@ -31,8 +31,29 @@ public class MenuScriptHandler : MonoBehaviour {
 
 		}
 		StartCoroutine(WaitAndMove(2.0F));
-
 	}
+
+	public void startTheGameHardMode()
+
+	{
+		if(mylevelInstace!=null)
+			mylevelInstace.isHardMode = true;
+		StartTheGame();
+	}
+
+	public void startTheGameEasyMode()
+
+	{
+		if(mylevelInstace!=null)
+			mylevelInstace.isHardMode = false;
+		StartTheGame();
+	}
+
+
+
+
+
+
 	public void InstructionsMenu(){
 
 	SceneManager.LoadScene(6);

@@ -71,7 +71,7 @@ void FixedUpdate () {
             ShootingDirectionsSwitch();
             ChargeShot();
 
-            cantGetHurt = false;//When the timer ends the layer can get hurt
+            cantGetHurt = false;//When the timer ends the payer can get hurt
 
         }//end of knockback check
         if(knockcounterTimer>0){
@@ -291,9 +291,9 @@ void FixedUpdate () {
     void KnockThePlayerBack(){
         knockcounterTimer-= Time.deltaTime;//countdown till 0 
             if( isFacingRight){
-                rgd.velocity = new Vector3(-knockbackforce, knockbackforce, 0f);}
+                rgd.velocity = new Vector3(-(knockbackforce+2f), knockbackforce, 0f);}
             else {
-                rgd.velocity = new Vector3(knockbackforce, knockbackforce, 0f);}
+			rgd.velocity = new Vector3(knockbackforce+2f, knockbackforce, 0f);}
 
             } 
 

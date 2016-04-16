@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class MenuScriptHandler : MonoBehaviour {
+
 	public Animator anim;
 	LevelManager mylevelInstace;
 	public Transform childTrans;
@@ -14,36 +15,54 @@ public class MenuScriptHandler : MonoBehaviour {
 
 	}
 	
-	// Update is called once per frame
-	void Update () {
-
-	}
 
 	public void StartTheGame(){
+
 		if(mylevelInstace!=null)
 			mylevelInstace.SetInitialThings();
 		else 
 		{
 			Debug.LogError("An instance of level manager does now exsist - Resetiing values-will not change across levels");
 			mylevelInstace.sceneCounter=0;
-		PlayerPrefs.SetInt("PlayerLives", 3);
-		PlayerPrefs.SetInt("PlayerHealth", 100);
-
+			PlayerPrefs.SetInt("PlayerLives", 3);
+			PlayerPrefs.SetInt("PlayerHealth", 100);
+			
 		}
 		StartCoroutine(WaitAndMove(2.0F));
-
 	}
+
+	public void startTheGameHardMode()
+
+	{
+		if(mylevelInstace!=null)
+			mylevelInstace.isHardMode = true;
+		StartTheGame();
+	}
+
+	public void startTheGameEasyMode()
+
+	{
+		if(mylevelInstace!=null)
+			mylevelInstace.isHardMode = false;
+		StartTheGame();
+	}
+
+
 	public void InstructionsMenu(){
 
-	SceneManager.LoadScene(6);
+		SceneManager.LoadScene(6);
+
 	}
 
 	public void QuitTheGame(){
-	Application.Quit();
+
+		Application.Quit();
+
 		}
 
 
 	IEnumerator WaitAndMove(float waitTime) {
+
 		if(anim!=null){
 			anim.Play("falls");
 		}
@@ -54,6 +73,7 @@ public class MenuScriptHandler : MonoBehaviour {
 
 
     public void PlayAgain(){
+
 		mylevelInstace.sceneCounter= 0;
 		SceneManager.LoadScene(0);
 

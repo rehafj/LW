@@ -14,7 +14,7 @@ GameObject:
   - 95: {fileID: 9504896}
   - 114: {fileID: 11483286}
   - 58: {fileID: 5810152}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Finch-platform
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 404802}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Hose
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -45,7 +45,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 401412}
   - 58: {fileID: 5884748}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
@@ -83,7 +83,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 102142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 160.81, y: -101.63, z: 0}
+  m_LocalPosition: {x: 144.65, y: -101.51, z: 0}
   m_LocalScale: {x: 2.04, y: 2.05, z: 1}
   m_Children:
   - {fileID: 404802}
@@ -115,7 +115,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 102142}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: f12575f521b88411ba2ee5d2d518def0, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: -0.08}
@@ -164,17 +164,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jumpStr: 5
+  jumpStr: 6
   propelStrength: 540
   isFacingRight: 0
   groundChecker: {fileID: 401412}
-  checkRadius: 0.25
+  checkRadius: 0.06
   groundMask:
     serializedVersion: 2
     m_Bits: 256
   HoseLocation: {fileID: 404802}
   Projectile: {fileID: 5049936, guid: c23220e98c78d4054862bbc222360508, type: 2}
-  chargeTime: 0
+  maxTime: 3
   chargedShot: {fileID: 5032748, guid: aecfd9d684b4e4673adbe54603196f2a, type: 2}
   coolDownTimer: 1
   FoundWater: 0
@@ -198,7 +198,6 @@ MonoBehaviour:
   Player: {fileID: 496998}
   anim: {fileID: 9504896}
   particleexp: {fileID: 193296, guid: cbbc8d1d7e73f464282e54684f6f120f, type: 2}
-  currentPoint: 0
   RespwanPoint: {x: 0, y: 0, z: 0}
 --- !u!212 &21276006
 SpriteRenderer:

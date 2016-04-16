@@ -19,7 +19,7 @@ public class LavaEffects : MonoBehaviour {
 	public float timetoreswpan =5f;
 	public bool wasDestroyed;
 	RespawnerGameObj postion_gameobject;
-
+	public ShipController truck;
 	SpriteRenderer myImg;
 	Color originalColor;
 	public GameObject EnemyExp;
@@ -32,6 +32,7 @@ public void Start(){
 myPlayer = GameObject.FindGameObjectWithTag("Player");
 playerStatusScript = myPlayer.GetComponent<PlayerStatus>();//TO MANAGE PLAYER HEALTH 
 currentController = myPlayer.GetComponent<PlayerController>();//FOR KNOCKBACK Purpose 
+truck = myPlayer.GetComponent<ShipController>();
 initialHitsToDestory = HitsToDestroy;
 postion_gameobject = GetComponent<RespawnerGameObj>();
 
@@ -111,9 +112,15 @@ void OnTriggerEnter2D( Collider2D coll){
 //chaneg this inside the player script status  - better anbd change ti to recive dmg -> call it from here 
 public void DoDamageToPlayer(){
 
-		playerStatusScript.GetDamageFromFire(howMuchDamage * multip);
+		if( currentController!= null && !currentController.cantGetHurt){
+			currentController.KnockBack();
+			playerStatusScript.GetDamageFromFire(howMuchDamage * multip);}
 //		currentController.KnockBack();
+else if ( truck!=null){
+			playerStatusScript.GetDamageFromFire(howMuchDamage * multip);}
+
 }
+
 
 public bool RetrunWasDestroyed (){
 

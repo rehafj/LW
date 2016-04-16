@@ -40,9 +40,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c7502da2703d4bada73e5a43c35706c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScene: 0
-  myPlayerHealth: 0
-  myPlayerLives: 5
+  sceneCounter: 2
+  myPlayerHealth: 100
+  myPlayerLives: 3
+  nextLevel: 0
+  isHardMode: 0
 --- !u!114 &11472696
 MonoBehaviour:
   m_ObjectHideFlags: 1

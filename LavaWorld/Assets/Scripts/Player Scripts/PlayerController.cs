@@ -41,8 +41,9 @@ Animator anim;
 public bool FoundWater = false; // will acsess this value from  teh water creaturething undine? if this is false the player cant propel nor shoot stuff!
 
 public float knockbackforce=2;
-public float lengthKnock=2;
-public float knockcounter = 0.5f;
+	public float knockBackLastingFor=0.5f;
+	 float knockcounterTimer;
+	public bool cantGetHurt;
 
 
 void Start () {
@@ -53,22 +54,33 @@ void Start () {
 	}
 	
 
-	void FixedUpdate () {
-		isGrounded = Physics2D.OverlapCircle(groundChecker.position, checkRadius, groundMask);
-//		Debug.Log("AM I ON GROUND ? "+ isGrounded);
-		MovePlayer();
-		if(isGrounded)//rgd.velocity.y==0)//ground check this will change into its own method with casting to check for gound ( better than this ) this is basiclaly checking the y speed of my player( 0) means not up or falling 
-		{
-		//	Debug.Log("CAN JUMP");
-			JumpAction();
-			if(FoundWater){
-				ProppelPlayer();}
-		}
-		ShootingDirectionsSwitch();
-		ChargeShot();
-	}
 
-											/// <summary>
+void FixedUpdate () {
+        isGrounded = Physics2D.OverlapCircle(groundChecker.position, checkRadius, groundMask);
+//        Debug.Log("AM I ON GROUND ? "+ isGrounded);
+        if( knockcounterTimer<=0){
+            MovePlayer();
+
+            if(isGrounded)//rgd.velocity.y==0)//ground check this will change into its own method with casting to check for gound ( better than this ) this is basiclaly checking the y speed of my player( 0) means not up or falling 
+            {
+            //    Debug.Log("CAN JUMP");
+                JumpAction();
+                if(FoundWater){
+                    ProppelPlayer();}
+            }
+            ShootingDirectionsSwitch();
+            ChargeShot();
+
+            cantGetHurt = false;//When the timer ends the layer can get hurt
+
+        }//end of knockback check
+        if(knockcounterTimer>0){
+                KnockThePlayerBack();
+        }
+        }
+    
+
+									/// <summary>
 											/// Moves the player based on axsis (left/ right) vertical is used fot directions and not jumping .
 											///setting directions is called here but  implemented called in another method 
 											/// </summary>
@@ -124,7 +136,9 @@ void Start () {
 
 	void ProppelPlayer(){
 		if(myDirection==Directions.down &&(Input.GetButtonDown("shoot"))){
-			rgd.AddForce(new Vector2 (0, propelStrength));
+			//rgd.AddForce(new Vector2 (0, propelStrength));
+			rgd.velocity = new Vector3(rgd.velocity.x, propelStrength, 0);
+
 		}}
 
 													/// <summary>
@@ -267,15 +281,23 @@ void Start () {
 
 
 	public void KnockBack(){
-		//Debug.Log("knockedBakc");
-		if(isFacingRight)
-			rgd.AddForce (transform.right * knockbackforce);
-		else
-			rgd.AddForce (-transform.right * knockbackforce);
+        //Debug.Log("knockedBakc");
+    knockcounterTimer = knockBackLastingFor;
+        cantGetHurt = true; //player cannot get hurt  
+        //    rgd.velocity = new Vector3(-knockbackforce, 1, 0f);
 
-		//	rgd.velocity = new Vector3(-knockbackforce, 1, 0f);
+    }
 
-	}
+    void KnockThePlayerBack(){
+        knockcounterTimer-= Time.deltaTime;//countdown till 0 
+            if( isFacingRight){
+                rgd.velocity = new Vector3(-knockbackforce, knockbackforce, 0f);}
+            else {
+                rgd.velocity = new Vector3(knockbackforce, knockbackforce, 0f);}
+
+            } 
+
+
 
 
 

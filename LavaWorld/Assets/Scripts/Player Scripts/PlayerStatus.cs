@@ -23,21 +23,26 @@ public class PlayerStatus : MonoBehaviour {
 	public GameObject particleexp;
 
 	 //remove these points - naother ways is better --- add a script that anges check points on player script 
-	public int currentPoint = 0;//current check point pos 
+	//public int currentPoint = 0;//current check point pos 
 	//public Transform ressetPoint;//change the resset point baased on what happens//reset point scripts finds player and changes the resset point -- and try and reload level-> so move this ot level manager script in future 
 	//public Transform []checkPoints = new Transform [3] ;//move this to anther script -- temporary  //make it a vector 3
 	public Vector3 RespwanPoint;
 
+
+	SpriteRenderer myImg;
+	Color originalColor;
+
 	void Start(){
-
-
 		currentScene = FindObjectOfType<LevelManager>();//sets it to scene manager 
-
 		health = PlayerPrefs.GetInt("PlayerHealth");;
 		lives = PlayerPrefs.GetInt("PlayerLives");
+
 		 Player  = GetComponent<Transform>();
 		 anim = GetComponent<Animator>();
 		RespwanPoint = gameObject.transform.position;
+
+		myImg = GetComponent<SpriteRenderer>();
+		originalColor = myImg.color;
 
 	}
 
@@ -55,10 +60,9 @@ public class PlayerStatus : MonoBehaviour {
 //		Debug.Log("COLLIDER DMG");
 
 		if(coll.gameObject.tag == "Dmg"){//refactor to a method - recive dmg and play anaimtaion 
-				//print("dmg - 10");		
 				anim.Play("Dmg");
 				this.health -=10; 
-				//coll. = false;		
+			//	StartCoroutine("FlashPlayer");
 				Destroy(coll.gameObject);
 			}
 
@@ -109,7 +113,9 @@ public class PlayerStatus : MonoBehaviour {
 	public void GetDamageFromFire(int dmg){
 			//print("player lost "+dmg+"hp points"); 
 			this.health-=dmg;
+			StartCoroutine("FlashPlayer");
 			anim.Play("Dmg");
+
 	}
 
 	public string ReturnHealthInString(){
@@ -118,6 +124,8 @@ public class PlayerStatus : MonoBehaviour {
 			return health.ToString();
 
 	}
+
+
 
 
 	//use this in another script to respawn the player - cant set it deactive here 
@@ -133,9 +141,37 @@ public class PlayerStatus : MonoBehaviour {
 		//Player.transform.position= checkPoints[currentPoint].transform.position;
 		Player.transform.position = RespwanPoint;
 		gameObject.SetActive(true);
+		myImg.color = originalColor ;
+;
+
 
 
 	}
+
+
+
+
+
+IEnumerator  FlashPlayer(){
+	for(int i = 0 ; i < 2; i++){
+			Debug.Log("test flash");
+			changeColorAlpha();
+			yield return new WaitForSeconds( 0.1f);
+			myImg.color = originalColor;
+			yield return new WaitForSeconds( 0.1f);
+
+
+			}}
+
+
+
+void changeColorAlpha(){
+	Color temp = myImg.color;
+	temp.a = 0;
+	myImg.color = temp;
+}
+
+
 }
 
 

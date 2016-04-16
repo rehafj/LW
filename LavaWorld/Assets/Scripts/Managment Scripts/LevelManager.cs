@@ -17,11 +17,10 @@ public	int sceneCounter;
 public int myPlayerHealth; 
 public int myPlayerLives;
 public int nextLevel;
+public bool isHardMode = false;
 	//public FungusTesting narration;
 void Awake(){
-		//playerInstance = FindObjectOfType<PlayerStatus>();
-		//Debug.Log("current scene on awake  " +sceneCounter);
-		//Debug.Log("nextlevel scene on awake  " +nextLevel);
+
 		Time.timeScale =1;
 		if(InstanceOfLeve!=null){//it exsits - destory it dont create another o=instacnae //do bnot dupilcate game managers 
 		GameObject.Destroy(gameObject);
@@ -32,14 +31,6 @@ void Awake(){
 		GameObject.DontDestroyOnLoad(gameObject);//do not destoyr teh current gameobject ( i..e scene instance) 
 				InstanceOfLeve = this;
 	}
-		//narration = FindObjectOfType<FungusTesting>();
-
-
-
-}
-void Start(){
-
-
 
 
 }
@@ -47,48 +38,41 @@ void Start(){
 
 
 public void SetInitialThings(){
+	if( isHardMode ==false){
+		LavaEffects.multip = 1;
 		PlayerPrefs.SetInt("PlayerLives", myPlayerLives);
-		PlayerPrefs.SetInt("PlayerHealth", myPlayerHealth);
+		PlayerPrefs.SetInt("PlayerHealth", myPlayerHealth);}
+	else if(isHardMode){
+		LavaEffects.multip = 3;
+		PlayerPrefs.SetInt("PlayerLives", 2 );
+		PlayerPrefs.SetInt("PlayerHealth", myPlayerHealth);}
+		
+		
 
 }
 
 public void MoveToNextLevel(){
 	
-			playerInstance = FindObjectOfType<PlayerStatus>();//ask about this - if i move the scene manager it wont read it on awake unless i have 
-			//un;ess i have other //would it be bad if i had one player.dfind ocated here ? 
-		if(playerInstance != null){//there is a player in the scene 
-			//	Debug.Log("Player lives is " + playerInstance.lives);
+			playerInstance = FindObjectOfType<PlayerStatus>();
+
+	if(playerInstance != null){
+
 				PlayerPrefs.SetInt("PlayerLives",playerInstance.lives);
 				PlayerPrefs.SetInt("PlayerHealth", playerInstance.health);
-
 	}
-		else {
-			//	Debug.Log("player is null");
-			}
-		//	PlayerPrefs.SetInt("PlayerLives")
-			//Debug.Log("Ceunner scene"+currentScene);
-			//Debug.Log(" number sent over"+number);
-			nextLevel=sceneCounter+1;
-			//Debug.Log("moving to level"+ nextLevel);
-			SceneManager.LoadScene(nextLevel);
-				//Debug.Log("inside method - increaed curent scene");
-		}
-//
-//	void OnLevelWasLoaded(){
-//		nextLevel=sceneCounter+1;
-//		if(sceneCounter>4){
-//			sceneCounter=0;
-//
-//		}
-		//Debug.Log("Currnet clip"+currentClip);
-	
+	else {
+	 Debug.LogError("no player was found");
+	}
 
+			nextLevel=sceneCounter+1;
+			SceneManager.LoadScene(nextLevel);
+		}
 
 
 
 		
 public void  GameOver(){
-		SceneManager.LoadScene(4);
+		SceneManager.LoadScene(5);
 
 			}
 

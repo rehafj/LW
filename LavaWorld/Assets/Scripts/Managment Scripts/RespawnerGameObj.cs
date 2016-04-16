@@ -48,17 +48,22 @@ Rigidbody2D initialRidgidbody;
 	///CHECK HOW THIS IS USED before if i used this script with naything that resets values if not use below method 
 	void OnBecameInvisible(){
 
-		StartCoroutine("DelayRespawn");
+		//StartCoroutine("DelayRespawn");
+		Invoke("DelayRespawn",0.5f);
 		//ResetDefaultpostions();
 	}
 
-	IEnumerator DelayRespawn(){
-
-		yield return new WaitForSeconds(5f);
+	void DelayRespawn(){
 		ResetDefaultpostions();
-
-
 	}
+
+//	IEnumerator DelayRespawn(){
+//
+//		yield return new WaitForSeconds(5f);
+//		ResetDefaultpostions();
+//
+//
+//	}
 
 
 }

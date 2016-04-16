@@ -154,7 +154,7 @@ public class PlayerStatus : MonoBehaviour {
 
 IEnumerator  FlashPlayer(){
 	for(int i = 0 ; i < 2; i++){
-			Debug.Log("test flash");
+//			Debug.Log("test flash");
 			changeColorAlpha();
 			yield return new WaitForSeconds( 0.1f);
 			myImg.color = originalColor;

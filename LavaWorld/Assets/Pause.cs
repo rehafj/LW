@@ -13,8 +13,8 @@ public GUITexture mytext;	// Use this for initialization
 	
 	// Update is called once per frame
 	void Update () {
-	if(Input.GetKeyDown("p")){
-
+	//if(Input.GetKeyDown("p")){
+		if(Input.GetButtonDown("Pause")){
 		ispauses = !ispauses;
 		if( ispauses == true){
 		Time.timeScale = 0;

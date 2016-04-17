@@ -7,6 +7,7 @@ public class FallingDebries : MonoBehaviour {
 /// </summary>
 Transform mytrans;
 public GameObject debries;
+public ObjectPooler lavaDroplets;
 public int x =1;
 	// Use this for initialization
 	void Start () {
@@ -21,7 +22,7 @@ public int x =1;
 	void OnBecameVisible() {
 	//Debug.Log("collided and falling debries start");
 
-			InvokeRepeating("InsFallingObjects",0.1f,0.5f);
+			InvokeRepeating("InsFallingObjects",0.1f,x);
 			//Instantiate(debries, mytrans.position, Quaternion.identity);
 			//x--;
 			//Invoke ("addmore",0.5f);
@@ -33,7 +34,7 @@ public int x =1;
 	void InsFallingObjects(){
 	//x++;
 
-	GameObject temp = Pooler.currentPoller.ReturnEnemyBullets();//gives acses to the ppoo for the ginafwm 
+		GameObject temp = lavaDroplets.RetrivePooledObject();//gives acses to the ppoo for the ginafwm 
 
 	if(temp==null)
 	return ;

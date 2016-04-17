@@ -6,9 +6,9 @@ public class Pooler : MonoBehaviour {
 	public static Pooler currentPoller;
 	public GameObject EnemyBullet; 
 	public GameObject  playerBullet;
-	public int Size=50;
+	public int Size=15;
 
-	public GameObject[] enemiesTypes = new GameObject[3];
+	//public GameObject[] enemiesTypes = new GameObject[3];
 
 	public GameObject [] EnemyBullets;
 	public GameObject [] playerBullets;
@@ -32,31 +32,24 @@ public class Pooler : MonoBehaviour {
 	void Start () {//
 
 
-	///intilize enemy bullet list and creat them - set them to deactive 
 	CreateEnemyBullets();
-//		EnemyBullets = new GameObject[Size];
-//		for( int i = 0; i< Size; i++){
-//			GameObject temp = Instantiate(EnemyBullet);//create an instance of an pbject 
-//			temp.SetActive(false);
-//			EnemyBullets[i] = temp;//add it to the array 
-//	}
-		///intilize Player bullet list and creat them - set them to deactive 
 
-		playerBullets = new GameObject[20];
-		for( int i = 0; i< 20; i++){
+		playerBullets = new GameObject[Size];
+
+		for( int i = 0; i< Size; i++){
 			GameObject temp = Instantiate(playerBullet);//create an instance of an pbject 
 			temp.SetActive(false);
 			playerBullets[i] = temp;//add it to the array 
 	}
 
-
-		for( int i = 0; i< enemiesTypes.Length; i++){
-			for( int j = 0; j< 4; j++ ){
-			GameObject temp = Instantiate(enemiesTypes[i]);//create an instance of an pbject 
-			temp.SetActive(false);
-				enemiesTypes[i] = temp;//add it to the array 
-	}}//spawned 6 enemies 
-
+//
+//		for( int i = 0; i< enemiesTypes.Length; i++){
+//			for( int j = 0; j< 4; j++ ){
+//			GameObject temp = Instantiate(enemiesTypes[i]);//create an instance of an pbject 
+//			temp.SetActive(false);
+//				enemiesTypes[i] = temp;//add it to the array 
+//	}}//spawned 6 enemies 
+//
 
 
 	}
@@ -84,40 +77,20 @@ public class Pooler : MonoBehaviour {
 	return null;
 		}
 
-		/// <summary>
-		/// this is done wrong - ill get back to it later - triverses it wrong - 
-		//i'll change this into a list later 
-		// or create them in an arrayy or list of lists - or dicitonaty with a key - ill get o yhis later 
-		/// </summary>
-		/// <returns>The random enmey.</returns>
-
-
-	public GameObject returnRandomEnmey(){
-		for( int i = 0 ; i< enemiesTypes.Length; i++){
-	//	Debug.Log(i+ "is the index of I");
-			for(int j = 0 ; j<enemiesTypes.Length ; j++){
-//				Debug.Log(j+ "is the index of J");
-
-				if(!enemiesTypes[i].activeInHierarchy)//if its not active in herarcy 
-			//return the pooled object to return it 
-					return enemiesTypes[i];
-	}
-	}
-//	Debug.Log("no enemy - null ");
-	return null;
-		}
 
 
 
-
-	public virtual void CreateEnemyBullets(){
+	public  void CreateEnemyBullets(){
 		EnemyBullets = new GameObject[Size];
 		for( int i = 0; i< Size; i++){
 			GameObject temp = Instantiate(EnemyBullet);//create an instance of an pbject 
 			temp.SetActive(false);
 			EnemyBullets[i] = temp;//add it to the array 
 	}}
-	public virtual void CreateEnemyBullets( GameObject x){
+
+
+
+	public  void CreateEnemyBullets( GameObject x){
 		EnemyBullets = new GameObject[Size];
 		for( int i = 0; i< Size; i++){
 			GameObject temp = Instantiate(EnemyBullet);//create an instance of an pbject 
@@ -129,6 +102,32 @@ public class Pooler : MonoBehaviour {
 
 
 	}
+
+
+	/// <summary>
+		/// this is done wrong - ill get back to it later - triverses it wrong - 
+		//i'll change this into a list later 
+		// or create them in an arrayy or list of lists - or dicitonaty with a key - ill get o yhis later 
+		/// </summary>
+		/// <returns>The random enmey.</returns>
+
+
+//	public GameObject returnRandomEnmey(){
+//		for( int i = 0 ; i< enemiesTypes.Length; i++){
+//	//	Debug.Log(i+ "is the index of I");
+//			for(int j = 0 ; j<enemiesTypes.Length ; j++){
+////				Debug.Log(j+ "is the index of J");
+//
+//				if(!enemiesTypes[i].activeInHierarchy)//if its not active in herarcy 
+//			//return the pooled object to return it 
+//					return enemiesTypes[i];
+//	}
+//	}
+////	Debug.Log("no enemy - null ");
+//	return null;
+//		}
+
+
 
 
 }

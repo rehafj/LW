@@ -116,8 +116,10 @@ public void DoDamageToPlayer(){
 			currentController.KnockBack();
 			playerStatusScript.GetDamageFromFire(howMuchDamage * multip);}
 //		currentController.KnockBack();
-else if ( truck!=null){
-			playerStatusScript.GetDamageFromFire(howMuchDamage * multip);}
+		else if ( truck!=null && !truck.cantGetHurt){
+			truck.CheckInvinibility();
+			playerStatusScript.GetDamageFromFire(howMuchDamage * multip);
+			}
 
 }
 

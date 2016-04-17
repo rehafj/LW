@@ -4,62 +4,57 @@ using System.Collections;
 public class Batbehavior : MonoBehaviour {
 bool movingRight = true;
 //public GameObject player;
-public float maxXpos = 9.58F;
-public float minXpos = -9.5f;
+ float maxXpos = 10f;
+ float minXpos = -9.5f;
 public int speed = 2;
 
 
-public float height = 10f;
-public float width = 5f; 
+//public float height = 5f;
+//public float width = 5f; 
+
 
 Animator anim;
 	// Use this for initialization
-	void Start () {
-
+	void Awake () {
+		setBounds();
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+
+
+
 //anim.applyRootMotion = true;
 						//works but clunky - refactor 
 	if(movingRight){
-		//transform.Translate(-Vector3.right * 2 * Time.deltaTime);
+
 		transform.position+= Vector3.right * speed *Time.deltaTime;
-	//		Debug.Log("movingRight"+movingRight);
-	if(transform.position.x <= maxXpos){
-//				Debug.Log("player pos is greater than max X set up");
-			 movingRight =false;
-				//transform.Translate(-Vector3.up * 0.5f * Time.deltaTime);
-			}		
 
+		if(transform.position.x >= maxXpos){
+			 movingRight =false;}		
 
-		//transform.position.y=  Mathf.Sin(1*Time.deltaTime);
 	}
+
 	else if(!movingRight){
-			transform.Translate(Vector3.right * speed * Time.deltaTime);
-			if( transform.position.x >= minXpos){
-		 movingRight = true;
-			}	
+			transform.Translate(Vector3.left * speed * Time.deltaTime);
+
+			if( transform.position.x <= minXpos){
+				 movingRight = true;
+				}	
 		}	//transform.Translate(Vector3.up * 0.5f * Time.deltaTime);
 
 }
 
 
 
+	public void setBounds(){
+		Vector3 screenBounds = new Vector3( Screen.width, Screen.height, 0);
+		Vector3 bounds = Camera.main.ScreenToWorldPoint(screenBounds);
+		//beter to get this by getting the lplayer sixe and then deviding stuff 
+		minXpos = -bounds.x/2f;
+		maxXpos = bounds.x/2f;
+
+	}
+
 
 }
-/////										testing purposes 
-//				if(movingRight){	
-//					transform.Translate(-Vector3.right * speed * Time.deltaTime);}
-//
-//			else{
-//					transform.Translate(Vector3.right * speed * Time.deltaTime);
-//			} 
-//			float objectrightE = transform.position.x + (0.5f* width);
-//			float objectlEFTtE = transform.position.x - (0.5f* width);
-//
-//				if(objectlEFTtE < minXpos || objectrightE >maxXpos){
-//
-//					movingRight = !movingRight;
-//				}
-//			}

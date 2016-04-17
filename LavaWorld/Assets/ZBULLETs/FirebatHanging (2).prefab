@@ -15,8 +15,6 @@ GameObject:
   - 114: {fileID: 11419074}
   - 114: {fileID: 11434544}
   - 58: {fileID: 5878740}
-  - 114: {fileID: 11450458}
-  - 111: {fileID: 11133734}
   - 95: {fileID: 9504640}
   m_Layer: 10
   m_Name: FirebatHanging (2)
@@ -63,7 +61,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
@@ -85,20 +83,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!111 &11133734
-Animation:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148530}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: c2f663bb1e35d4182a51f8b8eb9e2bf8, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!114 &11419074
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -129,18 +113,6 @@ MonoBehaviour:
   wasDestroyed: 0
   truck: {fileID: 0}
   EnemyExp: {fileID: 193296, guid: cbbc8d1d7e73f464282e54684f6f120f, type: 2}
---- !u!114 &11450458
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 798fb3c46f7074152badf545bf6f8e86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.5
 --- !u!114 &11463246
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -152,12 +124,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54ebb4bcaabe49baabf54aa5683d2e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 4
+  width: 8
   height: 2
   target: {fileID: 0}
   distanceBetween: {x: 0, y: 0, z: 0}
   speed: 1
-  offset: {x: 0, y: 0, z: 0}
 --- !u!114 &11485554
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -214,6 +185,18 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: width
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: speed
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

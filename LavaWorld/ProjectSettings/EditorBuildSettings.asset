@@ -30,6 +30,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/NotSureIfInUse/OldThings/Scenes/GameOver.unity
   - enabled: 0
-    path: Assets/Tests/Bri-testingLevel.unity
+    path: Assets/Tiled2Unity/Prefabs/Tests/Bri-testingLevel.unity
   - enabled: 0
     path: Assets/NotSureIfInUse/OldThings/Scenes/LevelOneProto.unity

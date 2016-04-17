@@ -41,7 +41,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyBullet: {fileID: 174038, guid: 52d2a6bde53e349629c4a8a15898c337, type: 2}
   playerBullet: {fileID: 188920, guid: eaf7103673bb347d79528d60920d5301, type: 2}
-  enemiesTypes: []
   Size: 100
   EnemyBullets: []
   playerBullets: []
@@ -51,7 +50,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Name
+      value: BulletPooler
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 104500}

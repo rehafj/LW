@@ -15,31 +15,26 @@ public class FallingPlatform : MonoBehaviour {
 	Animator anim;
 
 	void Awake(){
-	rgd = GetComponent<Rigidbody2D>();
-	currentPos = gameObject.transform.position;
-		//Debug.Log(currentPos);
-	colr = GetComponent<BoxCollider2D>();
-	anim = GetComponent<Animator>();
+		rgd = GetComponent<Rigidbody2D>();
+		currentPos = gameObject.transform.position;
+			//Debug.Log(currentPos);
+		colr = GetComponent<BoxCollider2D>();
+		anim = GetComponent<Animator>();
 	}
 	
-	// Update is called once per fram
-	/// <summary>
-	/// OF we want to male the player stand on platform we can add things where oncollider2dexit set it off - many ways to o this discuss with team 
-	/// </summary>
+
 	public void Falling(){
 		anim.SetBool("timepass", true);
-
-			rgd.isKinematic= false;
-			colr.isTrigger= true;
+		rgd.isKinematic= false;
+		colr.isTrigger= true;
 		anim.Play("FallingPlat");
-		//colr.enabled = false;
 
 	}
 
 	void OnCollisionEnter2D( Collision2D other ){
 		if(other.gameObject.tag=="Player"){
-        steppedOn = true;
-		Invoke ("Falling" , fallTimer);
+      	    steppedOn = true;
+			Invoke ("Falling" , fallTimer);
 		}}
 		 
 
@@ -51,7 +46,7 @@ public class FallingPlatform : MonoBehaviour {
 			rgd.isKinematic= true;
 		
 
-		Invoke("recreate",1);
+			Invoke("recreate",1);
 
 			//Destroy(gameObject,2);
 			//make a method to move it upwards 

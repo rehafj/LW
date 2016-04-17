@@ -6,12 +6,15 @@ public class MenuScriptHandler : MonoBehaviour {
 
 	public Animator anim;
 	LevelManager mylevelInstace;
-	public Transform childTrans;
+	public GameObject animatorSkull;
+	//public Transform childTrans;
 	// Use this for initialization
 	void Start () {
 		mylevelInstace = FindObjectOfType<LevelManager>();
-		anim= GetComponentInChildren<Animator>();
-		childTrans = GetComponentInChildren<Transform>();
+		//anim= GetComponentInChildren<Animator>();
+		animatorSkull = GameObject.FindGameObjectWithTag("AnimationMenu");
+		anim = animatorSkull.GetComponent<Animator>();
+		//childTrans = GetComponentInChildren<Transform>();
 
 	}
 	
@@ -63,7 +66,8 @@ public class MenuScriptHandler : MonoBehaviour {
 
 	IEnumerator WaitAndMove(float waitTime) {
 
-		if(anim!=null){
+		//if(anim!=null){
+		if(animatorSkull!=null){
 			anim.Play("falls");
 		}
         yield return new WaitForSeconds(1f);

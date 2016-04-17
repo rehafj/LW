@@ -15,6 +15,7 @@ TagManager:
   - Right
   - Left
   - CheckPoint
+  - AnimationMenu
   layers:
   - Default
   - TransparentFX

@@ -8,33 +8,38 @@ public class MovingPlatform : MonoBehaviour {
 public Transform pointA;
 public Transform pointB;
 bool moving = false;
-public bool hold=false;//if this is true the [;atfpr, will  not return to intial pont
+public bool hold=false;
 public int platFormSpeed=1;
 // note - if we want to move it when the player jumps on it just keep hold condition below else comment it out:) - and resets it to its  first pos!
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-	if(hold){
-		if(moving){
-			transform.position=   Vector3.MoveTowards(transform.position, pointB.position, platFormSpeed*Time.deltaTime);
 
-		}
-		else {	
-				transform.position=   Vector3.MoveTowards(transform.position, pointA.position, platFormSpeed*Time.deltaTime);}
-				if(transform.position.x <= pointA.transform.position.x){
-					moving = true;
+		if(hold){
+
+
+			if(moving){
+
+				transform.position=   Vector3.MoveTowards(transform.position, pointB.position, platFormSpeed*Time.deltaTime);
+
 				}
-		//transform.Translate(-Vector3.right * Time.deltaTime);
-			//transform.Translate(Vector3.right * Time.deltaTime, Space.World);
+			else {	
+				transform.position=   Vector3.MoveTowards(transform.position, pointA.position, platFormSpeed*Time.deltaTime);
 
-	}
+					}
+
+			if(transform.position.x <= pointA.transform.position.x){
+					moving = true;
+					}
+
+		}//end of hold 
 	}
 
 
 	void OnCollisionEnter2D(Collision2D coll) {
         if (coll.gameObject.tag == "Player"){
-        hold = true;
-        moving = true;
+	        hold = true;
+	        moving = true;
 
     }}
 
@@ -42,15 +47,7 @@ public int platFormSpeed=1;
 	void OnTriggerEnter2D(Collider2D other) {
     
 		if (other.gameObject.tag == "DestinationPoint"){
-			moving = false;
-			//print("triggerwise moving is "+moving);
-
-		}
-
-
-
-
-
+			moving = false;}
 
 		}
 //	void OnTriggerExit2D(Collider2D other)

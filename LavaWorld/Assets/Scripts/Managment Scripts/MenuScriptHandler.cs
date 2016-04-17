@@ -7,6 +7,7 @@ public class MenuScriptHandler : MonoBehaviour {
 	public Animator anim;
 	LevelManager mylevelInstace;
 	public GameObject animatorSkull;
+	AudioSource mySFX;
 	//public Transform childTrans;
 	// Use this for initialization
 	void Start () {
@@ -14,6 +15,7 @@ public class MenuScriptHandler : MonoBehaviour {
 		//anim= GetComponentInChildren<Animator>();
 		animatorSkull = GameObject.FindGameObjectWithTag("AnimationMenu");
 		anim = animatorSkull.GetComponent<Animator>();
+		mySFX = GetComponent<AudioSource>();
 		//childTrans = GetComponentInChildren<Transform>();
 
 	}
@@ -31,7 +33,7 @@ public class MenuScriptHandler : MonoBehaviour {
 			PlayerPrefs.SetInt("PlayerHealth", 100);
 			
 		}
-		StartCoroutine(WaitAndMove(2.0F));
+		StartCoroutine(WaitAndMove(3.0F));
 	}
 
 	public void startTheGameHardMode()
@@ -70,7 +72,10 @@ public class MenuScriptHandler : MonoBehaviour {
 		if(animatorSkull!=null){
 			anim.Play("falls");
 		}
-        yield return new WaitForSeconds(1f);
+		if(mySFX!=null){
+		mySFX.Play();
+		}
+		yield return new WaitForSeconds(waitTime);
 
 		SceneManager.LoadScene(1);
     }

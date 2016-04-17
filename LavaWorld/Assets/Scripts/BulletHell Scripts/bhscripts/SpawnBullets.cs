@@ -3,6 +3,7 @@ using System.Collections;
 
 public class SpawnBullets : MonoBehaviour {
 public float timer=1;
+//public ObjectPooler objpooler;
 /// <summary>
 /// test this oout and read more about pooling objects :D note to self... never read things at 4 am  
 /// </summary>
@@ -34,6 +35,16 @@ public float timer=1;
 
 	}
 
+
+//
+//	public void LetLooseTheBullets(){//cz my naming gets crazy oh well :P 
+//
+//	GameObject temp = objpooler.RetrivePooledObject();
+//	temp.transform.position = gameObject.transform.position;
+//	temp.transform.rotation = gameObject.transform.rotation;
+//	temp.SetActive(true);
+//	}
+//
 
 	void OnDisable() {
 //        print("script was removed");

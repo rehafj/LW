@@ -3812,6 +3812,27 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 31f2ccb9bd1b74dab80a98953b582af8, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &606099392 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 196878, guid: 50d4b10c372244340a9f7c22c09b7c10, type: 2}
+  m_PrefabInternal: {fileID: 960833468}
+--- !u!95 &606099396
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 606099392}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3575b2505efb54acaa73406f6a765e0e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &610733249
 GameObject:
   m_ObjectHideFlags: 1
@@ -4460,11 +4481,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 428892, guid: 50d4b10c372244340a9f7c22c09b7c10, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.27
+      value: -175.71
       objectReference: {fileID: 0}
     - target: {fileID: 428892, guid: 50d4b10c372244340a9f7c22c09b7c10, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.08
+      value: 95
       objectReference: {fileID: 0}
     - target: {fileID: 428892, guid: 50d4b10c372244340a9f7c22c09b7c10, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4480,11 +4501,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 428892, guid: 50d4b10c372244340a9f7c22c09b7c10, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.70741504
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 428892, guid: 50d4b10c372244340a9f7c22c09b7c10, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -0.7067984
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 428892, guid: 50d4b10c372244340a9f7c22c09b7c10, type: 2}
       propertyPath: m_RootOrder
@@ -4514,6 +4535,11 @@ Prefab:
       propertyPath: lavaDroplets
       value: 
       objectReference: {fileID: 2067231349}
+    - target: {fileID: 21284380, guid: 50d4b10c372244340a9f7c22c09b7c10, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 115a0126c12e34c1ba527144fb426343,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 50d4b10c372244340a9f7c22c09b7c10, type: 2}
   m_IsPrefabParent: 0
@@ -7155,6 +7181,11 @@ Prefab:
       propertyPath: jumpStr
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 21244864, guid: 64824513ccae8455582df429f533f08e, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5b06ca5d0958a4b9faa486133d57f931,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64824513ccae8455582df429f533f08e, type: 2}
   m_IsPrefabParent: 0

@@ -246,6 +246,8 @@ void FixedUpdate () {
 	 void ChargeShot(){
 	if(Input.GetButton("shoot") && chargeTime<= maxTime){
 //			Debug.Log("charging");
+			//anim.SetBool("charging",true);
+			anim.Play("charging");
 			chargeTime+=Time.deltaTime;
 			if(chargeTime>= maxTime)
 				ReleaseChargeShot( myDirection);
@@ -254,7 +256,7 @@ void FixedUpdate () {
 	 if( Input.GetButtonUp("shoot")){
 //			Debug.Log("button was released");
 			chargeTime=0;
-
+			//anim.SetBool("charging",false);
 			}
 
 	}

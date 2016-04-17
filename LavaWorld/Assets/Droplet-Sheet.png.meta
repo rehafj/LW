@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: 115a0126c12e34c1ba527144fb426343
+timeCreated: 1460922943
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Droplet-Sheet_0
+    21300002: Droplet-Sheet_1
+    21300004: Droplet-Sheet_2
+    21300006: Droplet-Sheet_3
+    21300008: Droplet-Sheet_4
+    21300010: Droplet-Sheet_5
+    21300012: Droplet-Sheet_6
+    21300014: Droplet-Sheet_7
+    21300016: Droplet-Sheet_8
+    21300018: Droplet-Sheet_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Droplet-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 74
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Droplet-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 72
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Droplet-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 70
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Droplet-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 69
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Droplet-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 62
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Droplet-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 58
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Droplet-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 56
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Droplet-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 51
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Droplet-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 69
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Droplet-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 38
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

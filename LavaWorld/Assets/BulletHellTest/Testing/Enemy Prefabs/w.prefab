@@ -13,7 +13,6 @@ GameObject:
   - 58: {fileID: 5826402}
   - 114: {fileID: 11477384}
   - 114: {fileID: 11473736}
-  - 114: {fileID: 11471238}
   m_Layer: 0
   m_Name: w
   m_TagString: Dmg
@@ -64,17 +63,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &11471238
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 174038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eaf93bd492e1145f4aeb668ef1c88d78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11473736
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -125,7 +113,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: aecce2acd83dd42ab9bf833dad0ee7ae, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.20689654, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!1001 &100100000
@@ -146,6 +134,18 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_TagString
       value: Dmg
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Color.g
+      value: 0.20689654
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Color.b
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

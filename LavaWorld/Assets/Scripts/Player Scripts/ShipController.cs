@@ -11,7 +11,9 @@ public class ShipController : MonoBehaviour {
 	public float coolDownTimer=1;								// the lower this is th more bullets on screen at a time 
  	float DownTime =0;
 
-
+public	bool cantGetHurt = false;
+public float invincbLastFor = 1f;
+float invincbTimer;
 	// Use this for initialization
 	void Start () {
 	rgd = GetComponent<Rigidbody2D>();
@@ -32,6 +34,12 @@ public class ShipController : MonoBehaviour {
 		else if( Input.GetButtonDown("shoot")){
 
 			FireBullers();
+		}
+
+		if(invincbTimer>=0){ invincbTimer-=Time.deltaTime;}
+
+		if( invincbTimer <= 0) {
+			cantGetHurt = false;
 		}
 	}
 
@@ -62,5 +70,11 @@ public class ShipController : MonoBehaviour {
 		myImg.sprite = Truckimg;
 
 
+	}
+
+
+	public void CheckInvinibility(){
+		invincbTimer = invincbLastFor;
+		cantGetHurt = true;
 	}
 }

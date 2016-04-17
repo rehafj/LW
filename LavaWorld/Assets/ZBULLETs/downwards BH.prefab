@@ -124,6 +124,7 @@ MonoBehaviour:
   CannotGetHit: 0
   timetoreswpan: 6
   wasDestroyed: 0
+  truck: {fileID: 0}
   EnemyExp: {fileID: 146312, guid: e552497a350724099857f237ae2ff9e7, type: 2}
 --- !u!114 &11483848
 MonoBehaviour:

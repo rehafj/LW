@@ -44,11 +44,7 @@ public class MusicManagerT : MonoBehaviour {
 
 	}
 
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 	void OnLevelWasLoaded(){
 		sceneNumber = SceneManager.GetActiveScene().buildIndex;
 //		Debug.Log(sceneNumber);

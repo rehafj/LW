@@ -49,7 +49,7 @@ public class ObjectPooler : MonoBehaviour {
 		}
 		
 
-
+		//test
 
 
 //		for ( int i= 0; i< pooledObjectS.Count; i++)

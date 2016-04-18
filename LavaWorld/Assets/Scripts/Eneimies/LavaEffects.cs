@@ -26,18 +26,25 @@ public class LavaEffects : MonoBehaviour {
 
 	public static int multip = 1;
 
+	AudioSource sound;
+
 
 public void Start(){
 
 myPlayer = GameObject.FindGameObjectWithTag("Player");
+if(myPlayer!=null){//if issues remove this 
 playerStatusScript = myPlayer.GetComponent<PlayerStatus>();//TO MANAGE PLAYER HEALTH 
+
 currentController = myPlayer.GetComponent<PlayerController>();//FOR KNOCKBACK Purpose 
 truck = myPlayer.GetComponent<ShipController>();
+}
 initialHitsToDestory = HitsToDestroy;
 postion_gameobject = GetComponent<RespawnerGameObj>();
 
-		myImg = GetComponent<SpriteRenderer>();
-		originalColor = myImg.color;
+myImg = GetComponent<SpriteRenderer>();
+originalColor = myImg.color;
+
+sound = GetComponent<AudioSource>();
 
 }
 
@@ -115,7 +122,6 @@ public void DoDamageToPlayer(){
 		if( currentController!= null && !currentController.cantGetHurt){
 			currentController.KnockBack();
 			playerStatusScript.GetDamageFromFire(howMuchDamage * multip);}
-//		currentController.KnockBack();
 		else if ( truck!=null && !truck.cantGetHurt){
 			truck.CheckInvinibility();
 			playerStatusScript.GetDamageFromFire(howMuchDamage * multip);

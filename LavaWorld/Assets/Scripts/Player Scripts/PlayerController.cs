@@ -10,13 +10,13 @@ public class PlayerController : MonoBehaviour {
 public enum Directions {right, left, up, down, idle};
  Directions myDirection = Directions.idle;
 
- Rigidbody2D rgd; 
+  Rigidbody2D rgd; 
  public float speed=10;
  public float jumpStr=500;
  public float propelStrength=10;
  public bool isFacingRight;
 
-bool isGrounded = false;
+public bool isGrounded = false;
  public  Transform groundChecker;
  public float checkRadius;
  public LayerMask groundMask;
@@ -27,11 +27,10 @@ bool isGrounded = false;
 		Rigidbody2D typeofprojectile ;
 
 														/*charge shot var */
-  float chargeTime=0;
+   float chargeTime=0;//incrimints 
  public	float maxTime=5; 
  public Rigidbody2D chargedShot;
-		bool chargedShotReady = false;
-
+	bool chargedShotReady = false;
 															/*recoil or wait time varibles*/
  public float coolDownTimer=1;								// the lower this is th more bullets on screen at a time 
  		float DownTime =0;
@@ -45,6 +44,15 @@ public float knockbackforce=2;
 	 float knockcounterTimer;
 	public bool cantGetHurt;
 
+
+	public bool isCharging = false;//change this tos tates o f enum if there is time 
+
+//
+//
+//public AudioSource mySFX;
+//public AudioClip[] myAudioSounds = new AudioClip[4];
+//public PlayerStatus playerEXP; 
+//
 
 void Start () {
 		typeofprojectile =  Projectile;
@@ -67,9 +75,10 @@ void FixedUpdate () {
                 JumpAction();
                 if(FoundWater){
                     ProppelPlayer();}
-            }
+			}
+			if(FoundWater){
             ShootingDirectionsSwitch();
-            ChargeShot();
+            ChargeShot();}
 
             cantGetHurt = false;//When the timer ends the payer can get hurt
 
@@ -159,7 +168,6 @@ void FixedUpdate () {
 			DownTime -= Time.deltaTime;
 
 		else if(Input.GetButtonDown("shoot")){
-			
 			chargeTime+=Time.deltaTime;
 			switch(myDirection){
 			case  Directions.right : {
@@ -203,7 +211,7 @@ void FixedUpdate () {
 
 		setprojectileType();//set the projectile type 
 
-		if( FoundWater){//only shoot if water is avaible 
+	//	if( FoundWater){//only shoot if water is avaible 
 			Rigidbody2D clone;
 
 		if(direction == Directions.right){
@@ -237,7 +245,7 @@ void FixedUpdate () {
 			}
 			DownTime = coolDownTimer;
 			chargedShotReady = false;
-	}
+//	}
 	}
 
 																/// <summary>
@@ -245,10 +253,10 @@ void FixedUpdate () {
 																/// </summary>
 	 void ChargeShot(){
 	if(Input.GetButton("shoot") && chargeTime<= maxTime){
-//			Debug.Log("charging");
-			//anim.SetBool("charging",true);
-			anim.Play("charging");
-			chargeTime+=Time.deltaTime;
+		chargeTime+=Time.deltaTime;
+			if(chargeTime>= (maxTime-2f)){
+				anim.Play("charging");
+				isCharging = true;}
 			if(chargeTime>= maxTime)
 				ReleaseChargeShot( myDirection);
 
@@ -256,6 +264,7 @@ void FixedUpdate () {
 	 if( Input.GetButtonUp("shoot")){
 //			Debug.Log("button was released");
 			chargeTime=0;
+			isCharging = false;
 			//anim.SetBool("charging",false);
 			}
 

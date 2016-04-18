@@ -14,8 +14,9 @@ public class MenuScriptHandler : MonoBehaviour {
 		mylevelInstace = FindObjectOfType<LevelManager>();
 		//anim= GetComponentInChildren<Animator>();
 		animatorSkull = GameObject.FindGameObjectWithTag("AnimationMenu");
+		if(animatorSkull!=null){
 		anim = animatorSkull.GetComponent<Animator>();
-		mySFX = GetComponent<AudioSource>();
+		mySFX = GetComponent<AudioSource>();}
 		//childTrans = GetComponentInChildren<Transform>();
 
 	}

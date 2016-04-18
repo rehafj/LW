@@ -21,7 +21,7 @@ public class PlayerStatus : MonoBehaviour {
 	public Transform Player ;
 	public Animator anim;
 	public GameObject particleexp;
-
+	//public PlayerController plr;
 	 //remove these points - naother ways is better --- add a script that anges check points on player script 
 	//public int currentPoint = 0;//current check point pos 
 	//public Transform ressetPoint;//change the resset point baased on what happens//reset point scripts finds player and changes the resset point -- and try and reload level-> so move this ot level manager script in future 
@@ -31,6 +31,12 @@ public class PlayerStatus : MonoBehaviour {
 
 	SpriteRenderer myImg;
 	Color originalColor;
+
+
+
+public AudioSource mySFX;
+public AudioClip[] myAudioSounds = new AudioClip[2];
+
 
 	void Start(){
 		currentScene = FindObjectOfType<LevelManager>();//sets it to scene manager 
@@ -44,7 +50,10 @@ public class PlayerStatus : MonoBehaviour {
 		myImg = GetComponent<SpriteRenderer>();
 		originalColor = myImg.color;
 
-	}
+		mySFX = GetComponent<AudioSource>();
+
+
+			}
 
 
 	void Update(){
@@ -62,7 +71,6 @@ public class PlayerStatus : MonoBehaviour {
 		if(coll.gameObject.tag == "Dmg"){//refactor to a method - recive dmg and play anaimtaion 
 				anim.Play("Dmg");
 				this.health -=10; 
-			//	StartCoroutine("FlashPlayer");
 				Destroy(coll.gameObject);
 			}
 
@@ -115,6 +123,10 @@ public class PlayerStatus : MonoBehaviour {
 			this.health-=dmg;
 			StartCoroutine("FlashPlayer");
 			anim.Play("Dmg");
+			if(!mySFX.isPlaying){
+			mySFX.PlayOneShot(myAudioSounds[0]);}
+		
+
 
 	}
 
@@ -137,12 +149,9 @@ public class PlayerStatus : MonoBehaviour {
 	}
 
 	public void setPlayerToActive(){
-	//Debug.Log("in incoke");
-		//Player.transform.position= checkPoints[currentPoint].transform.position;
 		Player.transform.position = RespwanPoint;
 		gameObject.SetActive(true);
 		myImg.color = originalColor ;
-;
 
 
 
@@ -154,7 +163,6 @@ public class PlayerStatus : MonoBehaviour {
 
 IEnumerator  FlashPlayer(){
 	for(int i = 0 ; i < 2; i++){
-//			Debug.Log("test flash");
 			changeColorAlpha();
 			yield return new WaitForSeconds( 0.1f);
 			myImg.color = originalColor;

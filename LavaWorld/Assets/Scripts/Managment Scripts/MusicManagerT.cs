@@ -14,10 +14,10 @@ public class MusicManagerT : MonoBehaviour {
 	void Awake(){
 //	Debug.Log("called");
 
-				myMusic = GetComponent<AudioSource>();
-				currentClip = GetComponent<AudioSource>().clip;
+		myMusic = GetComponent<AudioSource>();
+		currentClip = GetComponent<AudioSource>().clip;
 				//sceneNumber = _indexOfScene.currentScene;
-				myMusic.Play();
+		myMusic.Play();
 
 		
 		if(musicInstance !=null){

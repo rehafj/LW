@@ -65,16 +65,16 @@ public AudioClip[] myAudioSounds = new AudioClip[2];
 
 	}
 
-	void OnCollisionEnter2D(Collision2D coll){
-//		Debug.Log("COLLIDER DMG");
-
-		if(coll.gameObject.tag == "Dmg"){//refactor to a method - recive dmg and play anaimtaion 
-				anim.Play("Dmg");
-				this.health -=10; 
-				Destroy(coll.gameObject);
-			}
-
-	}
+//	void OnCollisionEnter2D(Collision2D coll){
+////		Debug.Log("COLLIDER DMG");
+//
+//		if(coll.gameObject.tag == "Dmg"){//refactor to a method - recive dmg and play anaimtaion 
+//				anim.Play("Dmg");
+//				this.health -=10; 
+//				Destroy(coll.gameObject);
+//			}
+//
+//	}
 
 	void OnTriggerEnter2D(Collider2D coll){
 //	Debug.Log("TRIGGER DMG");

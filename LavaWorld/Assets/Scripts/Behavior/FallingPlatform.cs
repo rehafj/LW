@@ -13,6 +13,7 @@ public class FallingPlatform : MonoBehaviour {
 	Vector3 currentPos;
 	BoxCollider2D colr;
 	Animator anim;
+	public float recrationTime =1f;
 
 	void Awake(){
 		rgd = GetComponent<Rigidbody2D>();
@@ -40,13 +41,13 @@ public class FallingPlatform : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other) {
 
-		if(other.gameObject.tag =="death" ||other.gameObject.tag == "Ground" ){
-		//Debug.Log("entred trigger");
+		if(other.gameObject.tag =="InsDeath" ||other.gameObject.tag == "Ground" ){
+		Debug.Log("entred trigger changing things ");
 		//	colr.enabled = false;
 			rgd.isKinematic= true;
 		
 
-			Invoke("recreate",1);
+			Invoke("recreate",recrationTime);
 
 			//Destroy(gameObject,2);
 			//make a method to move it upwards 

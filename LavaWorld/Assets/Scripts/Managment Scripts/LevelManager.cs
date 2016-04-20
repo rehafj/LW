@@ -44,7 +44,7 @@ public void SetInitialThings(){
 		PlayerPrefs.SetInt("PlayerHealth", myPlayerHealth);}
 	else if(isHardMode){
 		LavaEffects.multip = 3;
-		PlayerPrefs.SetInt("PlayerLives", 2 );
+		PlayerPrefs.SetInt("PlayerLives", 1 );
 		PlayerPrefs.SetInt("PlayerHealth", myPlayerHealth);}
 		
 		

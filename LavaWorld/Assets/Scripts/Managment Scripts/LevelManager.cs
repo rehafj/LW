@@ -65,6 +65,8 @@ public void MoveToNextLevel(){
 	}
 
 			nextLevel=sceneCounter+1;
+		Debug.Log("loading next scene "+ nextLevel);
+
 			SceneManager.LoadScene(nextLevel);
 		}
 

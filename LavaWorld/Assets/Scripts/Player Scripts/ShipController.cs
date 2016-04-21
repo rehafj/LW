@@ -39,6 +39,20 @@ public GameObject SPBullets;
 			FireBullers();
 		}
 
+		else if (Input.GetButtonDown("SpeicalShot")){
+
+			if( PlayerStatus.SpecialBullets>0){
+
+	///change this to pooler quick fix for testing 
+			Instantiate( SPBullets, Gun1.transform.position, Gun1.transform.rotation);
+			Instantiate( SPBullets, Gun2.transform.position, Gun2.transform.rotation);
+			PlayerStatus.DencreamentBullets();
+				DownTime = coolDownTimer;
+
+
+	}
+	}
+
 		if(invincbTimer>=0){ invincbTimer-=Time.deltaTime;}
 
 		if( invincbTimer <= 0) {
@@ -48,15 +62,15 @@ public GameObject SPBullets;
 
 	void FireBullers(){
 
-	if( PlayerStatus.SpecialBullets>0){
-
-	///change this to pooler quick fix for testing 
-			Instantiate( SPBullets, Gun1.transform.position, Gun1.transform.rotation);
-			Instantiate( SPBullets, Gun2.transform.position, Gun2.transform.rotation);
-			PlayerStatus.DencreamentBullets();
-
-	} else 
-	{
+//	if( PlayerStatus.SpecialBullets>0){
+//
+//	///change this to pooler quick fix for testing 
+//			Instantiate( SPBullets, Gun1.transform.position, Gun1.transform.rotation);
+//			Instantiate( SPBullets, Gun2.transform.position, Gun2.transform.rotation);
+//			PlayerStatus.DencreamentBullets();
+//
+////	} else 
+//	{
 			
 
 	GameObject temp = Pooler.currentPoller.ReturnPlayerBullets();//gives acses to the ppoo for the ginafwm 
@@ -71,7 +85,7 @@ public GameObject SPBullets;
 		DownTime = coolDownTimer;
 
 	}
-	}
+
 	void MoveTheTruck(){//add transtion for truk animations 
 
 	int sideways = (int) Input.GetAxisRaw("Horizontal");//0 or 1 only 

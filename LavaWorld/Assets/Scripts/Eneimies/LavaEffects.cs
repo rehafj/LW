@@ -10,7 +10,7 @@ public class LavaEffects : MonoBehaviour {
 	PlayerController currentController;
 
 	public int howMuchDamage = 10;					
-	public int HitsToDestroy = 3;		 int initialHitsToDestory;
+	public int HitsToDestroy = 3;		public int initialHitsToDestory;//just for inheritance test
 	//i.e. this object's health
 
 
@@ -30,15 +30,19 @@ public class LavaEffects : MonoBehaviour {
 
 	AudioSource sound;
 
+	 DropItems canDropItem;
+
+	 int damageTaken = 1;
 
 public void Start(){
-	Debug.Log("test");
+//said something stupid Here 
 	myPlayer = GameObject.FindGameObjectWithTag("Player");
 	if(myPlayer!=null){//if issues remove this 
 		playerStatusScript = myPlayer.GetComponent<PlayerStatus>();//TO MANAGE PLAYER HEALTH 
 		currentController = myPlayer.GetComponent<PlayerController>();
 		truck = myPlayer.GetComponent<ShipController>();
 	}
+	HitsToDestroy = HitsToDestroy * multip; // htis is if it is needed for multiplayer on health value 
 	initialHitsToDestory = HitsToDestroy;
 	postion_gameobject = GetComponent<RespawnerGameObj>();
 
@@ -47,7 +51,10 @@ public void Start(){
 
 	sound = GetComponent<AudioSource>();
 
-}
+
+		canDropItem = GetComponent<DropItems>();}
+
+
 
 
 void OnTriggerEnter2D( Collider2D coll){
@@ -56,10 +63,16 @@ void OnTriggerEnter2D( Collider2D coll){
 			
 			PlayerEffects();
 
-			}
+		}	if( coll.gameObject.tag=="SP" && CannotGetHit ==false){
+			damageTaken=2;
+			EnemyTakeDamage(damageTaken);
+
+				}
+
 	
 		if( coll.gameObject.tag=="Water" && CannotGetHit ==false){
-			EnemyTakeDamage();
+			damageTaken=1;
+			EnemyTakeDamage(damageTaken);
 
 				}
 
@@ -79,7 +92,7 @@ void OnCollisionEnter2D( Collision2D coll){
 
 		else if( coll.gameObject.tag=="Water" && CannotGetHit ==false){
 
-			EnemyTakeDamage();
+			EnemyTakeDamage(damageTaken);
 	}
 		else if( coll.gameObject.tag=="Water" && CannotGetHit ==true)
 			Debug.Log(" monster was hit and can get hit was true ");//for enemies like bLOB
@@ -91,17 +104,18 @@ void OnCollisionEnter2D( Collision2D coll){
 
 //chaneg this inside the player script status  - better anbd change ti to recive dmg -> call it from here 
 public void DoDamageToPlayer(){
+	if(howMuchDamage>0){// remove this later - quick fix for sandao platfrom sub
+			if( currentController!= null && !currentController.cantGetHurt){
+				if(playerStatusScript.health>10){
+					Debug.Log("health is "+playerStatusScript.health+"doing knockback!");//to prevent knockback if player has last 10 hp ( no kb on reset) 
+					currentController.KnockBack();}
+				playerStatusScript.GetDamageFromFire(howMuchDamage * multip);}
+			else if ( truck!=null && !truck.cantGetHurt){
+				truck.CheckInvinibility();
+				playerStatusScript.GetDamageFromFire(howMuchDamage * multip);
+				}
 
-		if( currentController!= null && !currentController.cantGetHurt){
-			if(playerStatusScript.health>10){
-				Debug.Log("health is "+playerStatusScript.health+"doing knockback!");//to prevent knockback if player has last 10 hp ( no kb on reset) 
-				currentController.KnockBack();}
-			playerStatusScript.GetDamageFromFire(howMuchDamage * multip);}
-		else if ( truck!=null && !truck.cantGetHurt){
-			truck.CheckInvinibility();
-			playerStatusScript.GetDamageFromFire(howMuchDamage * multip);
-			}
-
+		}
 }
 
 
@@ -110,7 +124,8 @@ public bool RetrunWasDestroyed (){
 		return wasDestroyed;
 }
 
-public void  ResetEnemValues(){
+public virtual void  ResetEnemValues(){ //for the future need to override this becuase enemyies are based on random and if this is ued in bh part = issues respawns same place but we need an ovverride to reset values only and not pos 
+		wasDestroyed = false;
 		gameObject.SetActive(true);
 		HitsToDestroy = initialHitsToDestory;
 		if(postion_gameobject!=null){
@@ -152,10 +167,10 @@ void PlayerEffects(){
 
 }
 
-void EnemyTakeDamage(){
+void EnemyTakeDamage(int dmg){
 
 
-			HitsToDestroy-=1;
+			HitsToDestroy-=dmg;
 			if(HitsToDestroy>0){
 				StartCoroutine("FlashEnemy",0f);}
 			DestroyThis();
@@ -166,8 +181,14 @@ void EnemyTakeDamage(){
 void DestroyThis(){
 	if(HitsToDestroy<=0){
 			wasDestroyed = true;
+
 			if(EnemyExp!=null){
-			Instantiate(EnemyExp,gameObject.transform.position, gameObject.transform.rotation);}
+				Instantiate(EnemyExp,gameObject.transform.position, gameObject.transform.rotation);}
+
+			if(canDropItem!=null){
+				canDropItem.DropCollectable();
+			}
+			
 		gameObject.SetActive(false);
 		Invoke ("ResetEnemValues", timetoreswpan);
 	}

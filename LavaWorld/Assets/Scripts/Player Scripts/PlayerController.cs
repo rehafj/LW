@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour {
 public enum Directions {right, left, up, down, idle};
  Directions myDirection = Directions.idle;
 
-  Rigidbody2D rgd; 
+ public Rigidbody2D rgd; // so we can stop the cahrercter from hainv gnay veloctyu while moving - suddnly. ( why it is public) 
  public float speed=10;
  public float jumpStr=500;
  public float propelStrength=10;

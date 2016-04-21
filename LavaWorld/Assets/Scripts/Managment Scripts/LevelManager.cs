@@ -41,11 +41,16 @@ public void SetInitialThings(){
 	if( isHardMode ==false){
 		LavaEffects.multip = 1;
 		PlayerPrefs.SetInt("PlayerLives", myPlayerLives);
-		PlayerPrefs.SetInt("PlayerHealth", myPlayerHealth);}
+		PlayerPrefs.SetInt("PlayerHealth", myPlayerHealth);
+		PlayerPrefs.SetInt("SPBullets", 0);
+		}
+
 	else if(isHardMode){
-		LavaEffects.multip = 3;
+		LavaEffects.multip = 2;
 		PlayerPrefs.SetInt("PlayerLives", 1 );
-		PlayerPrefs.SetInt("PlayerHealth", myPlayerHealth);}
+		PlayerPrefs.SetInt("PlayerHealth", myPlayerHealth);
+		PlayerPrefs.SetInt("SPBullets", 0);
+}
 		
 		
 
@@ -59,6 +64,8 @@ public void MoveToNextLevel(){
 
 				PlayerPrefs.SetInt("PlayerLives",playerInstance.lives);
 				PlayerPrefs.SetInt("PlayerHealth", playerInstance.health);
+				PlayerPrefs.SetInt("SPBullets", PlayerStatus.SpecialBullets);
+
 	}
 	else {
 	 Debug.LogError("no player was found");

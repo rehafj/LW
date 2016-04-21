@@ -10,7 +10,7 @@ public class LavaEffects : MonoBehaviour {
 	PlayerController currentController;
 
 	public int howMuchDamage = 10;					
-	public int HitsToDestroy = 3;		 int initialHitsToDestory;
+	public int HitsToDestroy = 3;		public int initialHitsToDestory;//just for inheritance test
 	//i.e. this object's health
 
 
@@ -124,7 +124,7 @@ public bool RetrunWasDestroyed (){
 		return wasDestroyed;
 }
 
-public void  ResetEnemValues(){ //for the future need to override this becuase enemyies are based on random and if this is ued in bh part = issues respawns same place but we need an ovverride to reset values only and not pos 
+public virtual void  ResetEnemValues(){ //for the future need to override this becuase enemyies are based on random and if this is ued in bh part = issues respawns same place but we need an ovverride to reset values only and not pos 
 		wasDestroyed = false;
 		gameObject.SetActive(true);
 		HitsToDestroy = initialHitsToDestory;

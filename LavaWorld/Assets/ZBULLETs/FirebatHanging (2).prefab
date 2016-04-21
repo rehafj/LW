@@ -13,9 +13,9 @@ GameObject:
   - 50: {fileID: 5007794}
   - 114: {fileID: 11463246}
   - 114: {fileID: 11419074}
-  - 114: {fileID: 11434544}
   - 58: {fileID: 5878740}
   - 95: {fileID: 9504640}
+  - 114: {fileID: 11448278}
   m_Layer: 10
   m_Name: FirebatHanging (2)
   m_TagString: Enem
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 019f58860605e4b469e7e78fda64617c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11434544
+--- !u!114 &11448278
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -102,17 +102,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 148530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea11049e91cb04a99bd2d47f4653814f, type: 3}
+  m_Script: {fileID: 11500000, guid: 361508d30fd0341a5b0ee725fed75376, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   howMuchDamage: 10
-  HitsToDestroy: 2
+  HitsToDestroy: 3
+  initialHitsToDestory: 0
   instantKill: 0
   CannotGetHit: 0
   timetoreswpan: 5
   wasDestroyed: 0
   truck: {fileID: 0}
-  EnemyExp: {fileID: 193296, guid: cbbc8d1d7e73f464282e54684f6f120f, type: 2}
+  EnemyExp: {fileID: 146312, guid: e552497a350724099857f237ae2ff9e7, type: 2}
 --- !u!114 &11463246
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -181,7 +182,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: EnemyExp
       value: 
-      objectReference: {fileID: 193296, guid: cbbc8d1d7e73f464282e54684f6f120f, type: 2}
+      objectReference: {fileID: 146312, guid: e552497a350724099857f237ae2ff9e7, type: 2}
     - target: {fileID: 0}
       propertyPath: m_Layer
       value: 10

@@ -1796,11 +1796,11 @@ GameObject:
   - 114: {fileID: 441070197}
   - 114: {fileID: 441070196}
   - 114: {fileID: 441070195}
+  - 114: {fileID: 441070198}
+  - 114: {fileID: 441070199}
   - 114: {fileID: 441070202}
   - 114: {fileID: 441070201}
   - 114: {fileID: 441070200}
-  - 114: {fileID: 441070199}
-  - 114: {fileID: 441070198}
   m_Layer: 0
   m_Name: fake
   m_TagString: Untagged
@@ -1875,7 +1875,8 @@ MonoBehaviour:
     width: 920
     height: 840
   selectedBlock: {fileID: 441070197}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 441070201}
   variables: []
   description: 
   stepPause: 0
@@ -1911,12 +1912,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 1
+  itemId: 5
   errorMessage: 
   indentLevel: 0
-  storyText: Hi!!!!!
+  storyText: "My name\u2019s Tyne and I\u2019m one of the WATER Undyne.\n\nLet me\r
+    gather the data from your WATER gun."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 141478096}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1960,12 +1962,12 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 441070196}
   commandList:
-  - {fileID: 441070195}
   - {fileID: 441070199}
+  - {fileID: 441070195}
+  - {fileID: 441070198}
+  - {fileID: 441070202}
   - {fileID: 441070200}
   - {fileID: 441070201}
-  - {fileID: 441070202}
-  - {fileID: 441070198}
 --- !u!114 &441070198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1994,18 +1996,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 5
+  itemId: 12
   errorMessage: 
   indentLevel: 0
-  storyText: Hi!!!!!
+  storyText: "Oh thank goodness you\u2019re here! I was just about to evaporate for\r\n\r\ngood."
   description: 
-  character: {fileID: 141478096}
+  character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: c247df6b484eaa948ab2c80ff7d70fca, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
-  fadeWhenDone: 1
+  fadeWhenDone: 0
   waitForClick: 1
   setSayDialog: {fileID: 0}
 --- !u!114 &441070200
@@ -2019,12 +2021,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 4
+  itemId: 15
   errorMessage: 
   indentLevel: 0
-  storyText: Hi!!!!!
+  storyText: "No matter, with me backing you up,\r\n\r\nwe can conquer anything!"
   description: 
-  character: {fileID: 141478096}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2044,10 +2046,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 3
+  itemId: 14
   errorMessage: 
   indentLevel: 0
-  storyText: add more text
+  storyText: "Now that I\u2019m with you, you can press\r\n\r\nX to shoot and X +
+    Down to jump higher and go further."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2069,10 +2072,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 2
+  itemId: 13
   errorMessage: 
   indentLevel: 0
-  storyText: Hi!!!!!
+  storyText: "Finch huh? And a new recruit no less. Seems like we\u2019re getting\r\n\r\ndesperate
+    in this situation."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2433,7 +2437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 441070193}
+  selectedFlowchart: {fileID: 1868176349}
 --- !u!4 &610733251
 Transform:
   m_ObjectHideFlags: 1
@@ -6706,11 +6710,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 482536, guid: 64824513ccae8455582df429f533f08e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 46.1
+      value: 8.21
       objectReference: {fileID: 0}
     - target: {fileID: 482536, guid: 64824513ccae8455582df429f533f08e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -13.8
+      value: 0.63
       objectReference: {fileID: 0}
     - target: {fileID: 482536, guid: 64824513ccae8455582df429f533f08e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7277,15 +7281,13 @@ GameObject:
   - 114: {fileID: 1868176346}
   - 114: {fileID: 1868176345}
   - 114: {fileID: 1868176344}
-  - 114: {fileID: 1868176342}
-  - 114: {fileID: 1868176341}
-  - 114: {fileID: 1868176340}
-  - 114: {fileID: 1868176339}
-  - 114: {fileID: 1868176338}
-  - 114: {fileID: 1868176337}
-  - 114: {fileID: 1868176336}
   - 114: {fileID: 1868176351}
   - 114: {fileID: 1868176343}
+  - 114: {fileID: 1868176352}
+  - 114: {fileID: 1868176354}
+  - 114: {fileID: 1868176353}
+  - 114: {fileID: 1868176355}
+  - 114: {fileID: 1868176362}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -7293,166 +7295,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1868176336
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1868176335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 10
-  errorMessage: 
-  indentLevel: 0
-  targetObject: {fileID: 441070190}
-  methodName: ActivatePLayer
-  delay: 1
---- !u!114 &1868176337
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1868176335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1868176342}
-  message: FUN
---- !u!114 &1868176338
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1868176335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 9
-  errorMessage: 
-  indentLevel: 0
-  storyText: "Now that I\u2019m with you, you can press\r\n\r\nX to fight your enemies!\n\nwhen
-    the timer reaches 50 eneimies shall spawn and you shall move \nget ready!"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: c247df6b484eaa948ab2c80ff7d70fca, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
---- !u!114 &1868176339
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1868176335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 8
-  errorMessage: 
-  indentLevel: 0
-  storyText: "Finch huh? And a new recruit no less. Seems like we\u2019re getting\r\n\r\ndesperate
-    in this situation. No matter, with me backing you up,\r\n\r\nwe can conquer anything!"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: c247df6b484eaa948ab2c80ff7d70fca, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 0
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
---- !u!114 &1868176340
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1868176335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 7
-  errorMessage: 
-  indentLevel: 0
-  storyText: "My name\u2019s Tyne and I\u2019m one of the WATER Undyne. Let me\r\n\r\ngather
-    the data from your WATER gun."
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: c247df6b484eaa948ab2c80ff7d70fca, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 0
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
---- !u!114 &1868176341
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1868176335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 6
-  errorMessage: 
-  indentLevel: 0
-  storyText: "Oh thank goodness you\u2019re here! I was just about to evaporate for\r\n\r\ngood."
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: c247df6b484eaa948ab2c80ff7d70fca, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 0
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
---- !u!114 &1868176342
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1868176335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 119
-    y: 45
-    width: 126
-    height: 40
-  itemId: 5
-  blockName: undine (Copy)
-  description: 
-  eventHandler: {fileID: 1868176337}
-  commandList:
-  - {fileID: 1868176341}
-  - {fileID: 1868176340}
-  - {fileID: 1868176339}
-  - {fileID: 1868176338}
-  - {fileID: 1868176336}
 --- !u!114 &1868176343
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7480,10 +7322,10 @@ MonoBehaviour:
   itemId: 4
   errorMessage: 
   indentLevel: 0
-  storyText: "Now that I\u2019m with you, you can press\r\n\r\nX to fight your enemies!\n\nwhen
-    the timer reaches 50 eneimies shall spawn and you shall move \nget ready!"
+  storyText: "Unfortunately, they got the one up on us. Somehow they managed\r\n\r\nto
+    get into one of our major science facilities a take several\r\n\r\n"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1992953357}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 8300000, guid: c247df6b484eaa948ab2c80ff7d70fca, type: 3}
   showAlways: 1
@@ -7507,10 +7349,10 @@ MonoBehaviour:
   itemId: 3
   errorMessage: 
   indentLevel: 0
-  storyText: "Finch huh? And a new recruit no less. Seems like we\u2019re getting\r\n\r\ndesperate
-    in this situation. No matter, with me backing you up,\r\n\r\nwe can conquer anything!"
+  storyText: "They plan to\r make our country into some type of giant theme park \n\nthat
+    serves\r suffering rather than smiles."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1992953357}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 8300000, guid: c247df6b484eaa948ab2c80ff7d70fca, type: 3}
   showAlways: 1
@@ -7534,10 +7376,11 @@ MonoBehaviour:
   itemId: 2
   errorMessage: 
   indentLevel: 0
-  storyText: "My name\u2019s Tyne and I\u2019m one of the WATER Undyne. Let me\r\n\r\ngather
-    the data from your WATER gun."
+  storyText: "As you know the Cult of the Phoenix has started to wreak major\r\n\r\nhavoc
+    on the US. At first they were an odd religious group\r\n\r\nclaiming to find peace
+    with the element of fire."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1992953357}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 8300000, guid: c247df6b484eaa948ab2c80ff7d70fca, type: 3}
   showAlways: 1
@@ -7561,9 +7404,10 @@ MonoBehaviour:
   itemId: 1
   errorMessage: 
   indentLevel: 0
-  storyText: "Oh thank goodness you\u2019re here! I was just about to evaporate for\r\n\r\ngood."
+  storyText: "Listen Finch, I know that you\u2019re still a probationary recruit\r\n\r\nbut
+    things are getting serious and we need all hands on deck."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1992953357}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 8300000, guid: c247df6b484eaa948ab2c80ff7d70fca, type: 3}
   showAlways: 1
@@ -7591,14 +7435,19 @@ MonoBehaviour:
     width: 120
     height: 40
   itemId: 0
-  blockName: undine
+  blockName: MIZU
   description: This is where the talk happens
   eventHandler: {fileID: 1868176343}
   commandList:
   - {fileID: 1868176347}
   - {fileID: 1868176346}
+  - {fileID: 1868176354}
   - {fileID: 1868176345}
   - {fileID: 1868176344}
+  - {fileID: 1868176353}
+  - {fileID: 1868176355}
+  - {fileID: 1868176352}
+  - {fileID: 1868176362}
   - {fileID: 1868176351}
 --- !u!114 &1868176349
 MonoBehaviour:
@@ -7613,7 +7462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1.0
-  scrollPos: {x: 28.5, y: 49}
+  scrollPos: {x: 27.5, y: 49}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 246
@@ -7624,9 +7473,9 @@ MonoBehaviour:
     y: -399
     width: 1173
     height: 1061
-  selectedBlock: {fileID: 1868176342}
+  selectedBlock: {fileID: 1868176348}
   selectedCommands:
-  - {fileID: 1868176336}
+  - {fileID: 1868176362}
   variables: []
   description: 
   stepPause: 0
@@ -7645,7 +7494,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.24006435, y: 0.24006419, z: 0.24006419}
-  m_Children: []
+  m_Children:
+  - {fileID: 1992953358}
   m_Father: {fileID: 0}
   m_RootOrder: 21
 --- !u!114 &1868176351
@@ -7665,6 +7515,135 @@ MonoBehaviour:
   targetObject: {fileID: 1245688851}
   methodName: RecivingMsg
   delay: 0
+--- !u!114 &1868176352
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1868176335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 12
+  errorMessage: 
+  indentLevel: 0
+  storyText: "\rFinch, this will be no easy task. "
+  description: 
+  character: {fileID: 1992953357}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  setSayDialog: {fileID: 0}
+--- !u!114 &1868176353
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1868176335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 14
+  errorMessage: 
+  indentLevel: 0
+  storyText: "of our Undyne hostage. We already have some of our best \n\npeople on
+    the hunt for the\r members and the other Undyne,"
+  description: 
+  character: {fileID: 1992953357}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  setSayDialog: {fileID: 0}
+--- !u!114 &1868176354
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1868176335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 13
+  errorMessage: 
+  indentLevel: 0
+  storyText: "claiming to find peace with the element of fire. But they\u2019ve finally\n\nshown
+    their true intentions."
+  description: 
+  character: {fileID: 1992953357}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  setSayDialog: {fileID: 0}
+--- !u!114 &1868176355
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1868176335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 15
+  errorMessage: 
+  indentLevel: 0
+  storyText: "but you\u2019re the only recruit in\r this area who can\n\n save the
+    Undyne here. I won\u2019t lie to you,\r"
+  description: 
+  character: {fileID: 1992953357}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  setSayDialog: {fileID: 0}
+--- !u!114 &1868176362
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1868176335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 16
+  errorMessage: 
+  indentLevel: 0
+  storyText: "But you\u2019ve shown exemplary\r skills during training and the \n\ndepartment.
+    You\u2019ll be ready for battle."
+  description: 
+  character: {fileID: 1992953357}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  setSayDialog: {fileID: 0}
 --- !u!1001 &1869524966
 Prefab:
   m_ObjectHideFlags: 0
@@ -8286,6 +8265,54 @@ Transform:
   - {fileID: 5869490}
   m_Father: {fileID: 1391197727}
   m_RootOrder: 1
+--- !u!1 &1992953356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: b20518d45890e4be59ba82946f88026c, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1992953358}
+  - 114: {fileID: 1992953357}
+  m_Layer: 0
+  m_Name: General Mizu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1992953357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: b20518d45890e4be59ba82946f88026c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1992953356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: General Mizu
+  nameColor: {r: 0, g: 0.6907707, b: 0.7205882, a: 1}
+  soundEffect: {fileID: 0}
+  profileSprite: {fileID: 0}
+  portraits: []
+  portraitsFace: 0
+  setSayDialog: {fileID: 0}
+  description: 
+--- !u!4 &1992953358
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: b20518d45890e4be59ba82946f88026c, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1992953356}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4.1655498, y: 4.1655526, z: 4.1655526}
+  m_Children: []
+  m_Father: {fileID: 1868176350}
+  m_RootOrder: 0
 --- !u!1 &2005263793
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,8 @@ public class NarrativeFungusController : Flowchart {
 
 public PlayerController playerPlatformer;
 public ShipController truck;
+public Timer startTimer;
+public 	BhSpawnEnimies spawner;
 
 int currentLevel;
 //void awake -> find the player by type - player controller 
@@ -15,7 +17,12 @@ int currentLevel;
 
 	truck = FindObjectOfType<ShipController>();
 	playerPlatformer = FindObjectOfType<PlayerController>();
+	startTimer = FindObjectOfType<Timer>();
+	spawner = FindObjectOfType<BhSpawnEnimies>();
+	if(spawner!=null){
+			 	 spawner.enabled= false;
 
+	}
 	}
 
 	void Update () {
@@ -32,6 +39,11 @@ int currentLevel;
 
 		if(playerPlatformer!=null){
 		playerPlatformer.enabled = false;
+		}
+
+		if( truck!=null){
+		truck.enabled = false;
+
 		}
 
 //		if(currentLevel ==1 ){
@@ -62,6 +74,8 @@ int currentLevel;
 
 	public void RecivingMsg2(){
     Debug.Log("msg recived from flow chart");
+    startTimer.narrativeIsOver= true;
+	spawner.enabled= true;
     truck.enabled = true;
     	// player controller 
     	//enable th eplayer controller after time 

@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1633134101}
+  selectedFlowchart: {fileID: 1339197620}
 --- !u!4 &98431362
 Transform:
   m_ObjectHideFlags: 1
@@ -556,12 +556,14 @@ MonoBehaviour:
   description: 
   stepPause: 0
   colorCommands: 1
-  hideComponents: 1
+  hideComponents: 0
   saveSelection: 1
   localizationId: 
   hideCommands: []
   playerPlatformer: {fileID: 0}
   truck: {fileID: 959009807}
+  startTimer: {fileID: 1157865258}
+  spawner: {fileID: 1883728647}
 --- !u!4 &681056090
 Transform:
   m_ObjectHideFlags: 0
@@ -930,6 +932,12 @@ MonoBehaviour:
   myPooledObject: {fileID: 148530, guid: 85c0315d8ef3c4b789d8101eb2d6a7b2, type: 2}
   Size: 5
   pooledObjectS: []
+--- !u!114 &1157865258 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11445204, guid: 9fe21c0ecb5fb46f5911704a28afabfc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1202386078}
+  m_Script: {fileID: 11500000, guid: 9e192a4522802457a8d0d0482e171cd1, type: 3}
 --- !u!1001 &1202386078
 Prefab:
   m_ObjectHideFlags: 0
@@ -1358,6 +1366,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &1339197620 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11485868, guid: 346e1e938cd56469abc8ac44e61a3071,
+    type: 2}
+  m_PrefabInternal: {fileID: 777492238}
+  m_Script: {fileID: 11500000, guid: 649cb1fb6820a48e681e68b4a2fc8b55, type: 3}
 --- !u!1 &1343852296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1788,7 +1802,6 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
@@ -2177,8 +2190,8 @@ MonoBehaviour:
   itemId: 11
   errorMessage: 
   indentLevel: 0
-  targetObject: {fileID: 0}
-  methodName: RecivingMsg
+  targetObject: {fileID: 681056088}
+  methodName: RecivingMsg2
   delay: 1
 --- !u!114 &1633134092
 MonoBehaviour:
@@ -2328,7 +2341,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 137
     y: 47
-    width: 132
+    width: 126
     height: 40
   itemId: 5
   blockName: undine (Copy)
@@ -2428,7 +2441,7 @@ MonoBehaviour:
     height: 1021
   selectedBlock: {fileID: 1633134100}
   selectedCommands:
-  - {fileID: 1633134084}
+  - {fileID: 1633134091}
   variables: []
   description: 
   stepPause: 0
@@ -2547,7 +2560,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1883728643}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15998397016d544e3b1f57fa92d8014b, type: 3}
   m_Name: 

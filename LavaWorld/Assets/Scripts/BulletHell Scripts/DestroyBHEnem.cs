@@ -3,11 +3,11 @@ using System.Collections;
 
 public class DestroyBHEnem : MonoBehaviour {
 
-
+public float lifeTime = 10f;
 	// Use this for initialization
 	void OnEnable () {
 
-	Invoke( "Destroy", 10f);
+		Invoke( "Destroy", lifeTime);
 	}
 	
 	// Update is called once per frame

@@ -13,9 +13,9 @@ GameObject:
   - 114: {fileID: 11446180}
   - 50: {fileID: 5041280}
   - 114: {fileID: 11483848}
-  - 114: {fileID: 11447826}
   - 95: {fileID: 9533162}
   - 58: {fileID: 5846180}
+  - 114: {fileID: 11448008}
   m_Layer: 10
   m_Name: downwards BH
   m_TagString: Enem
@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.75
---- !u!114 &11447826
+--- !u!114 &11448008
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -115,14 +115,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 147230}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea11049e91cb04a99bd2d47f4653814f, type: 3}
+  m_Script: {fileID: 11500000, guid: 361508d30fd0341a5b0ee725fed75376, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   howMuchDamage: 10
-  HitsToDestroy: 1
+  HitsToDestroy: 3
+  initialHitsToDestory: 0
   instantKill: 0
   CannotGetHit: 0
-  timetoreswpan: 6
+  timetoreswpan: 5
   wasDestroyed: 0
   truck: {fileID: 0}
   EnemyExp: {fileID: 146312, guid: e552497a350724099857f237ae2ff9e7, type: 2}

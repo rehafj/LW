@@ -4,9 +4,10 @@ using System.Collections;
 public class WaterProjectile : MonoBehaviour {
 
 	// Use this for initialization
+	public float timeToDestrroy = 0.8f;
 	void Start () {
 
-	Destroy(gameObject, 0.8f);
+		Destroy(gameObject, timeToDestrroy);
 	}
 	/// <summary>
 	/// temporary sulotion untill we unify adn c how things go 

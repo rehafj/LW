@@ -39,7 +39,7 @@ public GameObject SPBullets;
 			FireBullers();
 		}
 
-		else if (Input.GetButtonDown("SpeicalShot")){
+		else if (Input.GetButtonDown("Jump")){//(Input.GetButtonDown("SpeicalShot"))
 
 			if( PlayerStatus.SpecialBullets>0){
 

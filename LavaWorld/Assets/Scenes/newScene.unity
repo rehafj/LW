@@ -4699,6 +4699,8 @@ MonoBehaviour:
   hideCommands: []
   playerPlatformer: {fileID: 1966140889}
   truck: {fileID: 0}
+  startTimer: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!4 &1245688853
 Transform:
   m_ObjectHideFlags: 0

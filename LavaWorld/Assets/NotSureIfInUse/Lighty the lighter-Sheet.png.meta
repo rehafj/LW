@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 71e70cfc9f00b4ad091d7f16b5777938
-timeCreated: 1457423975
+timeCreated: 1461595824
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -189,60 +189,6 @@ TextureImporter:
         - {x: 22.5, y: 15.5}
         - {x: 19.5, y: 16.5}
         - {x: 17.5, y: 14.5}
-    - name: Lighty the lighter-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 231
-        y: 0
-        width: 36
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 1, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -8, y: -2.5}
-        - {x: -8, y: -3.5}
-        - {x: -4, y: -6.5}
-        - {x: -3, y: -6.5}
-        - {x: 1, y: -2.5}
-        - {x: -1, y: 2.5}
-        - {x: -3, y: 2.5}
-      - - {x: -14, y: 12.5}
-        - {x: -18, y: 8.5}
-        - {x: -18, y: 4.5}
-        - {x: -14, y: 2.5}
-        - {x: -11, y: 2.5}
-        - {x: -9, y: 6.5}
-        - {x: -9, y: 7.5}
-        - {x: -13, y: 12.5}
-      - - {x: -7, y: 10.5}
-        - {x: -3, y: 6.5}
-        - {x: 0, y: 7.5}
-        - {x: 1, y: 11.5}
-        - {x: -3, y: 15.5}
-        - {x: -5, y: 15.5}
-    - name: Lighty the lighter-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 318
-        y: 1
-        width: 35
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: Lighty the lighter-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 405
-        y: 0
-        width: 43
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
     outline: []
   spritePackingTag: 
   userData: 

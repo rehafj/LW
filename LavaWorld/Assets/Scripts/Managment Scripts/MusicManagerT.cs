@@ -55,7 +55,7 @@ public class MusicManagerT : MonoBehaviour {
 		//		Debug.Log("in bullet hell");
 				currentClip = myAudioSources[2];
 			}
-
+			//just for git testing 
 			else {
 			//	Debug.Log("scene is platformer");
 				currentClip = myAudioSources[0];

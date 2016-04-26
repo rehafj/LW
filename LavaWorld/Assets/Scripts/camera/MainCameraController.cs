@@ -11,13 +11,13 @@ public class MainCameraController : MonoBehaviour {
    public Vector3 targetlocation;
    public float smoothing = 0;
    public float xVal, Yval;
+	float xPosition, yPosition, zPosition;
 
    void Start()
    {
        PlayerPosition = GameObject.FindGameObjectWithTag("Player");
        playerdirection = PlayerPosition.GetComponent<PlayerController>();
-       //PlayerPostion = PlayerPostion.GetComponent<GameObject>();
-
+		//PlayerPosition = PlayerPosition.GetComponent<GameObject>();
    }
    /// <summary>
    /// do you guys want this script - just adds space infront of the player - or we can manually go and change the x value and just have lerp here - notetoself
@@ -27,22 +27,23 @@ public class MainCameraController : MonoBehaviour {
    void FixedUpdate()
    {//// if our camera is not a child we can implement ths not oto show the flow but we habe tp scale it right amd this will save the y pos of the camera 
     ///right not its relative to the player 
-       targetlocation = new Vector3(PlayerPosition.transform.position.x, transform.position.y, transform.position.z);
 
+	targetlocation = new Vector3(PlayerPosition.transform.position.x, PlayerPosition.transform.position.y, transform.position.z);
+		//targetlocation = PlayerPosition.transform.position;
        if (playerdirection.isFacingRight)
        {
-           //transform.position 
-            targetlocation = new Vector3(PlayerPosition.transform.position.x + xVal, PlayerPosition.transform.position.y + Yval, transform.position.z);
+          //transform.position 
+           targetlocation = new Vector3(PlayerPosition.transform.position.x + xVal, PlayerPosition.transform.position.y + Yval, transform.position.z);
            transform.position = Vector3.Lerp(transform.position, targetlocation, smoothing * Time.deltaTime);
        }
        else if (!playerdirection.isFacingRight)
        {
 			targetlocation = new Vector3(PlayerPosition.transform.position.x - xVal, PlayerPosition.transform.position.y+Yval, transform.position.z);
-          transform.position = Vector3.Lerp(transform.position, targetlocation, smoothing * Time.deltaTime);
+         transform.position = Vector3.Lerp(transform.position, targetlocation, smoothing * Time.deltaTime);
        }
-        var xPosition = PlayerPosition.transform.position.x;
-         var yPosition = transform.position.y;
-         var zPosition = transform.position.z;
+         xPosition = PlayerPosition.transform.position.x;
+		yPosition = PlayerPosition.transform.position.y;
+		 zPosition = transform.position.z;
          //transform.position 
          if (PlayerPosition.transform.position.x > 100 || PlayerPosition.transform.position.x < 0)
          {
@@ -52,10 +53,16 @@ public class MainCameraController : MonoBehaviour {
          {
              yPosition = targetlocation.y;
          }
+         else {
+			xPosition = PlayerPosition.transform.position.x;
+			yPosition = PlayerPosition.transform.position.y;
+
+
+         }
          targetlocation = new Vector3(xPosition, yPosition, zPosition);
 
 
-         transform.position = Vector3.Lerp(transform.position, targetlocation, 2f * Time.deltaTime); 
+         transform.position = Vector3.Lerp(transform.position, targetlocation, 10f * Time.deltaTime); 
    }
 }
 

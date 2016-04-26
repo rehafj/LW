@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ShootingEnemy : MonoBehaviour
+public class PikaLizard : MonoBehaviour
 {
     public float speed;
     public PlayerController player;
@@ -15,6 +15,7 @@ public class ShootingEnemy : MonoBehaviour
     private float shotCounter;
     public LavaEffects lava;
     public GameObject shootyFire;
+    Animator anim;
     // Use this for initialization
     void Start()
     {
@@ -25,6 +26,8 @@ public class ShootingEnemy : MonoBehaviour
         shotCounter = shotWait;
 
         myRigidbody2D = GetComponent<Rigidbody2D>();
+
+        anim = GetComponent<Animator>();
 
         //keeps position working for the enemy
         if (player.transform.position.x < transform.position.x)

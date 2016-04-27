@@ -38,6 +38,8 @@ public AudioSource mySFX;
 public AudioClip[] myAudioSounds = new AudioClip[2];
 
 
+public NewGateB gate;
+
 	void Start(){
 		currentScene = FindObjectOfType<LevelManager>();//sets it to scene manager 
 		health = PlayerPrefs.GetInt("PlayerHealth");;
@@ -52,7 +54,7 @@ public AudioClip[] myAudioSounds = new AudioClip[2];
 		originalColor = myImg.color;
 
 		mySFX = GetComponent<AudioSource>();
-
+		gate = FindObjectOfType<NewGateB>();
 
 			}
 
@@ -140,6 +142,9 @@ public AudioClip[] myAudioSounds = new AudioClip[2];
 	public void  ResspawnPlayer(){
 		gameObject.SetActive(false);
 		Instantiate(particleexp, gameObject.transform.position, gameObject.transform.rotation);
+		if(gate!=null){
+			gate.ResetGate();//this is bad but a quick fix sul for now - move to manager script 
+		}
 		Invoke("setPlayerToActive",2f);
 
 	}

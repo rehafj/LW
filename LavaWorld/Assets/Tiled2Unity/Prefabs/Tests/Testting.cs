@@ -5,7 +5,7 @@ public class Testting : MonoBehaviour {
 
 public Renderer myrnd ;
 	// Use this for initialization
-	void Start () {
+	/*void Start () {
 	myrnd = GetComponent<Renderer>();
 	}
 	
@@ -31,5 +31,5 @@ public Renderer myrnd ;
 
 
        // enabled = false;
-    }
+    }*/
 }

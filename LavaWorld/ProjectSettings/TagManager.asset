@@ -18,6 +18,7 @@ TagManager:
   - AnimationMenu
   - Sanado
   - SP
+  - HP
   layers:
   - Default
   - TransparentFX

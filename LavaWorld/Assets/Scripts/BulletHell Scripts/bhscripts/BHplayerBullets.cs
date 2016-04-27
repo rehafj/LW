@@ -19,4 +19,14 @@ public Rigidbody2D myegd;
 		
 		myegd.velocity = transform.TransformDirection(Vector3.up * 15);
 		myegd.AddForce(myegd.transform.up * 10);	}
-}
+
+
+
+
+void OnTriggerEnter2D(Collider2D col){
+
+			if(col.gameObject.tag=="Dmg"){
+			col.gameObject.SetActive(false);
+			}
+		}
+		}

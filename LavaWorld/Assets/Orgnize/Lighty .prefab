@@ -192,6 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   howMuchDamage: 10
   HitsToDestroy: 8
+  initialHitsToDestory: 0
   instantKill: 0
   CannotGetHit: 0
   timetoreswpan: 5
@@ -203,6 +204,7 @@ MonoBehaviour:
   - {fileID: 421432}
   - {fileID: 407278}
   - {fileID: 446186}
+  activePortal: {fileID: 0}
 --- !u!114 &11428004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -216,6 +218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   howMuchDamage: 10
   HitsToDestroy: 8
+  initialHitsToDestory: 0
   instantKill: 0
   CannotGetHit: 0
   timetoreswpan: 5

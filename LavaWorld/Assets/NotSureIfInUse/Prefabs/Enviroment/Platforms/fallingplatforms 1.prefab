@@ -92,7 +92,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   steppedOn: 0
-  fallTimer: 2
+  fallTimer: 1
+  recrationTime: 1
 --- !u!212 &21273708
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -72,9 +72,29 @@ public void MoveToNextLevel(){
 	}
 
 			nextLevel=sceneCounter+1;
-		Debug.Log("loading next scene "+ nextLevel);
-
+			Debug.Log("loading next scene "+ nextLevel);
 			SceneManager.LoadScene(nextLevel);
+		}
+
+
+
+
+	public void MoveToSelevtedLevel(int level){
+	
+			playerInstance = FindObjectOfType<PlayerStatus>();
+
+	if(playerInstance != null){
+
+				PlayerPrefs.SetInt("PlayerLives",playerInstance.lives);
+				PlayerPrefs.SetInt("PlayerHealth", playerInstance.health);
+				PlayerPrefs.SetInt("SPBullets", PlayerStatus.SpecialBullets);
+
+	}
+	else {
+	 Debug.LogError("no player was found");
+	}
+
+			SceneManager.LoadScene(level);
 		}
 
 

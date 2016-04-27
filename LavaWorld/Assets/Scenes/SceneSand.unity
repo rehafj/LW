@@ -323,7 +323,7 @@ Transform:
   m_LocalScale: {x: 0.55497336, y: 0.55497336, z: 0.55497336}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 62
+  m_RootOrder: 63
 --- !u!1001 &149378392
 Prefab:
   m_ObjectHideFlags: 0
@@ -1022,7 +1022,7 @@ Transform:
   m_LocalScale: {x: 7.1875005, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 51
+  m_RootOrder: 52
 --- !u!61 &259945223
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1207,7 +1207,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 75
+  m_RootOrder: 76
 --- !u!1001 &405793542
 Prefab:
   m_ObjectHideFlags: 0
@@ -2844,6 +2844,10 @@ Prefab:
       propertyPath: m_SortingOrder
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 11467124, guid: 7f5894bf3721649008979b9476de5363, type: 2}
+      propertyPath: nextLevel
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7f5894bf3721649008979b9476de5363, type: 2}
   m_IsPrefabParent: 0
@@ -3307,7 +3311,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
 --- !u!1001 &817630296
 Prefab:
   m_ObjectHideFlags: 0
@@ -3491,7 +3495,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
 --- !u!114 &890263450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3902,7 +3906,7 @@ Transform:
   - {fileID: 416992548}
   - {fileID: 307339066}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
 --- !u!1001 &1019385075
 Prefab:
   m_ObjectHideFlags: 0
@@ -5478,7 +5482,7 @@ Transform:
   - {fileID: 541682864}
   - {fileID: 963876947}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
 --- !u!114 &1394784475
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5724,7 +5728,7 @@ Transform:
   m_LocalScale: {x: 0.55497336, y: 0.55497336, z: 0.55497336}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 64
+  m_RootOrder: 65
 --- !u!1001 &1516482448
 Prefab:
   m_ObjectHideFlags: 0
@@ -6057,7 +6061,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
 --- !u!1001 &1677424660
 Prefab:
   m_ObjectHideFlags: 0
@@ -6331,7 +6335,7 @@ Transform:
   m_LocalScale: {x: 1, y: -1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 77
+  m_RootOrder: 78
 --- !u!1001 &1913239437
 Prefab:
   m_ObjectHideFlags: 0

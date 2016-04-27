@@ -3334,7 +3334,6 @@ GameObject:
   - 4: {fileID: 1394784468}
   - 114: {fileID: 1394784467}
   - 114: {fileID: 1394784466}
-  - 114: {fileID: 1394784462}
   - 114: {fileID: 1394784461}
   - 114: {fileID: 1394784460}
   - 114: {fileID: 1394784459}
@@ -3344,16 +3343,7 @@ GameObject:
   - 114: {fileID: 1394784455}
   - 114: {fileID: 1394784454}
   - 114: {fileID: 1394784453}
-  - 114: {fileID: 1394784470}
-  - 114: {fileID: 1394784469}
-  - 114: {fileID: 1394784465}
-  - 114: {fileID: 1394784464}
-  - 114: {fileID: 1394784463}
   - 114: {fileID: 1394784475}
-  - 114: {fileID: 1394784474}
-  - 114: {fileID: 1394784473}
-  - 114: {fileID: 1394784472}
-  - 114: {fileID: 1394784471}
   m_Layer: 0
   m_Name: Flowchart (1)
   m_TagString: Untagged
@@ -3538,7 +3528,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 137
     y: 47
-    width: 126
+    width: 132
     height: 40
   itemId: 5
   blockName: undine (Copy)
@@ -3550,108 +3540,6 @@ MonoBehaviour:
   - {fileID: 1394784458}
   - {fileID: 1394784457}
   - {fileID: 1394784455}
---- !u!114 &1394784462
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 11484142, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1394784452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 4
-  errorMessage: 
-  indentLevel: 0
-  storyText: "Texas Pete is known for his quick whip and campy cowboy act.\r\n\r\nHe\u2019s
-    a feisty one, but I think you two can get the job done."
-  description: 
-  character: {fileID: 963876946}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: c247df6b484eaa948ab2c80ff7d70fca, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
---- !u!114 &1394784463
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1394784452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 16
-  errorMessage: 
-  indentLevel: 0
-  storyText: 'Number 347: Tyne reporting for duty Battalion Chief!'
-  description: 
-  character: {fileID: 541682863}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: c247df6b484eaa948ab2c80ff7d70fca, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
---- !u!114 &1394784464
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1394784452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 15
-  errorMessage: 
-  indentLevel: 0
-  storyText: "Glad to see you\u2019re safe Tyne. You and Finch are needed in the\r\n\r\narea."
-  description: 
-  character: {fileID: 963876946}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: c247df6b484eaa948ab2c80ff7d70fca, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
---- !u!114 &1394784465
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1394784452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 14
-  errorMessage: 
-  indentLevel: 0
-  storyText: "What\u2019s the situation Chief?"
-  description: 
-  character: {fileID: 541682863}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: c247df6b484eaa948ab2c80ff7d70fca, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
 --- !u!114 &1394784466
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3675,16 +3563,6 @@ MonoBehaviour:
   description: This is where the talk happens
   eventHandler: {fileID: 1394784453}
   commandList:
-  - {fileID: 1394784470}
-  - {fileID: 1394784463}
-  - {fileID: 1394784464}
-  - {fileID: 1394784465}
-  - {fileID: 1394784469}
-  - {fileID: 1394784462}
-  - {fileID: 1394784471}
-  - {fileID: 1394784472}
-  - {fileID: 1394784473}
-  - {fileID: 1394784474}
   - {fileID: 1394784475}
   - {fileID: 1394784454}
 --- !u!114 &1394784467
@@ -3712,7 +3590,8 @@ MonoBehaviour:
     width: 1173
     height: 1021
   selectedBlock: {fileID: 1394784466}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1394784475}
   variables: []
   description: 
   stepPause: 0
@@ -3736,161 +3615,6 @@ Transform:
   - {fileID: 963876947}
   m_Father: {fileID: 0}
   m_RootOrder: 13
---- !u!114 &1394784469
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1394784452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 13
-  errorMessage: 
-  indentLevel: 0
-  storyText: "It seems that one of the Fire Lords of the cult has taken over a\r\n\r\nlarge
-    area of the city."
-  description: 
-  character: {fileID: 963876946}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: c247df6b484eaa948ab2c80ff7d70fca, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
---- !u!114 &1394784470
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1394784452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 12
-  errorMessage: 
-  indentLevel: 0
-  storyText: "Finch, I\u2019m glad to see you\u2019re still in one piece, and with
-    the\r\n\r\nundine no less."
-  description: 
-  character: {fileID: 963876946}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: c247df6b484eaa948ab2c80ff7d70fca, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
---- !u!114 &1394784471
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1394784452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 23
-  errorMessage: 
-  indentLevel: 0
-  storyText: "Don\u2019t worry chief, now that Finch has me he can take anyone\r\n\r\ndown."
-  description: 
-  character: {fileID: 541682863}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: c247df6b484eaa948ab2c80ff7d70fca, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
---- !u!114 &1394784472
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1394784452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 22
-  errorMessage: 
-  indentLevel: 0
-  storyText: "That\u2019s good to hear. One last thing before the mission. The\r\n\r\nroads
-    have become dangerous since the fire creatures got loose,"
-  description: 
-  character: {fileID: 963876946}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: c247df6b484eaa948ab2c80ff7d70fca, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
---- !u!114 &1394784473
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1394784452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 21
-  errorMessage: 
-  indentLevel: 0
-  storyText: "you\u2019re going to have some battles ahead of you. And may the\r\n\r\nWATER
-    flow through you!"
-  description: 
-  character: {fileID: 963876946}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: c247df6b484eaa948ab2c80ff7d70fca, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
---- !u!114 &1394784474
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1394784452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 20
-  errorMessage: 
-  indentLevel: 0
-  storyText: "It\u2019ll only take us a minute to get to there. And it\r\n\r\nlooks
-    like some nasties are going to get in our way."
-  description: 
-  character: {fileID: 541682863}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: c247df6b484eaa948ab2c80ff7d70fca, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
 --- !u!114 &1394784475
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3905,12 +3629,12 @@ MonoBehaviour:
   itemId: 19
   errorMessage: 
   indentLevel: 0
-  storyText: "I\u2019m\r\n\r\nalready hooked up to the truck\u2019s Undine system,
-    so when you\r\n\r\nget a clear shot on anyone in our way, take it!"
+  storyText: Geez, this place has really been soaking up the sun! Let's give this
+    place a refresher on whay not to mess with WATER!
   description: 
-  character: {fileID: 0}
+  character: {fileID: 541682863}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: c247df6b484eaa948ab2c80ff7d70fca, type: 3}
+  voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
   extendPrevious: 0

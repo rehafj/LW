@@ -6,7 +6,7 @@ using System.Collections;
 ///tell me if you have nay questions :D 
 /// </summary>
 public class FallingPlatform : MonoBehaviour {
-
+//this is teh final update test at 9pm
 	public bool steppedOn = false;//not used for nor just to check in inspector - 
 	public float fallTimer = 1f;
 	Rigidbody2D rgd;

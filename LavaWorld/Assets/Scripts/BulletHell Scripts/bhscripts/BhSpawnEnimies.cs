@@ -67,7 +67,6 @@ public class BhSpawnEnimies : MonoBehaviour {
 
 
 IEnumerator	BullerHellGame(){
-
 		yield return new WaitForSeconds(10f);//counts to `0 seconds 
 		myship.enabled=true;
 		Invoke("startRepeating",0f);//he time value is based on the timer we set up 

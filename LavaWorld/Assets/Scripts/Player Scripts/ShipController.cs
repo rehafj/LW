@@ -14,6 +14,9 @@ public class ShipController : MonoBehaviour {
 public	bool cantGetHurt = false;
 public float invincbLastFor = 1f;
 float invincbTimer;
+
+public Transform Gun1, Gun2; 
+public GameObject SPBullets;
 	// Use this for initialization
 	void Start () {
 	rgd = GetComponent<Rigidbody2D>();
@@ -36,6 +39,20 @@ float invincbTimer;
 			FireBullers();
 		}
 
+		else if (Input.GetButtonDown("Jump")){//(Input.GetButtonDown("SpeicalShot"))
+
+			if( PlayerStatus.SpecialBullets>0){
+
+	///change this to pooler quick fix for testing 
+			Instantiate( SPBullets, Gun1.transform.position, Gun1.transform.rotation);
+			Instantiate( SPBullets, Gun2.transform.position, Gun2.transform.rotation);
+			PlayerStatus.DencreamentBullets();
+				DownTime = coolDownTimer;
+
+
+	}
+	}
+
 		if(invincbTimer>=0){ invincbTimer-=Time.deltaTime;}
 
 		if( invincbTimer <= 0) {
@@ -44,6 +61,17 @@ float invincbTimer;
 	}
 
 	void FireBullers(){
+
+//	if( PlayerStatus.SpecialBullets>0){
+//
+//	///change this to pooler quick fix for testing 
+//			Instantiate( SPBullets, Gun1.transform.position, Gun1.transform.rotation);
+//			Instantiate( SPBullets, Gun2.transform.position, Gun2.transform.rotation);
+//			PlayerStatus.DencreamentBullets();
+//
+////	} else 
+//	{
+			
 
 	GameObject temp = Pooler.currentPoller.ReturnPlayerBullets();//gives acses to the ppoo for the ginafwm 
 

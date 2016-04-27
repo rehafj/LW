@@ -16,6 +16,9 @@ TagManager:
   - Left
   - CheckPoint
   - AnimationMenu
+  - Sanado
+  - SP
+  - HP
   layers:
   - Default
   - TransparentFX
@@ -30,8 +33,8 @@ TagManager:
   - ENEM
   - walls
   - Player
-  - 
-  - 
+  - EnemPlatforms
+  - EnemyWALLS
   - 
   - 
   - 

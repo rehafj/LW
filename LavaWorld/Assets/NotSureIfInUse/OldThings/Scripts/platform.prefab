@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 410074}
   - 212: {fileID: 21222196}
   - 61: {fileID: 6146214}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platform
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -24,8 +24,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 171374}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 347.64, y: -61.23, z: 0}
-  m_LocalScale: {x: 4.2, y: 4.3, z: 2.7176754}
+  m_LocalPosition: {x: 22.37, y: -27.43, z: 0}
+  m_LocalScale: {x: 12.171921, y: 4.886962, z: 3.0886457}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

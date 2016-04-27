@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Timer : MonoBehaviour {
 public float timer = 60f;
+	public bool narrativeIsOver = false;
 LevelManager lvl;
 	// Use this for initialization
 	void Start () {
@@ -12,6 +13,7 @@ LevelManager lvl;
 	
 	// Update is called once per frame
 	void Update () {
+	if(narrativeIsOver){
 	timer -= Time.deltaTime;
 //	Debug.Log(timer);
 
@@ -21,6 +23,7 @@ LevelManager lvl;
 	timer=60;
 	lvl.MoveToNextLevel();
 	//lvl.GameOver();
+	}
 	}
 	}
 }

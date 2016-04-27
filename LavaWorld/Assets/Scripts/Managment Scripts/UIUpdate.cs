@@ -36,7 +36,7 @@ public class UIUpdate : MonoBehaviour {
 	void Update () {
 		//healht playerStatusScript.health).ToString;
 		//playerStatusScript
-		myhealthText.text =healthText + playerStatusScript.health.ToString() +"\ncurrent lives:"+playerStatusScript.lives.ToString() ;
+		myhealthText.text =healthText + playerStatusScript.health.ToString() +"\ncurrent lives:"+playerStatusScript.lives.ToString() + "\n speiclaBullets:"+PlayerStatus.SpecialBullets.ToString();
 		myslider.value = playerStatusScript.health;
 		if(levelCountDown!=null){
 			timerText.text = "survive " + levelCountDown.timer.ToString("F2")+ "!!";

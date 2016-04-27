@@ -27,7 +27,7 @@ public class PlayerStatus : MonoBehaviour {
 	//public Transform ressetPoint;//change the resset point baased on what happens//reset point scripts finds player and changes the resset point -- and try and reload level-> so move this ot level manager script in future 
 	//public Transform []checkPoints = new Transform [3] ;//move this to anther script -- temporary  //make it a vector 3
 	public Vector3 RespwanPoint;
-
+	 public static int SpecialBullets; //check if it resets and respawns fine 
 
 	SpriteRenderer myImg;
 	Color originalColor;
@@ -42,6 +42,7 @@ public AudioClip[] myAudioSounds = new AudioClip[2];
 		currentScene = FindObjectOfType<LevelManager>();//sets it to scene manager 
 		health = PlayerPrefs.GetInt("PlayerHealth");;
 		lives = PlayerPrefs.GetInt("PlayerLives");
+		SpecialBullets = PlayerPrefs.GetInt("SPBullets");
 
 		 Player  = GetComponent<Transform>();
 		 anim = GetComponent<Animator>();
@@ -65,16 +66,6 @@ public AudioClip[] myAudioSounds = new AudioClip[2];
 
 	}
 
-//	void OnCollisionEnter2D(Collision2D coll){
-////		Debug.Log("COLLIDER DMG");
-//
-//		if(coll.gameObject.tag == "Dmg"){//refactor to a method - recive dmg and play anaimtaion 
-//				anim.Play("Dmg");
-//				this.health -=10; 
-//				Destroy(coll.gameObject);
-//			}
-//
-//	}
 
 	void OnTriggerEnter2D(Collider2D coll){
 //	Debug.Log("TRIGGER DMG");
@@ -92,6 +83,11 @@ public AudioClip[] myAudioSounds = new AudioClip[2];
 		RespwanPoint = coll.transform.position;
 		}
 
+		if(coll.gameObject.tag=="HP"){
+		this.lives++;
+		Destroy(coll.gameObject);
+		}
+
 	}
 	/// <summary>
 	/// this method is called whenever the player's health is lower than 0 
@@ -99,7 +95,7 @@ public AudioClip[] myAudioSounds = new AudioClip[2];
 	/// </summary>
 	public void resetVlues(){
 
-	if(lives>0){
+	if(lives>=0){
 		//StartCoroutine("waitAndPlayDeath");
 		anim.Play("IDLE");
 		//StartCoroutine("ResspawnPlayer");
@@ -179,6 +175,19 @@ void changeColorAlpha(){
 	myImg.color = temp;
 }
 
+	public  static  void  increamentBullets(){
+
+		SpecialBullets ++;
+
+}
+
+	public static void DencreamentBullets(){
+	if(SpecialBullets>0)
+		SpecialBullets --;
+
+	}
+
+
 
 }
 
@@ -203,4 +212,13 @@ void changeColorAlpha(){
 //			PlayerinstanceTest = this;
 //		
 //	}
+////	void OnCollisionEnter2D(Collision2D coll){
+////		Debug.Log("COLLIDER DMG");
 //
+//		if(coll.gameObject.tag == "Dmg"){//refactor to a method - recive dmg and play anaimtaion 
+//				anim.Play("Dmg");
+//				this.health -=10; 
+//				Destroy(coll.gameObject);
+//			}
+//
+//	}

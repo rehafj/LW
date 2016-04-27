@@ -82,10 +82,11 @@ public Transform plr;
 
 
 	void OnBecameInvisible(){
-	if( gameObject.transform.position.x < plr.transform.position.x){
+	if(plr!=null){
+		if(gameObject.transform.position.x < plr.transform.position.x){
 		passed=false;
 		gameObject.transform.position = originalpos;
-		Debug.Log("player on right");
+		Debug.Log("player on right");}
 
 		}
 	}

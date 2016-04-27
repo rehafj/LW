@@ -21,7 +21,7 @@ LevelManager lvl;
 
 	if(timer<=0){
 	timer=60;
-	lvl.MoveToNextLevel();
+	lvl.MoveToSelevtedLevel(3);
 	//lvl.GameOver();
 	}
 	}

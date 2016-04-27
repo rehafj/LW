@@ -95,7 +95,7 @@ public AudioClip[] myAudioSounds = new AudioClip[2];
 	/// </summary>
 	public void resetVlues(){
 
-	if(lives>=0){
+	if(lives>0){
 		//StartCoroutine("waitAndPlayDeath");
 		anim.Play("IDLE");
 		//StartCoroutine("ResspawnPlayer");

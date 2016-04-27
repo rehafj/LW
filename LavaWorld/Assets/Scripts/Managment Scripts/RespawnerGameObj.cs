@@ -10,6 +10,9 @@ Vector3 iniitalPostion;
 Quaternion initialRotation;
 Vector3 intialScale;
 Rigidbody2D initialRidgidbody;
+
+	SpriteRenderer myImg;
+	Color originalColor;
 //GameObject instance;
 
 	// Use this for initialization
@@ -24,6 +27,10 @@ Rigidbody2D initialRidgidbody;
 	initialRotation = transform.rotation;
 	intialScale = transform.localScale;
 
+
+	myImg = GetComponent<SpriteRenderer>();
+	originalColor = myImg.color;
+
 	if(gameObject.GetComponent<Rigidbody2D>()!=null){
 
 	initialRidgidbody = GetComponent<Rigidbody2D>();
@@ -36,8 +43,10 @@ Rigidbody2D initialRidgidbody;
 	public void ResetDefaultpostions(){
 
 	transform.position = iniitalPostion;
-	initialRotation = transform.rotation;
+		transform.rotation =initialRotation;
 	transform.localScale = intialScale;
+		myImg.color = originalColor ;
+
 
 		if(initialRidgidbody!=null){
 

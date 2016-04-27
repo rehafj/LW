@@ -24,7 +24,7 @@ public class FallingPlatform : MonoBehaviour {
 	}
 	
 
-	public void Falling(){
+	public virtual void Falling(){
 		anim.SetBool("timepass", true);
 		rgd.isKinematic= false;
 		colr.isTrigger= true;
@@ -32,7 +32,7 @@ public class FallingPlatform : MonoBehaviour {
 
 	}
 
-	void OnCollisionEnter2D( Collision2D other ){
+	public virtual void  OnCollisionEnter2D( Collision2D other ){
 		if(other.gameObject.tag=="Player"){
       	    steppedOn = true;
 			Invoke ("Falling" , fallTimer);

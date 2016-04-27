@@ -4,6 +4,7 @@ using System.Collections;
 public class MoveToNextLevel : MonoBehaviour {
 
 	public LevelManager mamage;
+	public bool canMove = false;
 	// Use this for initialization
 	void Start () {
 	mamage = FindObjectOfType<LevelManager>();
@@ -11,7 +12,7 @@ public class MoveToNextLevel : MonoBehaviour {
 	
 	// Update is called once per frame
 	void OnTriggerEnter2D(Collider2D coll){
-	if(coll.gameObject.CompareTag("Player")){
+	if(coll.gameObject.CompareTag("Player")){ //&& canMove==true){
 
 		mamage.MoveToNextLevel();
 	}

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
-
+//rj-finalrdits 
 public class MenuScriptHandler : MonoBehaviour {
 
 	public Animator anim;

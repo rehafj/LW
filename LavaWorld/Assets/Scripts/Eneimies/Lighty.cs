@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+
 /// <summary>
 /// specfic script for lighty's behavior 
 /// </summary>
@@ -11,7 +12,7 @@ using System.Collections;
 /// </summary>
 
 public class Lighty : LavaEffects {//or we attach the scri[t and not have it inherit :P 
-
+ int currentScene; 
 Vector3 currentPos;//will be used later
 Animator anim;
 bool isAlive;
@@ -28,11 +29,15 @@ public  Transform[] locations= new Transform[3];
 	}
 
 
+	//this is a v old script that has not been updated - logic is flawed - will fix in future drafts 
+
+	//add somehting to reset game object if player is out of scene ( now) but that resets health /// <summary>
+	///  have to check what to do tiwht that 
+	///
 
 
-
+	/// </summary>
 	void OnBecameVisible() {
-        enabled = true;
 		InvokeRepeating("insFire2",3f,9f);
 
     }
@@ -40,7 +45,6 @@ public  Transform[] locations= new Transform[3];
 
 	void OnBecameInvisible() {
 		CancelInvoke("insFire2");
-        enabled = false;
     }
 
 
@@ -53,6 +57,7 @@ public  Transform[] locations= new Transform[3];
 	
 
 	IEnumerator  insFire(){
+	//spawns it at l=places 1-2-3 
 		for(int i = 0; i<= locations.Length-1; i++){
 			//Debug.Log("spawned at"+i);
 			if(num>=0)
@@ -64,5 +69,7 @@ public  Transform[] locations= new Transform[3];
 		yield return new WaitForSeconds(3f);
 
 	}
+
+
 	}
 

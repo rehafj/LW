@@ -83,6 +83,11 @@ public AudioClip[] myAudioSounds = new AudioClip[2];
 		RespwanPoint = coll.transform.position;
 		}
 
+		if(coll.gameObject.tag=="HP"){
+		this.lives++;
+		Destroy(coll.gameObject);
+		}
+
 	}
 	/// <summary>
 	/// this method is called whenever the player's health is lower than 0 
@@ -90,7 +95,7 @@ public AudioClip[] myAudioSounds = new AudioClip[2];
 	/// </summary>
 	public void resetVlues(){
 
-	if(lives>0){
+	if(lives>=0){
 		//StartCoroutine("waitAndPlayDeath");
 		anim.Play("IDLE");
 		//StartCoroutine("ResspawnPlayer");

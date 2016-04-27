@@ -19,15 +19,15 @@ bool isAlive;
 public GameObject fireArea;
 int num = 1;
 public  Transform[] locations= new Transform[3];
-	public MoveToNextLevel activePortal;
+	//public MoveToNextLevel activePortal;
 	//public GameObject portal;
 //can have it internal via code - what do you prefer and call it cia object's name //find //this is where to spawn the fire 
 
 	// Use this for initialization
 	void Awake () {
 		anim = GetComponent<Animator>();
-		activePortal = FindObjectOfType<MoveToNextLevel>();
-		activePortal.gameObject.SetActive(false);
+		//activePortal = FindObjectOfType<MoveToNextLevel>();
+	//	activePortal.gameObject.SetActive(false);
 
 
 	}
@@ -42,7 +42,7 @@ public  Transform[] locations= new Transform[3];
 	public override void  ResetEnemValues(){ //for the future need to override this becuase enemyies are based on random and if this is ued in bh part = issues respawns same place but we need an ovverride to reset values only and not pos 
 		wasDestroyed = false;
 		//gameObject.SetActive(true);
-		activePortal.gameObject.SetActive(true);
+		//activePortal.gameObject.SetActive(true);
 		Debug.Log("overrided method was called");
 		HitsToDestroy = initialHitsToDestory;
 		//portal.SetActive(true);

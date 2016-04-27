@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   howMuchDamage: 10
-  HitsToDestroy: 3
+  HitsToDestroy: 1
   initialHitsToDestory: 0
   instantKill: 0
   CannotGetHit: 0
@@ -138,6 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 019f58860605e4b469e7e78fda64617c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lifeTime: 10
 --- !u!212 &21203948
 SpriteRenderer:
   m_ObjectHideFlags: 1

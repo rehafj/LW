@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// quick fix - v messy 
+///orginally meant to change gameobject but a simpler way is to change the sprite and reduce dmg to 0 and 
+///anyways handles switching between platform and object and resize collider on new object so can be used with other things- but needs testing if used
+/// currenly used along with sanado
+/// </summary>
 public class ObjectSwitch : MonoBehaviour {
 	public Sprite mysprite;
 	public Sprite initialSprite;

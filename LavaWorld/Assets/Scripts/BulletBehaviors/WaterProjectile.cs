@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// this class destorys the water buller instaited b the player - so far player does not use pooler - untill changed use this sscript 
+/// </summary>
 public class WaterProjectile : MonoBehaviour {
 
 	// Use this for initialization

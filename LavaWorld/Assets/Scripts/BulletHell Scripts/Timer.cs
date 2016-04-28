@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// handles the timer /// moves the player to next level at end 
+/// </summary>
 public class Timer : MonoBehaviour {
 public float timer = 60f;
 	public bool narrativeIsOver = false;

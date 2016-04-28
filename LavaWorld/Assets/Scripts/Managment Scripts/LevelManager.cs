@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 /// this script iwll be used to triverse across levels - so far  just created one method for the menu selection 
 /// we will use this to move from level to level soon j
 /// this script should presist and not have duplicate copies so it cpuld manage the level we are in 
+///TODO added a quick fix sul below - update this soon and if time - think o static level counter but have to becarful
 /// </summary>
 //TODO fix this script 
 public class LevelManager : MonoBehaviour {

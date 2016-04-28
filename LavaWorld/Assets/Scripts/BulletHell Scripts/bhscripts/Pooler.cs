@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// this creates an array of bullets that are static - used for spaning bulets from player and enemies - does not grow / not a litst 
+///size is assigned for now ( inorder to not have 2 many bullets on screen at a time) 
+/// </summary>
 public class Pooler : MonoBehaviour {
 
 	public static Pooler currentPoller;

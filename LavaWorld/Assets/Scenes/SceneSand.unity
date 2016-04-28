@@ -5122,9 +5122,8 @@ MonoBehaviour:
     y: -353
     width: 921
     height: 843
-  selectedBlock: {fileID: 1392589149}
-  selectedCommands:
-  - {fileID: 1392589143}
+  selectedBlock: {fileID: 0}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -5728,7 +5727,7 @@ Transform:
   m_LocalScale: {x: 0.55497336, y: 0.55497336, z: 0.55497336}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 65
+  m_RootOrder: 67
 --- !u!1001 &1516482448
 Prefab:
   m_ObjectHideFlags: 0
@@ -6335,7 +6334,7 @@ Transform:
   m_LocalScale: {x: 1, y: -1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 78
+  m_RootOrder: 80
 --- !u!1001 &1913239437
 Prefab:
   m_ObjectHideFlags: 0

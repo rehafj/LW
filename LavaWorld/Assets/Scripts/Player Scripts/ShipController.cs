@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// truck controller for bullet hell 
+/// handles movmennts and shots fired - one aspect useds pooler - other is a quick fix added fast - fix to pooler later ( special bullets so does not inst alot) 
+/// </summary>
 public class ShipController : MonoBehaviour {
 
 	public Sprite Truckimg;

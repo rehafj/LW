@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// name is alll that is needed relaly - dmg overtime if hit 
+/// </summary>
 public class FloorIsLava : MonoBehaviour {
 	PlayerStatus playerhealth;
 	const int dmgbytime =2;

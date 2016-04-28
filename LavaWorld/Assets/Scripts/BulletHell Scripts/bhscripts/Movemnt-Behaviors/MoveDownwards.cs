@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// simply moves the enmeydown down  on y axsis 
+/// </summary>
 public class MoveDownwards : MonoBehaviour {
 	Rigidbody2D rgd;
 	public float speed=0.5f;

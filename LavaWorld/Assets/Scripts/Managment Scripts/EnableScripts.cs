@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// used with complex scripts - if any! 
+///deactivates scripts and acivates them  - not needed now - unless we force soemthing not tot run 
+/// </summary>
 public class EnableScripts : MonoBehaviour {
 MonoBehaviour [] scriptsAttched; 
 int TimesVisble = 0;
@@ -18,7 +21,7 @@ int TimesVisble = 0;
 	void OnBecameVisible() {
 		TimesVisble+=1;
 
-		if(TimesVisble==1){//so it does not call it each frame - will slow it down NVM onbecameivisble works once triggred does not call evryframe
+		if(TimesVisble==1){//so it does not call it each frame - not neeed - onbecamevisbible is caled once - duble check and remove counter check
 			EnableScriptsAttached();
 			TimesVisble=2;
 		

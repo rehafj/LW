@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// this is not done  in an ideal way but funtions properly 
+///blob expands its collider and stops between two points to expand 
+///if expanded cannot get hurt 
+/// </summary>
 public class Blob : MonoBehaviour {
 
 	// Use this for initialization

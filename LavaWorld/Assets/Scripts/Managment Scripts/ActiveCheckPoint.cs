@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// instant checkpoint effect
+///bool was added for closing and opening flags but not used for now 
+/// </summary>
 public class ActiveCheckPoint : MonoBehaviour {
 
 	public bool activeCheckpoint = false;

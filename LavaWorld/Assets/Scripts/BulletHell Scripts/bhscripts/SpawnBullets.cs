@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// this class spawns bulllets that are used by enemy o= in BH - the speed can be tapred with to increase/decrease spawn rate publicly based on enemy type/prebfab
+/// </summary>
 public class SpawnBullets : MonoBehaviour {
 public float timer=1;
 //public ObjectPooler objpooler;
-/// <summary>
-/// test this oout and read more about pooling objects :D note to self... never read things at 4 am  
+/// <summary>///
+/// note to self... never read things at 4 am  
 /// </summary>
 	// Use this for initialization
 //public GameObject myPooledgameObject; 

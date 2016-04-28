@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
-//note to self: must refactor if time and use raycast to ccheck for ground!!
+//note to self: must refactor if time  and clean up - 
 /// <summary>
 /// thiss cript handles any control actions towards the player (i.e. controller)
+///shooting - jumping - directions - moving and special water things in terms of movment( propel) 
 /// </summary>
 public class PlayerController : MonoBehaviour {
 
@@ -45,13 +46,13 @@ public float knockbackforce=2;
 	public bool cantGetHurt;
 
 
-	public bool isCharging = false;//change this tos tates o f enum if there is time 
+	public bool isCharging = false;//change this tos states o f enum if there is time 
 
 //
 //
 //public AudioSource mySFX;
 //public AudioClip[] myAudioSounds = new AudioClip[4];
-//public PlayerStatus playerEXP; 
+//public PlayerStatus playerEXP;    /*own script*/
 //
 
 void Start () {

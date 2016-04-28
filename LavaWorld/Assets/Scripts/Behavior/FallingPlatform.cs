@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 /// <summary>
-/// this script manages falling platforms 
+/// this script manages falling platforms // o rthings that fall when hit - simple script 
+///they currently reset and recrate when they hit the death collides or ground / by playing with triggers and colliders... 
 /// there are many ways we can do this for now its done bt setting it as a collider/trigger an dplayong with kinemtic values 
-///tell me if you have nay questions :D 
 /// </summary>
 public class FallingPlatform : MonoBehaviour {
 

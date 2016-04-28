@@ -2,6 +2,9 @@
 using System.Collections;
 using Fungus;
 using UnityEngine.SceneManagement;
+/// <summary>
+/// handles fungus based on level load 
+/// </summary>
 public class NarrativeFungusController : Flowchart {
 
 public PlayerController playerPlatformer;

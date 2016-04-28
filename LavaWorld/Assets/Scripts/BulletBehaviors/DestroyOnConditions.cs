@@ -1,9 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 /// <summary>
-/// this script will handle destruciton of things - so far it just destroys objects based on timer we give it to and a boolian value we can manipluate 
-///THIS SCRIPT WIL BE REWTITTEN - DEPENING ON OBJECT IF BULLETS MOSTLY WILL BE TURNED INTO DEACTIVATE AND WE WILL USE OBECT OOOLING STAYTUNED~ ops sorry caps 
-/// NOOT NOOT
+/// this script destorys objects based on lifetime / used with things that do not use a pooler or instaniates // untill we fix all links across the game 
 /// </summary>
 public class DestroyOnConditions : MonoBehaviour {
 

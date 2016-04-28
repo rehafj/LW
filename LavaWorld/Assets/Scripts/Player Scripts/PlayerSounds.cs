@@ -2,7 +2,9 @@
 using System.Collections;
 
 public class PlayerSounds : MonoBehaviour {
-
+/// <summary>
+/// handles sounds related t ppayer 
+/// </summary>
 public AudioSource mySFX;
 public AudioClip[] myAudioSounds = new AudioClip[4];
 public PlayerController player; 

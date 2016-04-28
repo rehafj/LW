@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// Destroy BH enem. - deactivates an enemy in BH after a lifespan - this script maybe a aduplicate check if same logic is used somewhere /// quick fix 
+/// </summary>
 public class DestroyBHEnem : MonoBehaviour {
 
 public float lifeTime = 10f;

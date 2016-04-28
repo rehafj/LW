@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// inc the static counter of b=special bullets as they travelw ith the player and destorys the obj at the moemnt - did not add a pooler for it 
+///quick fix
+/// </summary>
 public class CollectionManager : MonoBehaviour {
 
 	

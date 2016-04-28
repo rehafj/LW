@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// poor naming - was intended for old behavior -> this script moves the enemy left and right within the bounds 
+/// it is currenlty used with the script that moves the enemy/object downwards to create a zigzag pattern 
+/// </summary>
 public class Batbehavior : MonoBehaviour {
 bool movingRight = true;
 //public GameObject player;

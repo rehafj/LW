@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 /// <summary>
-/// this class sets whatever object its atached to as a parent - 
+///
 ///this can be used within platforms that are moving so that the player can move along with it 
 ///( sets player as child of the object the script it attached to )
 /// </summary>

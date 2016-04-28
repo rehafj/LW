@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+/// <summary>
+/// new gate that closes odwn on player - resets if player diesd in boss fight or if gate moves offscreen from right side( to avoid t moving if player is there) 
+/// </summary>
 public class NewGateB : MonoBehaviour {
 
 

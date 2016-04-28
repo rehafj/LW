@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 /// <summary>
-/// just for testing
+/// this is used with bullets or objects that are used with the pooler // sets them to deactive instead of destroying them 
 /// </summary>
 public class DestroyBullet : MonoBehaviour {
 

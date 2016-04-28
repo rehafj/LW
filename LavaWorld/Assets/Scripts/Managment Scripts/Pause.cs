@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// pauses the screen / gameplay
+/// </summary>
 public class Pause : MonoBehaviour {
 bool ispauses = false;
 public GUITexture mytext;	// Use this for initialization

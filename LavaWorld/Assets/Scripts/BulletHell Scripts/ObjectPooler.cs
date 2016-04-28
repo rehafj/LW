@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+/// <summary>
+/// an object pooler based on lists // to grow if needed - soon used to pool spec objects assigned in inspector 
+///did not create a dictionary - no need for this small game for now /// not alot of insta at run time
+/// </summary>
 public class ObjectPooler : MonoBehaviour {
 
 	public GameObject myPooledObject;

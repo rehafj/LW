@@ -3,9 +3,8 @@ using System.Collections;
 
 /// <summary>
 /// Pthis script manages all things player status - currenlt it checks for player health, lives and resets .etc 
-///for now this script holds check points however this may be moved onto its own script or with scene manager script -
-/// however this is used in conjunciton scripts such as checkpoints( resets thiisvalue to last check point visted) 
-///and some scripts that deal damage to player - os managed by a method here or via tag for base dmg (if we forgot to script anything!)
+///for now this script holds check points however this may be moved onto its own script or with scene manager script - not needed though easy if done here 
+///and some scripts that deal damage to player - os managed by a method here or via tag for base dmg (if we forgot to script anything - just tag it!)
 /// </summary>
 //move shared componenets into a level manager -> 
 public class PlayerStatus : MonoBehaviour {

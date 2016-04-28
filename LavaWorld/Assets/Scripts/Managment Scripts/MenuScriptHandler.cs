@@ -2,6 +2,9 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 //rj-finalrdits 
+/// <summary>
+/// script to handle menu things 
+/// </summary>
 public class MenuScriptHandler : MonoBehaviour {
 
 	public Animator anim;

@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// inhirited class from lava effects - deals with enemy statas  in order to not reset its pos  nor set it active( as iin lava) 
+//overrided to just reset eemy health - evrything else is handled by the pooler that is used in scene
+///other things are as they are in lava effects 
+/// </summary>
 public class BulletHellStatus : LavaEffects {
 
 

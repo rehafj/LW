@@ -1,7 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-
+/// <summary>
+/// manages all enemy status things - idealy inherted classes are for each type but for a small scale most use this one 
+/// might remove blob or sand features and create verrided methods or something 
+///so far overrided are -> bh enemies and lighty -> as these will cause an error otherwise( logical dealting with spawns) 
+/// </summary>
 public class LavaEffects : MonoBehaviour {
 //this script is a genral one that does  specfic dmg - it can be attached to damaging objects and we can modifty how many hits it takes to destory it 
 

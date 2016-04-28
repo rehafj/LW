@@ -1,7 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
-
+/// <summary>
+/// triverses music through scenes By getting the active build on scene load 
+///plays spec music on menue/ bullet heall/ platform 
+///hard coded value - if we had more might make it odd/even music loops. within a range 
+/// </summary>
 public class MusicManagerT : MonoBehaviour {
 	public Scene myscene;
 	public int sceneNumber;

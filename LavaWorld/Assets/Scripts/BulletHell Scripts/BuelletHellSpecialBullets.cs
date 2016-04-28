@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// behavior of special bullets /// think this may be a duplicate class somehwre - created it as  aq uick fix  
+/// </summary>
 public class BuelletHellSpecialBullets : MonoBehaviour {
 
 	// Use this for initialization

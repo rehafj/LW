@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// this script randomizes eneimies in BH section - based on pooler and increases speed based on time class 
+///quick hack for timing values -> hard coded in // change if time
+/// </summary>
 public class BhSpawnEnimies : MonoBehaviour {
 	// Use this for initialization
 

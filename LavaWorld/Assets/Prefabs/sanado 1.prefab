@@ -358,6 +358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   howMuchDamage: 10
   HitsToDestroy: 3
+  initialHitsToDestory: 0
   instantKill: 0
   CannotGetHit: 0
   timetoreswpan: 5

@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// as the name sugests this limits the bonds to the bonds of the camera - currenly used in BH section 
+///attached to objects that cant move outside selected camera bound :) 
+/// </summary>
 public class LimitToCamBounds : MonoBehaviour {
 float minX;
 float maxX;

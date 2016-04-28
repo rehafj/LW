@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// 5 am naming - this just moves it in a cir pattern 
+/// </summary>
 public class MoveSomthing : MonoBehaviour {
 float timer = 0;
 public int width = 3, height = 4;

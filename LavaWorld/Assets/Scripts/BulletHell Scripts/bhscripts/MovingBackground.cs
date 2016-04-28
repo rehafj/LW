@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// used to move the background in bulleyt hell 
+/// </summary>
 public class MovingBackground : MonoBehaviour {
 public float speed =0.1f;
 public Vector2 offset = new Vector2(0,0);

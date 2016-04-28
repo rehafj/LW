@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// moves player to scene assigned in inspector - quick fix 
+/// </summary>
 public class MoveToNextLevel : MonoBehaviour {
 
 	public LevelManager mamage;

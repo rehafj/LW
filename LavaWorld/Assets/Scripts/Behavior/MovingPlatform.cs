@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 /// <summary>
-/// the new platform script - starts moving if player steps on it - returns to initial pos when stepped off 
+/// the new platform script - starts moving if player steps on it - returns to initial pos when stepped off - cuntinues moving if player jumps on it
+///this has been updated //does not hold at top anymore - removed that feature  
 /// </summary>
 public class MovingPlatform : MonoBehaviour {
 

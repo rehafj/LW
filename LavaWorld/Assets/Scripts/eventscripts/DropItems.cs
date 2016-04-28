@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+//drops items 40% chance depending on random value 
 public class DropItems : MonoBehaviour {
 int x;
 LavaEffects status;

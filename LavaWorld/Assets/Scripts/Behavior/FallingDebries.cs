@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// Falling debries. This class draws items form a pooler in scene and drops them when camera is enabled 
+/// </summary>
 public class FallingDebries : MonoBehaviour {
 /// <summary>
 /// temporary - wil use another method instead of instantistying will pull it to reduce load 

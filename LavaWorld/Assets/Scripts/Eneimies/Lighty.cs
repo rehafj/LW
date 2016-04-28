@@ -2,7 +2,9 @@
 using System.Collections;
 
 /// <summary>
-/// specfic script for lighty's behavior 
+/// a very simple script 
+/// inhirits from lava effects 
+///moves fire on a pattern ( instant) 1-2-3-1-2-3 planned that way
 /// </summary>
 
 

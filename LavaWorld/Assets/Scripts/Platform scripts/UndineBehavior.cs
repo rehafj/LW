@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Fungus;
+/// <summary>
+/// just displays uidine and enables player water 
+/// </summary>
 public class UndineBehavior : MonoBehaviour {
 	// Use this for initialization
     //remmeber\to deavtivate script and just hide it

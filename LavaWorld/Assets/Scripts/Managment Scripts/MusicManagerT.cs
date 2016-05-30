@@ -76,3 +76,15 @@ public class MusicManagerT : MonoBehaviour {
 			myMusic.Play();	}	
 	}
 }
+
+/*
+*** the music is credited to 
+klankbeeld
+dAmbient
+bone666138
+from free sound.org
+
+https://www.freesound.org/people/bone666138/sounds/198896/
+https://www.freesound.org/people/dAmbient/sounds/251936/
+https://www.freesound.org/people/klankbeeld/sounds/120368/
+*/
